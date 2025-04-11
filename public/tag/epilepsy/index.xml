@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>epilepsy | A Rambling On</title>
+    <title>Epilepsy | </title>
     <link>/tag/epilepsy/</link>
       <atom:link href="/tag/epilepsy/index.xml" rel="self" type="application/rss+xml" />
-    <description>epilepsy</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <description>Epilepsy</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>epilepsy</title>
+      <title>Epilepsy</title>
       <link>/tag/epilepsy/</link>
     </image>
     
     <item>
       <title>Analysis of Structural Connectivity in 6 Cases of Hemispherectomy</title>
       <link>/publication/hemi/hemi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       <guid>/publication/hemi/hemi/</guid>
       <description></description>
     </item>

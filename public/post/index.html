@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Data Scientist">
+  <meta name="description" content="Data Scientist &#43; Engineer">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/">
@@ -204,61 +204,15 @@
   <link rel="stylesheet" href="/css/academic.css">
 
   
-
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-186337108-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-186337108-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-  
-
-
-  
   
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="A Rambling On">
+  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="">
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_ab7c00cfe4a5c449.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_12651b7f5ca1ac92.png">
 
   <link rel="canonical" href="/post/">
 
@@ -274,10 +228,10 @@
   
   <meta property="twitter:card" content="summary_large_image">
   
-  <meta property="og:site_name" content="A Rambling On">
+  <meta property="og:site_name" content="">
   <meta property="og:url" content="/post/">
-  <meta property="og:title" content="Posts | A Rambling On">
-  <meta property="og:description" content="Data Scientist"><meta property="og:image" content="/img/Bayes.jpg">
+  <meta property="og:title" content="Posts | ">
+  <meta property="og:description" content="Data Scientist &#43; Engineer"><meta property="og:image" content="/img/Bayes.jpg">
   <meta property="twitter:image" content="/img/Bayes.jpg"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2023-06-15T02:14:14-07:00">
@@ -297,7 +251,7 @@
 
 
 
-  <title>Posts | A Rambling On</title>
+  <title>Posts | </title>
 
 </head>
 
@@ -348,7 +302,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">A Rambling On</a>
+      <a class="navbar-brand" href="/"></a>
     </div>
     
 
@@ -361,7 +315,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">A Rambling On</a>
+      <a class="navbar-brand" href="/"></a>
     </div>
     
 
@@ -511,28 +465,6 @@
         
         
 
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/files/Resume.pdf"><span>Resume</span></a>
-        </li>
-
-        
-        
-
       
 
         
@@ -674,7 +606,8 @@
 
   
   <div class="article-style">
-    <p>This is the last post in a mini-series on designing Gitlab CI/CD pipelines. We&rsquo;ve discussed the basic anatomy of a .gitlab-ci.yml file, how to set up authentication tokens and files for building and pushing packages to a registry, and designing a Dockerfile for building images from a package in the context of a CI/CD pipeline.</p>
+    <p><p>This is the last post in a mini-series on 
+<a href="/post/cicd-1-config/">designing Gitlab CI/CD pipelines</a>.  We&rsquo;ve discussed the basic anatomy of a <code>.gitlab-ci.yml</code> file, how to set up authentication tokens and files for building and pushing packages to a registry, and designing a Dockerfile for building images from a package in the context of a CI/CD pipeline.  In this post, I&rsquo;m going to show how to push your package to a remote AWS Elastic Container Registry (ECR).</p></p>
   </div>
   
 
@@ -749,7 +682,9 @@
 
   
   <div class="article-style">
-    <p>This is the third post in a mini-series on designing Gitlab CI/CD pipelines. In the last post, we discussed setting up your .pypirc and .netrc files in the context of a Gitlab CI/CD pipeline to enable building and pushing packages to a package registry, as well as for installing code from a private registry.</p>
+    <p><p>This is the third post in a mini-series on 
+<a href="/post/cicd-1-config/">designing Gitlab CI/CD pipelines</a>.  In the last 
+<a href="/post/cicd-2-packages/">post</a>, we discussed setting up your <code>.pypirc</code> and <code>.netrc</code> files in the context of a Gitlab CI/CD pipeline to enable building and pushing packages to a package registry, as well as for installing code from a private registry.  In this post, we&rsquo;ll discuss putting together a Dockerfile for building containers in the context of a Gitlab CI/CD pipeline.</p></p>
   </div>
   
 
@@ -824,7 +759,8 @@
 
   
   <div class="article-style">
-    <p>This is the second post in a mini-series on designing Gitlab CI/CD pipelines. In order to build packages and push them to a remote package registry, we use the build and twine packages. build generates a package, and twine pushes this package to a registry (or &ldquo;index&rdquo;).</p>
+    <p><p>This is the second post in a mini-series on 
+<a href="/post/cicd-1-config/">designing Gitlab CI/CD pipelines</a>.  In order to build packages and push them to a remote package registry, we use the <code>build</code> and <code>twine</code> packages.  <code>build</code> generates a package, and <code>twine</code> pushes this package to a registry (or &ldquo;index&rdquo;).  <code>twine</code> requires access to authentication usernames, passwords, and a registry URL in order to do so.  <code>twine</code> can access these tokens from a <code>.pypirc</code> file &ndash; the tokens are generated by the registry, and ensure that the submitting user has permissions to perform a certain action.</p></p>
   </div>
   
 
@@ -899,7 +835,7 @@
 
   
   <div class="article-style">
-    <p>I recently developed a template workflow to help our team adopt a CI/CD-based development strategy. Many of our web applications and tools were based on simple repository structures. With growing datasets and ever-increasing use by outside teams, we found ourselves needing to add new features more frequently to many of these tools and believed that continuous integration and deployment could help us not just develop more quickly, but also more intelligently.</p>
+    <p><p>I recently developed a template workflow to help our team adopt a CI/CD-based development strategy.  Many of our web applications and tools were based on simple repository structures.  With growing datasets and ever-increasing use by outside teams, we found ourselves needing to add new features more frequently to many of these tools and believed that continuous integration and deployment could help us not just develop more quickly, but also more intelligently.  Since we use Gitlab to store our code, we decided to use the Gitlab CI/CD tools.</p></p>
   </div>
   
 
@@ -974,7 +910,7 @@
 
   
   <div class="article-style">
-    <p>I was recently tasked with examining databases related to some computer vision tools that my company had acquired. Basically, the framework was as follows&hellip; Clients/users would sign up for some service with the goal in mind of building a model to classify a set of microscopy images.</p>
+    <p><p>I was recently tasked with examining databases related to some computer vision tools that my company had acquired.  Basically, the framework was as follows&hellip; Clients/users would sign up for some service with the goal in mind of building a model to classify a set of microscopy images.  These models could then be used by the client for downstream services.  The users interacted with this tool through a web application, with which they could upload the training and validation datasets.  They could also interact with models that they might have previously trained.  The software used AWS EC2 instances to train and test their models, and a database to store all the relevant image files and metadata associated with the users and experiments.</p></p>
   </div>
   
 
@@ -1044,7 +980,7 @@
   
   
   <a href="/post/information/">
-      <img src="/post/information/featured_hu2d34906aae936312658030a6868df8b0_29912_918x517_fill_q90_lanczos_smart1_3.png" class="article-banner" alt="">
+      <img src="/post/information/featured_hu_8a88b04fd328efd1.png" class="article-banner" alt="">
   </a>
   
 
@@ -1054,7 +990,8 @@
 
   
   <div class="article-style">
-    <p>I&rsquo;m interested in looking at some spatial mappings between pairs of cortical regions, and believe that these mappings are mediated, to some degree, by the temporal coupling between cortical areas. I don&rsquo;t necessarily know the functional form of these mappings, but neurobiologically predict that these mappings are not random and have some inherent structure.</p>
+    <p><meta name="thumbnail" content="featured.png">
+<p>I&rsquo;m interested in looking at some spatial mappings between pairs of cortical regions, and believe that these mappings are mediated, to some degree, by the temporal coupling between cortical areas.  I don&rsquo;t necessarily know the functional form of these mappings, but neurobiologically predict that these mappings are not random and have some inherent structure.  I want to examine the relationship between spatial location and strength of temporal coupling.  I&rsquo;m going to use mutual information to measure this association.</p></p>
   </div>
   
 
@@ -1124,7 +1061,7 @@
   
   
   <a href="/post/jumping-knowledge/">
-      <img src="/post/jumping-knowledge/featured_hu1544ee6cdd55ddea4900815f79dc3360_1193315_918x517_fill_q90_lanczos_smart1_3.png" class="article-banner" alt="">
+      <img src="/post/jumping-knowledge/featured_hu_f4465f44e56b543a.png" class="article-banner" alt="">
   </a>
   
 
@@ -1134,7 +1071,9 @@
 
   
   <div class="article-style">
-    <p>Background As I mentioned in my previous post on constrained graph attention networks, graph neural networks suffer from overfitting and oversmoothing as network depth increases. These issues can ultimately be linked to the local topologies of the graph.</p>
+    <p><h2 id="background">Background</h2>
+<p>As I mentioned in my previous post on 
+<a href="/post/constrained-gat/">constrained graph attention networks</a>, graph neural networks suffer from overfitting and oversmoothing as network depth increases.  These issues can ultimately be linked to the local topologies of the graph.</p></p>
   </div>
   
 
@@ -1209,7 +1148,10 @@
 
   
   <div class="article-style">
-    <p>In their recent paper, Wang et al. propose a few updates to the Graph Attention Network (GAT) neural network algorithm (if you want to skip the technical bit and get to the code, click here). Briefly, GATs are a recently-developed neural network architecture applied to data distributed over a graph domain.</p>
+    <p><p>In their recent 
+<a href="https://arxiv.org/abs/1910.11945" target="_blank" rel="noopener">paper</a>, Wang et al. propose a few updates to the Graph Attention Network (GAT) neural network algorithm (if you want to skip the technical bit and get to the code, click 
+<a href="#Implementation">here</a>).  Briefly, GATs are a 
+<a href="https://arxiv.org/pdf/1710.10903.pdf" target="_blank" rel="noopener">recently-developed</a> neural network architecture applied to data distributed over a graph domain.  We can think of graph convolutional networks as progressively transforming and aggregating signals from within a local neighborhood of a node.  At each iteration of this process, we implicitly merge signals from larger and larger neighborhoods of the node of interest, and thereby learn unique representations of nodes that are dependent on their surroundings.</p></p>
   </div>
   
 
@@ -1284,7 +1226,8 @@
 
   
   <div class="article-style">
-    <p>As I mentioned in my previous post, I work with cortical surface segmentation data. Due to the biology of the human brain, there is considerable reproducible structure and function across individuals (thankfully!). One manifestion of this reproducibility is exemplified by the neocortex a.</p>
+    <p><p>As I mentioned in my previous 
+<a href="/post/gaussian-kernel-convolution/">post</a>, I work with cortical surface segmentation data.  Due to the biology of the human brain, there is considerable reproducible structure and function across individuals (thankfully!).  One manifestion of this reproducibility is exemplified by the neocortex a.k.a. the thin (~2.5mm) gray matter layer of cell-bodies at the periphery of the brain.  The neocortex is well known to have local homogeneity in terms of types of neuronal cells, protein and gene expression, and large-scale function, for example.  Naturally, researchers have been trying to identify discrete delineations of the cortex for nearly 100 years, by looking for regions of local homogeneity of various features along the cortical manifold.</p></p>
   </div>
   
 
@@ -1359,7 +1302,8 @@
 
   
   <div class="article-style">
-    <p>I&rsquo;m using graph convolutional networks as a tool to segment the cortical surface of the brain. This research resides in the domain of node classification using inductive learning. By node classification, I mean that we wish to assign a discrete label to cortical surface locations (nodes / vertices in a graph) on the basis of some feature data and brain network topology.</p>
+    <p><p>I&rsquo;m using 
+<a href="https://tkipf.github.io/graph-convolutional-networks/" target="_blank" rel="noopener">graph convolutional networks</a> as a tool to segment the cortical surface of the brain.  This research resides in the domain of <em>node classification</em> using <em>inductive learning</em>.  By node classification, I mean that we wish to assign a discrete label to cortical surface locations (nodes / vertices in a graph) on the basis of some feature data and brain network topology.  By inductive learning, I mean that we will train, validate, and test on datasets with possibly different graph topologies &ndash; this is in contrast to <em>transductive learning</em> that learns models that do not generalize to arbitrary network topology.</p></p>
   </div>
   
 
@@ -1486,7 +1430,7 @@
     
     
     
-    <script src="/js/academic.min.cd45a9c0bbdd3dfb1c126917c601c9f2.js"></script>
+    <script src="/js/academic.min.625093851a77bbf06d06d7f8a6cf3f7b.js"></script>
 
     
 

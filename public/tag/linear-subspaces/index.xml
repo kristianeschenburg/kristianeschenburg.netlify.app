@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linear subspaces | A Rambling On</title>
+    <title>Linear Subspaces | </title>
     <link>/tag/linear-subspaces/</link>
       <atom:link href="/tag/linear-subspaces/index.xml" rel="self" type="application/rss+xml" />
-    <description>linear subspaces</description>
+    <description>Linear Subspaces</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 29 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>linear subspaces</title>
+      <title>Linear Subspaces</title>
       <link>/tag/linear-subspaces/</link>
     </image>
     

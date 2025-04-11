@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fiction | A Rambling On</title>
+    <title>Fiction | </title>
     <link>/tag/fiction/</link>
       <atom:link href="/tag/fiction/index.xml" rel="self" type="application/rss+xml" />
-    <description>fiction</description>
+    <description>Fiction</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 21 Mar 2021 23:24:17 -0700</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>fiction</title>
+      <title>Fiction</title>
       <link>/tag/fiction/</link>
     </image>
     

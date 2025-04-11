@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fMRI | A Rambling On</title>
+    <title>FMRI | </title>
     <link>/tag/fmri/</link>
       <atom:link href="/tag/fmri/index.xml" rel="self" type="application/rss+xml" />
-    <description>fMRI</description>
+    <description>FMRI</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>fMRI</title>
+      <title>FMRI</title>
       <link>/tag/fmri/</link>
     </image>
     

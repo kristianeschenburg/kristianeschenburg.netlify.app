@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>image segmentation | A Rambling On</title>
+    <title>Image Segmentation | </title>
     <link>/tag/image-segmentation/</link>
       <atom:link href="/tag/image-segmentation/index.xml" rel="self" type="application/rss+xml" />
-    <description>image segmentation</description>
+    <description>Image Segmentation</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>image segmentation</title>
+      <title>Image Segmentation</title>
       <link>/tag/image-segmentation/</link>
     </image>
     

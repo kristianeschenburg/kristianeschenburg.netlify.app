@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="For one of the projects I&rsquo;m working on, I have an array of multivariate data relating to brain connectivity patterns. Briefly, each brain is represented as a surface mesh, which we represent as a graph $G = (V,E)$, where $V$ is a set of $n$ vertices, and $E$ are the set of edges between vertices.">
+  <meta name="description" content="For one of the projects I&rsquo;m working on, I have an array of multivariate data relating to brain connectivity patterns.  Briefly, each brain is represented as a surface mesh, which we represent as a graph $G = (V,E)$, where $V$ is a set of $n$ vertices, and $E$ are the set of edges between vertices.">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/mahalanobis-distances-of-brain-connectivity/">
@@ -204,59 +204,13 @@
   <link rel="stylesheet" href="/css/academic.css">
 
   
-
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-186337108-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-186337108-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-  
-
-
-  
   
 
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_ab7c00cfe4a5c449.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_12651b7f5ca1ac92.png">
 
   <link rel="canonical" href="/post/mahalanobis-distances-of-brain-connectivity/">
 
@@ -272,10 +226,10 @@
   
   <meta property="twitter:card" content="summary_large_image">
   
-  <meta property="og:site_name" content="A Rambling On">
+  <meta property="og:site_name" content="">
   <meta property="og:url" content="/post/mahalanobis-distances-of-brain-connectivity/">
-  <meta property="og:title" content="Mahalanobis Distances of Brain Connectivity | A Rambling On">
-  <meta property="og:description" content="For one of the projects I&rsquo;m working on, I have an array of multivariate data relating to brain connectivity patterns. Briefly, each brain is represented as a surface mesh, which we represent as a graph $G = (V,E)$, where $V$ is a set of $n$ vertices, and $E$ are the set of edges between vertices."><meta property="og:image" content="/img/Bayes.jpg">
+  <meta property="og:title" content="Mahalanobis Distances of Brain Connectivity | ">
+  <meta property="og:description" content="For one of the projects I&rsquo;m working on, I have an array of multivariate data relating to brain connectivity patterns.  Briefly, each brain is represented as a surface mesh, which we represent as a graph $G = (V,E)$, where $V$ is a set of $n$ vertices, and $E$ are the set of edges between vertices."><meta property="og:image" content="/img/Bayes.jpg">
   <meta property="twitter:image" content="/img/Bayes.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -314,13 +268,13 @@
   
   "publisher": {
     "@type": "Organization",
-    "name": "A Rambling On",
+    "name": "",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_192x192_fill_lanczos_center_3.png"
+      "url": "/images/icon_hu_12651b7f5ca1ac92.png"
     }
   },
-  "description": "For one of the projects I\u0026rsquo;m working on, I have an array of multivariate data relating to brain connectivity patterns. Briefly, each brain is represented as a surface mesh, which we represent as a graph $G = (V,E)$, where $V$ is a set of $n$ vertices, and $E$ are the set of edges between vertices."
+  "description": "\u003cp\u003eFor one of the projects I\u0026rsquo;m working on, I have an array of multivariate data relating to brain connectivity patterns.  Briefly, each brain is represented as a surface mesh, which we represent as a graph $G = (V,E)$, where $V$ is a set of $n$ vertices, and $E$ are the set of edges between vertices.\u003c/p\u003e"
 }
 </script>
 
@@ -338,7 +292,7 @@
 
 
 
-  <title>Mahalanobis Distances of Brain Connectivity | A Rambling On</title>
+  <title>Mahalanobis Distances of Brain Connectivity | </title>
 
 </head>
 
@@ -389,7 +343,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">A Rambling On</a>
+      <a class="navbar-brand" href="/"></a>
     </div>
     
 
@@ -402,7 +356,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">A Rambling On</a>
+      <a class="navbar-brand" href="/"></a>
     </div>
     
 
@@ -547,28 +501,6 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/personal"><span>Personal</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/files/Resume.pdf"><span>Resume</span></a>
         </li>
 
         
@@ -724,10 +656,10 @@
 <figure id="figure-example-of-cortical-map-and-array-of-connectivity-features">
 
 
-  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/parcellation_huf0b3bb1bc41eebdcb9d4479e215063d3_232126_2000x2000_fit_lanczos_3.png" data-caption="Example of cortical map, and array of connectivity features.">
+  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/parcellation_hu_ff318333e3f2fe17.png" data-caption="Example of cortical map, and array of connectivity features.">
 
 
-  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/parcellation_huf0b3bb1bc41eebdcb9d4479e215063d3_232126_2000x2000_fit_lanczos_3.png" class="lazyload" alt="" width="1296" height="432">
+  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/parcellation_hu_ff318333e3f2fe17.png" class="lazyload" alt="" width="1296" height="432">
 </a>
 
 
@@ -885,10 +817,10 @@ for l in labels:
 <figure id="figure-empirical-distributions-of-within-region-top-and-between-region-bottom-d2-values--each-line-is-the-distribution-of-the-distance-of-samples-in-our-roi-to-a-whole-region">
 
 
-  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/IntraInterMahal_hu396a8faeb9757ca8b446c8e1d4b3975d_82931_2000x2000_fit_q90_lanczos.jpg" data-caption="Empirical distributions of within-region (top) and between-region (bottom) $d^{2}$ values.  Each line is the distribution of the distance of samples in our ROI to a whole region.">
+  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/IntraInterMahal_hu_4a20b8ed998a232e.jpg" data-caption="Empirical distributions of within-region (top) and between-region (bottom) $d^{2}$ values.  Each line is the distribution of the distance of samples in our ROI to a whole region.">
 
 
-  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/IntraInterMahal_hu396a8faeb9757ca8b446c8e1d4b3975d_82931_2000x2000_fit_q90_lanczos.jpg" class="lazyload" alt="" width="864" height="864">
+  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/IntraInterMahal_hu_4a20b8ed998a232e.jpg" class="lazyload" alt="" width="864" height="864">
 </a>
 
 
@@ -945,10 +877,10 @@ probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
 <figure id="figure-density-and-qq-plot-of-null-distribution">
 
 
-  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/Density.QQPlot_hu1d3559aae9fc2b76dfaee6ede7f1500d_47405_2000x2000_fit_lanczos_3.png" data-caption="Density and QQ plot of null distribution.">
+  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/Density.QQPlot_hu_ca5535fcd8e75fcd.png" data-caption="Density and QQ plot of null distribution.">
 
 
-  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/Density.QQPlot_hu1d3559aae9fc2b76dfaee6ede7f1500d_47405_2000x2000_fit_lanczos_3.png" class="lazyload" alt="" width="864" height="864">
+  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/Density.QQPlot_hu_ca5535fcd8e75fcd.png" class="lazyload" alt="" width="864" height="864">
 </a>
 
 
@@ -986,10 +918,10 @@ probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
 <figure id="figure-region-of-interest">
 
 
-  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/Region_LT_hu99f982ee794454d59a2b0bf97fc60dbf_189336_2000x2000_fit_lanczos_3.png" data-caption="Region of interest.">
+  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/Region_LT_hu_ac1dbc85f77489a3.png" data-caption="Region of interest.">
 
 
-  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/Region_LT_hu99f982ee794454d59a2b0bf97fc60dbf_189336_2000x2000_fit_lanczos_3.png" class="lazyload" alt="" width="1440" height="821">
+  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/Region_LT_hu_ac1dbc85f77489a3.png" class="lazyload" alt="" width="1440" height="821">
 </a>
 
 
@@ -1023,10 +955,10 @@ probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
 <figure id="figure-estimated-squared-mahalanobis-distances-overlaid-on-cortical-surface">
 
 
-  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/MahalanobisDistance_hu9c9596cf29d1146f5fc3d3b7dde66282_764298_2000x2000_fit_lanczos_3.png" data-caption="Estimated squared Mahalanobis distances, overlaid on cortical surface.">
+  <a data-fancybox="" href="/post/mahalanobis-distances-of-brain-connectivity/MahalanobisDistance_hu_d2a6bbc02ed1093d.png" data-caption="Estimated squared Mahalanobis distances, overlaid on cortical surface.">
 
 
-  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/MahalanobisDistance_hu9c9596cf29d1146f5fc3d3b7dde66282_764298_2000x2000_fit_lanczos_3.png" class="lazyload" alt="" width="1440" height="821">
+  <img data-src="/post/mahalanobis-distances-of-brain-connectivity/MahalanobisDistance_hu_d2a6bbc02ed1093d.png" class="lazyload" alt="" width="1440" height="821">
 </a>
 
 
@@ -1139,12 +1071,12 @@ probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
     <div class="media author-card content-widget-hr">
       
         
-        <img class="avatar mr-3 avatar-circle" src="/author/avatar_hu1d33f7c1c3956865c98823fdaf357458_38773_270x270_fill_q90_lanczos_center.jpg" alt="">
+        <img class="avatar mr-3 avatar-circle" src="/author/avatar_hu_1ade8766b2e7b61d.png" alt="">
       
 
       <div class="media-body">
         <h5 class="card-title"><a href="/"></a></h5>
-        <h6 class="card-subtitle">Data Scientist</h6>
+        <h6 class="card-subtitle">Data Scientist + Engineer</h6>
         
         <ul class="network-icon" aria-hidden="true">
   
@@ -1160,23 +1092,6 @@ probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
     <li>
       <a href="mailto:keschenb@uw.edu" >
         <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://twitter.com/keschh" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
       </a>
     </li>
   
@@ -1341,7 +1256,7 @@ probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
     
     
     
-    <script src="/js/academic.min.cd45a9c0bbdd3dfb1c126917c601c9f2.js"></script>
+    <script src="/js/academic.min.625093851a77bbf06d06d7f8a6cf3f7b.js"></script>
 
     
 

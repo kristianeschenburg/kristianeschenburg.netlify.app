@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>non-parametric | A Rambling On</title>
+    <title>Non-Parametric | </title>
     <link>/tag/non-parametric/</link>
       <atom:link href="/tag/non-parametric/index.xml" rel="self" type="application/rss+xml" />
-    <description>non-parametric</description>
+    <description>Non-Parametric</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>non-parametric</title>
+      <title>Non-Parametric</title>
       <link>/tag/non-parametric/</link>
     </image>
     
@@ -105,10 +105,10 @@ crp.fit(synth.features_, synth.adj_list, gt_z=synth.z_)
 &lt;figure id=&#34;figure-model-convergence-in-synthetic-data&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/ddcrp/ell_hu198df877147cc727f2f21bf1ceacd1a3_58174_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Model convergence in synthetic data.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/ddcrp/ell_hu_332061f2298fe492.jpg&#34; data-caption=&#34;Model convergence in synthetic data.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/ddcrp/ell_hu198df877147cc727f2f21bf1ceacd1a3_58174_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;360&#34;&gt;
+  &lt;img data-src=&#34;/project/ddcrp/ell_hu_332061f2298fe492.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;360&#34;&gt;
 &lt;/a&gt;
 
 

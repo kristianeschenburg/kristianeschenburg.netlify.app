@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Laplacian eigenmaps | A Rambling On</title>
+    <title>Laplacian Eigenmaps | </title>
     <link>/tag/laplacian-eigenmaps/</link>
       <atom:link href="/tag/laplacian-eigenmaps/index.xml" rel="self" type="application/rss+xml" />
-    <description>Laplacian eigenmaps</description>
+    <description>Laplacian Eigenmaps</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 22 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>Laplacian eigenmaps</title>
+      <title>Laplacian Eigenmaps</title>
       <link>/tag/laplacian-eigenmaps/</link>
     </image>
     

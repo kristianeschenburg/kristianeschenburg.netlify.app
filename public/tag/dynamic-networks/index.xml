@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dynamic networks | A Rambling On</title>
+    <title>Dynamic Networks | </title>
     <link>/tag/dynamic-networks/</link>
       <atom:link href="/tag/dynamic-networks/index.xml" rel="self" type="application/rss+xml" />
-    <description>dynamic networks</description>
+    <description>Dynamic Networks</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>dynamic networks</title>
+      <title>Dynamic Networks</title>
       <link>/tag/dynamic-networks/</link>
     </image>
     

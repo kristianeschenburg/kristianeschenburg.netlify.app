@@ -18,18 +18,17 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+
 [[experience]]
   title = "Data Scientist"
   company = "CuriBio"
   company_url = "https://www.curibio.com/"
   location = "Seatte, WA"
-  date_start = "2021-06-28"
-  date_end = "2022-04-06"
+  date_start = "2021-06-01"
+  date_end = "2022-04-01"
   description = """
-  
-  * Built AI models for predicting cell differentiation success rates from high- throughput microscopy imaging datasets
-  * Explored the utility of explainable AI tools for relating imaging-based phenotypic features to cell differentiation outcomes
-  * Developed software platform for phenotypic analysis of engineered cardiac and skeletal myocyte contractility waveforms
+  * Responsible for developing and deploying image processing AI models for predicting cell differentiation success likelihood from high-throughput microscopy imaging datasets. Reduced material resource costs by upwards of 25% for associated research stage.
+  * Developed client-side waveform analysis software for characterizing contractility profiles of engineered cardiac and skeletal muscle stem cells. Leveraged signal processing algorithms to analyze impact of therapeutics on muscle cell function.
   """
 
 [[experience]]
@@ -37,15 +36,16 @@ date_format = "Jan 2006"
   company = "Integrated Brain Imaging Center"
   company_url = "http://ibic.washington.edu/#&panel1-1"
   location = "Seatte, WA"
-  date_start = "2014-09-20"
-  date_end = "2021-12-13"
+  date_start = "2014-09-01"
+  date_end = "2021-09-01"
   description = """
   
-  * Developed computer vision models based on unsupervised + supervised ML algorithms for segmenting cortical tissue using MRI, implemented in Python
-  * Designed graph neural network models to apply population-level cortical maps to unmapped MRI images, improving segmentation accuracies by >15%, relative to conventional CNN models
-  * Initiated cross-department study on brain dynamics, resulting in high-impact publication
-  * Developed turn-key pipeline for processing 1000+ adult human MRI scans (>1.5TB) using shell scripting and distributed computing (SGE)
-  * Thesis work resulted in 2+ high-impact peer-reviewed publications, 2+ international conference posters, and 3+ conference presentations
+   * Developed graph neural network approaches to segment cortices of medical brain images. Trained models yielded improvements in classification accuracy of 8% over conventional image alignment algorithms. Improved test-retest reliability of patient-specific segmentations by 6% across clinical scanning sessions.
+   * Applied novel modal decomposition algorithm (DMD) for studying fMRI brain dynamics that out-performed state-of-art (ICA) at identifying canonical activation networks. Increased test-retest reliability of detected networks by 7% while requiring shorter duration MRI scanning sessions than state-of-art.
+   * Designed novel approach for analyzing variability in the topography of functional brain connectivity using spatial statistical modeling. Results aligned with long-standing theories of hierarchical brain organization.
+   * Developed turn-key orchestration pipeline for processing 1000+ functional and diffusion MRI scans (>1.5TB), deployed on GPU-backed high-performance computing system.
+   * Awarded highly selective 3-year fellowship from the ARCS Washington Research Foundation to pursue doctorate research.
+  
   """
 
 [[experience]]
@@ -55,12 +55,7 @@ date_format = "Jan 2006"
   location = "Seattle, WA"
   date_start = "2017-04-01"
   date_end = "2017-06-01"
-  description = """
-  
-  * Contributed to the development of meta-genome clustering algorithms for Python-based software platform
-  * Learned and employed principles of test-driven software development
-  * Gained experience with cloud computing using AWS
-  """
+  descriotion = """"""
   
 [[experience]]
   title = "Data Science Intern"
@@ -69,10 +64,5 @@ date_format = "Jan 2006"
   location = "Richland, WA"
   date_start = "2016-06-01"
   date_end = "2016-09-01"
-  description = """
-  
-  * Studied data structures related to dynamic graphs
-  * Analyzed dynamical systems of functional MRI to characterize coherent spatial patterns of brain activity
-  * Translated summer internship research into journal paper [journal paper](https://www.frontiersin.org/articles/10.3389/fncom.2019.00075/full)
-  """
+  description = """"""
 +++

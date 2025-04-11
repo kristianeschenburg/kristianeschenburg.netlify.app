@@ -10,20 +10,20 @@ authors:
 superuser: true
 
 # Role/position
-role: Data Scientist
+role: Data Scientist + Engineer
 
 # Organizations/Affiliations
 organizations:
-- name: "PNW"
+- name: "Pacific Northwest"
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: ""
 
 interests:
-- Deep Learning
-- Data Visualization
-- Computer Vision
+- Building orchestration pipelines
+- Implementing ML + AI models described in literature
+- Designing vizualization tools to tell stories about data
 
 education:
   courses:
@@ -42,9 +42,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:keschenb@uw.edu'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/keschh
 - icon: github
   icon_pack: fab
   link: https://github.com/kristianeschenburg
@@ -54,8 +51,8 @@ social:
   
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
+# - icon: file-pdf
+#   icon_pack: fas
 #   link: files/Resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
@@ -68,8 +65,6 @@ social:
 # - Visitors
 ---
 # 
-I'm a Data Scientist currently living in Seattle.  I completed my PhD in Biomedical Engineering at University of Washington, where I developed computational methods to explore relationships between brain structure and brain function using magnetic resonance imaging.  My primary research focus was on designing computer vision models to map the human cortex using various MRI modalities, and relating derived maps of the cortex to various biological and neurological processes.  I have extensive experience in medical imaging, image processing, machine learning, graph-based data, high-dimensional data analysis, data visualization, and scientific communication.  
+I'm a full-stack data professional passionate about helping companies make their data useful with machine learning and data engineering.
 
-Since completing my PhD, I've worked as Data Scientist in the Biotechnology sector, with a major focus on building AI tools to facilitate the drug discovery process.  This work has included developing image and graph-based machine learning models for in-house and client-facing projects, designing end-to-end analysis and deployment pipelines, and building data visualization tools for scientists in various functional groups.
-
-When I'm not thinking about data, I like to backcountry ski, climb, trail run, and take care of my plants.  I'm driven by curiosity and fueled by coffee.
+When I'm not thinking about data, I like to backcountry ski, trail run, and take care of my plants.

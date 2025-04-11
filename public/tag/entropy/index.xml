@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>entropy | A Rambling On</title>
+    <title>Entropy | </title>
     <link>/tag/entropy/</link>
       <atom:link href="/tag/entropy/index.xml" rel="self" type="application/rss+xml" />
-    <description>entropy</description>
+    <description>Entropy</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 08 Oct 2021 15:24:17 -0700</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>entropy</title>
+      <title>Entropy</title>
       <link>/tag/entropy/</link>
     </image>
     
@@ -59,10 +59,10 @@ Y =
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/information/entropy_hue80009bb191a784785003f9715471fdc_16228_2000x2000_fit_lanczos_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/information/entropy_hu_dc3bc6f4c1dd716e.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/information/entropy_hue80009bb191a784785003f9715471fdc_16228_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;424&#34; height=&#34;280&#34;&gt;
+  &lt;img data-src=&#34;/post/information/entropy_hu_dc3bc6f4c1dd716e.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;424&#34; height=&#34;280&#34;&gt;
 &lt;/a&gt;
 
 
@@ -135,10 +135,10 @@ A \otimes B =
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/information/domain_hudf6752327912411f9654bba4b0b0185d_22907_2000x2000_fit_lanczos_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/information/domain_hu_a56873c4ef9923b.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/information/domain_hudf6752327912411f9654bba4b0b0185d_22907_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;424&#34; height=&#34;424&#34;&gt;
+  &lt;img data-src=&#34;/post/information/domain_hu_a56873c4ef9923b.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;424&#34; height=&#34;424&#34;&gt;
 &lt;/a&gt;
 
 

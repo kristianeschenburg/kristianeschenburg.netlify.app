@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>neural networks | A Rambling On</title>
+    <title>Neural Networks | </title>
     <link>/tag/neural-networks/</link>
       <atom:link href="/tag/neural-networks/index.xml" rel="self" type="application/rss+xml" />
-    <description>neural networks</description>
+    <description>Neural Networks</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 25 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>neural networks</title>
+      <title>Neural Networks</title>
       <link>/tag/neural-networks/</link>
     </image>
     

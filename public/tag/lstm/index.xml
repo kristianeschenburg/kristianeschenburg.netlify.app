@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lstm | A Rambling On</title>
+    <title>Lstm | </title>
     <link>/tag/lstm/</link>
       <atom:link href="/tag/lstm/index.xml" rel="self" type="application/rss+xml" />
-    <description>lstm</description>
+    <description>Lstm</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 14 Feb 2021 23:24:17 -0700</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>lstm</title>
+      <title>Lstm</title>
       <link>/tag/lstm/</link>
     </image>
     

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | A Rambling On</title>
+    <title>Posts | </title>
     <link>/personal/</link>
       <atom:link href="/personal/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 21 Mar 2021 23:24:17 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 09 May 2021 23:24:17 -0700</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
       <title>Posts</title>

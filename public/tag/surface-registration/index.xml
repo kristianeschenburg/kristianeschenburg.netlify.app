@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>surface registration | A Rambling On</title>
+    <title>Surface Registration | </title>
     <link>/tag/surface-registration/</link>
       <atom:link href="/tag/surface-registration/index.xml" rel="self" type="application/rss+xml" />
-    <description>surface registration</description>
+    <description>Surface Registration</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 15 Jan 2015 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>surface registration</title>
+      <title>Surface Registration</title>
       <link>/tag/surface-registration/</link>
     </image>
     

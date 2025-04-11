@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
-title = "Skills"
+title = "Skills and Technologies"
 subtitle = ""
 
 # Showcase personal skills or business features.
@@ -35,40 +35,26 @@ subtitle = ""
   text_color_light = false  
 
 [[feature]]
-  icon = "python"
-  icon_pack = "fab"
-  name = "Python"
-  description = "PyData stack"
+  icon = "brain"
+  icon_pack = "fas"
+  name = "Data Science"
+  description = "APIs (FastAPI), Python data stack (numpy, scipy, pandas, etc.), visualization (Dash, Plotly, Streamlit)"
 
 [[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "Machine Learning"
-  description = "PyTorch, Tensorflow, Scikit-Learn, Deep Graph Library"
+  icon = "cloud"
+  icon_pack = "fas"
+  name = "Cloud infrastructure"
+  description = "AWS (EC2, ECS, EKS, EventBridge, IAM, Lambda, RDS, S3, SageMaker, VPC), Terraform"
+[[feature]]
+  icon = "project-diagram"
+  icon_pack = "fas"
+  name = "Data Engineering"
+  description = "AI + ML (Pytorch, DGL), MLOps (MLFlow), deployment (ECS, SageMaker, Lambda), CI/CD (Gitlab), containerization (Docker), orchestration (Dagster), databases (SQL, PySpark)"
 
 [[feature]]
   icon = "keyboard"
   icon_pack = "fas"
   name = "Software Engineering"
-  description = "Data structures and algorithms, unit-testing, object-oriented design"
-
-[[feature]]
-  icon = "project-diagram"
-  icon_pack = "fas"
-  name = "Linear Algebra"
-  description = ""  
-  
-[[feature]]
-  icon = "brain"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = ""
-
-
-[[feature]]
-  icon = "border-all"
-  icon_pack = "fas"
-  name = "Computer Vision / Image Processing"
-  description = ""
+  description = "object-oriented design, test-driven development, data structures + algorithms"  
 
 +++

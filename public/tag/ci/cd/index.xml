@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CI/CD | A Rambling On</title>
+    <title>CI/CD | </title>
     <link>/tag/ci/cd/</link>
       <atom:link href="/tag/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <description>CI/CD</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 15 Jun 2023 02:14:14 -0700</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
       <title>CI/CD</title>
@@ -31,7 +31,7 @@
 &lt;li&gt;&lt;code&gt;AWS_SECRET_ACCESS_KEY&lt;/code&gt;: this is the information contained in the downloaded *.pem file&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To set variables that are accessible by CI/CD jobs, go to your &lt;strong&gt;Project/Group &amp;gt; Settings &amp;gt; CI/CD &amp;gt; Variables &amp;gt; Expand&lt;/strong&gt; and define the variables of interest:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./CICD.VariableTab.png&#34; alt=&#34;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/post/cicd-4-cr/CICD.VariableTab.png&#34; alt=&#34;&#34;&gt;
 &lt;img src=&#34;./CICD.Variables.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you define these variables at the Gitlab Group level, they will be propagated down to the project level, so long as the Project falls under the Group scope.&lt;/p&gt;
 &lt;h4 id=&#34;pushing-to-aws-ecr-via-cicd-job&#34;&gt;Pushing to AWS ECR via CI/CD job&lt;/h4&gt;

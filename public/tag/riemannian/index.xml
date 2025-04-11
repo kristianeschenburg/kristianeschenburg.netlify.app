@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Riemannian | A Rambling On</title>
+    <title>Riemannian | </title>
     <link>/tag/riemannian/</link>
       <atom:link href="/tag/riemannian/index.xml" rel="self" type="application/rss+xml" />
     <description>Riemannian</description>
@@ -41,11 +41,11 @@
 &lt;figure id=&#34;figure-intersecting-2d-linear-subspaceshttpswwwresearchgatenetpublication327930102_optimal_exploitation_of_subspace_prior_information_in_matrix_sensing&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/comparing-subspaces/subspaces_hub081a28bf258255fb45bfa4cda66f295_17202_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Intersecting 2D linear 
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/comparing-subspaces/subspaces_hu_664436aa30d376e4.png&#34; data-caption=&#34;Intersecting 2D linear 
 subspaces.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/comparing-subspaces/subspaces_hub081a28bf258255fb45bfa4cda66f295_17202_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;640&#34; height=&#34;483&#34;&gt;
+  &lt;img data-src=&#34;/post/comparing-subspaces/subspaces_hu_664436aa30d376e4.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;640&#34; height=&#34;483&#34;&gt;
 &lt;/a&gt;
 
 
@@ -104,11 +104,11 @@ d(X_{i}, X_{j}) = \sqrt{\sum_{n=1}^{k} cos^{-1}(\sigma_{n})^{2}}
 &lt;figure id=&#34;figure-grassmann-manifold-and-its-tangent-spacehttpsdeepaiorgpublicationautomatic-recognition-of-space-time-constellations-by-learning-on-the-grassmann-manifold-extended-version&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/comparing-subspaces/grassmann_hu2cd3f58cc8fbe46f24a9a6bd61a80bd2_41873_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Grassmann manifold and its 
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/comparing-subspaces/grassmann_hu_27eb0bb5a47e713.png&#34; data-caption=&#34;Grassmann manifold and its 
 tangent space.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/comparing-subspaces/grassmann_hu2cd3f58cc8fbe46f24a9a6bd61a80bd2_41873_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;398&#34; height=&#34;249&#34;&gt;
+  &lt;img data-src=&#34;/post/comparing-subspaces/grassmann_hu_27eb0bb5a47e713.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;398&#34; height=&#34;249&#34;&gt;
 &lt;/a&gt;
 
 

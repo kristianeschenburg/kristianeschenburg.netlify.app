@@ -1,15 +1,15 @@
 {
-  "name": "A Rambling On",
-  "short_name": "A Rambling On",
+  "name": "",
+  "short_name": "",
   "lang": "en-us",
   "theme_color": "#2962ff",
   "background_color": "#2962ff",
   "icons": [{
-    "src": "/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_192x192_fill_lanczos_center_3.png",
+    "src": "/images/icon_hu_12651b7f5ca1ac92.png",
     "sizes": "192x192",
     "type": "image/png"
     }, {
-    "src": "/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_512x512_fill_lanczos_center_3.png",
+    "src": "/images/icon_hu_cc8ae8c005aea51c.png",
     "sizes": "512x512",
     "type": "image/png"
      }],

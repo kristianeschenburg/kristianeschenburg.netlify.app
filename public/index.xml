@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Rambling On</title>
+    <title></title>
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <description>A Rambling On</description>
+    <description></description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 15 Jun 2023 02:14:14 -0700</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>A Rambling On</title>
+      <title></title>
       <link>/</link>
     </image>
     
@@ -31,7 +31,7 @@
 &lt;li&gt;&lt;code&gt;AWS_SECRET_ACCESS_KEY&lt;/code&gt;: this is the information contained in the downloaded *.pem file&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To set variables that are accessible by CI/CD jobs, go to your &lt;strong&gt;Project/Group &amp;gt; Settings &amp;gt; CI/CD &amp;gt; Variables &amp;gt; Expand&lt;/strong&gt; and define the variables of interest:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./CICD.VariableTab.png&#34; alt=&#34;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/post/cicd-4-cr/CICD.VariableTab.png&#34; alt=&#34;&#34;&gt;
 &lt;img src=&#34;./CICD.Variables.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you define these variables at the Gitlab Group level, they will be propagated down to the project level, so long as the Project falls under the Group scope.&lt;/p&gt;
 &lt;h4 id=&#34;pushing-to-aws-ecr-via-cicd-job&#34;&gt;Pushing to AWS ECR via CI/CD job&lt;/h4&gt;
@@ -463,10 +463,10 @@ build-image-glcr:
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/sql-schema/reverse_hucaf06a6fd22e2d570ceaac7c0a8c909b_156034_2000x2000_fit_lanczos_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/sql-schema/reverse_hu_5fa9229a81cbae40.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/sql-schema/reverse_hucaf06a6fd22e2d570ceaac7c0a8c909b_156034_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;536&#34; height=&#34;248&#34;&gt;
+  &lt;img data-src=&#34;/post/sql-schema/reverse_hu_5fa9229a81cbae40.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;536&#34; height=&#34;248&#34;&gt;
 &lt;/a&gt;
 
 
@@ -495,10 +495,10 @@ build-image-glcr:
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/sql-schema/schema_hu2c2607ea4c922e6e62e731c3eaf56347_263063_2000x2000_fit_lanczos_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/sql-schema/schema_hu_addbe3c361d71b29.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/sql-schema/schema_hu2c2607ea4c922e6e62e731c3eaf56347_263063_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;766&#34; height=&#34;756&#34;&gt;
+  &lt;img data-src=&#34;/post/sql-schema/schema_hu_addbe3c361d71b29.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;766&#34; height=&#34;756&#34;&gt;
 &lt;/a&gt;
 
 
@@ -563,10 +563,10 @@ Y =
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/information/entropy_hue80009bb191a784785003f9715471fdc_16228_2000x2000_fit_lanczos_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/information/entropy_hu_dc3bc6f4c1dd716e.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/information/entropy_hue80009bb191a784785003f9715471fdc_16228_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;424&#34; height=&#34;280&#34;&gt;
+  &lt;img data-src=&#34;/post/information/entropy_hu_dc3bc6f4c1dd716e.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;424&#34; height=&#34;280&#34;&gt;
 &lt;/a&gt;
 
 
@@ -639,10 +639,10 @@ A \otimes B =
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/information/domain_hudf6752327912411f9654bba4b0b0185d_22907_2000x2000_fit_lanczos_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/information/domain_hu_a56873c4ef9923b.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/information/domain_hudf6752327912411f9654bba4b0b0185d_22907_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;424&#34; height=&#34;424&#34;&gt;
+  &lt;img data-src=&#34;/post/information/domain_hu_a56873c4ef9923b.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;424&#34; height=&#34;424&#34;&gt;
 &lt;/a&gt;
 
 
@@ -749,20 +749,6 @@ def mutual_information_grid(X,Y,Z):
     
     return estimates
     
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Removing large files in Git</title>
-      <link>/drafts/large-files-fit/</link>
-      <pubDate>Tue, 21 Sep 2021 23:24:17 -0700</pubDate>
-      <guid>/drafts/large-files-fit/</guid>
-      <description>&lt;p&gt;For one reason or another, I&amp;rsquo;ll often find myself running into the following issue:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;remote: error: GH001: Large files detected. You may want to try Git Large File Storage — https://git-lfs.github.com.
-remote: error: Trace: b5116d865251981c96d4b32cdf7ef464
-remote: error: See http://git.io/iEPt8g for more information.
-remote: error: File fixtures/11_user_answer.json is 131.37 MB; this exceeds GitHub’s file size limit of 100.00 MB
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -2656,11 +2642,11 @@ print(S.distance_)
 &lt;figure id=&#34;figure-intersecting-2d-linear-subspaceshttpswwwresearchgatenetpublication327930102_optimal_exploitation_of_subspace_prior_information_in_matrix_sensing&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/comparing-subspaces/subspaces_hub081a28bf258255fb45bfa4cda66f295_17202_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Intersecting 2D linear 
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/comparing-subspaces/subspaces_hu_664436aa30d376e4.png&#34; data-caption=&#34;Intersecting 2D linear 
 subspaces.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/comparing-subspaces/subspaces_hub081a28bf258255fb45bfa4cda66f295_17202_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;640&#34; height=&#34;483&#34;&gt;
+  &lt;img data-src=&#34;/post/comparing-subspaces/subspaces_hu_664436aa30d376e4.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;640&#34; height=&#34;483&#34;&gt;
 &lt;/a&gt;
 
 
@@ -2719,11 +2705,11 @@ d(X_{i}, X_{j}) = \sqrt{\sum_{n=1}^{k} cos^{-1}(\sigma_{n})^{2}}
 &lt;figure id=&#34;figure-grassmann-manifold-and-its-tangent-spacehttpsdeepaiorgpublicationautomatic-recognition-of-space-time-constellations-by-learning-on-the-grassmann-manifold-extended-version&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/comparing-subspaces/grassmann_hu2cd3f58cc8fbe46f24a9a6bd61a80bd2_41873_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Grassmann manifold and its 
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/comparing-subspaces/grassmann_hu_27eb0bb5a47e713.png&#34; data-caption=&#34;Grassmann manifold and its 
 tangent space.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/comparing-subspaces/grassmann_hu2cd3f58cc8fbe46f24a9a6bd61a80bd2_41873_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;398&#34; height=&#34;249&#34;&gt;
+  &lt;img data-src=&#34;/post/comparing-subspaces/grassmann_hu_27eb0bb5a47e713.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;398&#34; height=&#34;249&#34;&gt;
 &lt;/a&gt;
 
 
@@ -2848,10 +2834,10 @@ crp.fit(synth.features_, synth.adj_list, gt_z=synth.z_)
 &lt;figure id=&#34;figure-model-convergence-in-synthetic-data&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/ddcrp/ell_hu198df877147cc727f2f21bf1ceacd1a3_58174_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Model convergence in synthetic data.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/ddcrp/ell_hu_332061f2298fe492.jpg&#34; data-caption=&#34;Model convergence in synthetic data.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/ddcrp/ell_hu198df877147cc727f2f21bf1ceacd1a3_58174_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;360&#34;&gt;
+  &lt;img data-src=&#34;/project/ddcrp/ell_hu_332061f2298fe492.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;360&#34;&gt;
 &lt;/a&gt;
 
 
@@ -2909,10 +2895,10 @@ Nonparametric Inference of Topic Hierarchies. JACM.&lt;/p&gt;
 &lt;figure id=&#34;figure-model-convergence-in-synthetic-data&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/rainier_hu5d2e9382f73667cb57e9f1f1ea45c0f7_123667_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Model convergence in synthetic data.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/rainier_hu_4a515d883e4ebd29.jpg&#34; data-caption=&#34;Model convergence in synthetic data.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/fieldmodel/rainier_hu5d2e9382f73667cb57e9f1f1ea45c0f7_123667_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;494&#34; height=&#34;490&#34;&gt;
+  &lt;img data-src=&#34;/project/fieldmodel/rainier_hu_4a515d883e4ebd29.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;494&#34; height=&#34;490&#34;&gt;
 &lt;/a&gt;
 
 
@@ -2996,10 +2982,10 @@ G.plot(field=&#39;sigma&#39;)
 &lt;figure id=&#34;figure-fitted-fieldmodel-density&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/pdf_hu5198acae7b46ecb9e697721f643f0ffb_61407_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Fitted fieldmodel density.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/pdf_hu_21cc538ecef37fc6.jpg&#34; data-caption=&#34;Fitted fieldmodel density.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/fieldmodel/pdf_hu5198acae7b46ecb9e697721f643f0ffb_61407_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;647&#34; height=&#34;302&#34;&gt;
+  &lt;img data-src=&#34;/project/fieldmodel/pdf_hu_21cc538ecef37fc6.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;647&#34; height=&#34;302&#34;&gt;
 &lt;/a&gt;
 
 
@@ -3033,10 +3019,10 @@ G.plot(field=&#39;sigma&#39;)
 &lt;figure id=&#34;figure-estimated-model-amplitude-for-each-candidate-mean-location&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/amplitude_huefc18c93caf304dc635a2b50ed6a8bbc_60179_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Estimated model amplitude for each candidate mean location.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/amplitude_hu_2200610931a81dd8.jpg&#34; data-caption=&#34;Estimated model amplitude for each candidate mean location.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/fieldmodel/amplitude_huefc18c93caf304dc635a2b50ed6a8bbc_60179_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;641&#34; height=&#34;286&#34;&gt;
+  &lt;img data-src=&#34;/project/fieldmodel/amplitude_hu_2200610931a81dd8.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;641&#34; height=&#34;286&#34;&gt;
 &lt;/a&gt;
 
 
@@ -3070,10 +3056,10 @@ G.plot(field=&#39;sigma&#39;)
 &lt;figure id=&#34;figure-estimated-model-sigma-for-each-candidate-mean-location&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/sigma_huefc18c93caf304dc635a2b50ed6a8bbc_57686_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Estimated model sigma for each candidate mean location.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/sigma_hu_473de23bdc739dc9.jpg&#34; data-caption=&#34;Estimated model sigma for each candidate mean location.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/fieldmodel/sigma_huefc18c93caf304dc635a2b50ed6a8bbc_57686_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;625&#34; height=&#34;286&#34;&gt;
+  &lt;img data-src=&#34;/project/fieldmodel/sigma_hu_473de23bdc739dc9.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;625&#34; height=&#34;286&#34;&gt;
 &lt;/a&gt;
 
 
@@ -3643,10 +3629,10 @@ done &amp;lt;${subjects}
 &lt;figure id=&#34;figure-example-of-qstat-command-after-submitting-jobs-view-qsub&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/submitting-batch-jobs-with-qsub/qsub_huaabaffbba137fe798b5631086ab7846a_122046_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Example of qstat command, after submitting jobs view qsub.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/submitting-batch-jobs-with-qsub/qsub_hu_f5f7230e53b0ace3.png&#34; data-caption=&#34;Example of qstat command, after submitting jobs view qsub.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/submitting-batch-jobs-with-qsub/qsub_huaabaffbba137fe798b5631086ab7846a_122046_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;799&#34; height=&#34;323&#34;&gt;
+  &lt;img data-src=&#34;/post/submitting-batch-jobs-with-qsub/qsub_hu_f5f7230e53b0ace3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;799&#34; height=&#34;323&#34;&gt;
 &lt;/a&gt;
 
 
@@ -3844,10 +3830,10 @@ class PriorityFlood(object):
 &lt;figure id=&#34;figure-example-of-priorityflooding-algorithm-applied-to-gradient-of-inferiorparietal-region--shown-on-inflated-and-flattened-cortical-surfaces&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/watershed-by-flooding-applied-data-structures/WSA_hu0337061d81dd53d2945002c9b9cfc50e_191463_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Example of PriorityFlooding algorithm, applied to gradient of inferiorparietal region.  Shown on inflated and flattened cortical surfaces.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/watershed-by-flooding-applied-data-structures/WSA_hu_22fbb331c3d719ca.jpg&#34; data-caption=&#34;Example of PriorityFlooding algorithm, applied to gradient of inferiorparietal region.  Shown on inflated and flattened cortical surfaces.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/watershed-by-flooding-applied-data-structures/WSA_hu0337061d81dd53d2945002c9b9cfc50e_191463_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1280&#34; height=&#34;803&#34;&gt;
+  &lt;img data-src=&#34;/post/watershed-by-flooding-applied-data-structures/WSA_hu_22fbb331c3d719ca.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1280&#34; height=&#34;803&#34;&gt;
 &lt;/a&gt;
 
 
@@ -3879,11 +3865,9 @@ class PriorityFlood(object):
       <guid>/post/dose-response-curves-and-biomarker-diagnostic-power/</guid>
       <description>&lt;p&gt;The other day, one of my friends and colleagues (I&amp;rsquo;ll refer to him as &amp;ldquo;Dr. A&amp;rdquo;) asked me if I knew anything about assessing biomarker diagnostic power.  He went on to describe his clinical problem, which I&amp;rsquo;ll try to recant here (but will likely mess up some of the relevant detail &amp;ndash; his research pertains to generating induced pluripotent cardiac stem cells, which I have little to no experience with):&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;So chemotherapy is meant to combat cancer.  But some clinicians, and their patients, have found that some forms of chemotherapy and anti-cancer drugs later result in problems with the heart and vasculature &amp;ndash; these problems are collectively referred to as &amp;lsquo;cardiotoxicity&amp;rsquo;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&amp;ldquo;So chemotherapy is meant to combat cancer.  But some clinicians, and their patients, have found that some forms of chemotherapy and anti-cancer drugs later result in problems with the heart and vasculature &amp;ndash; these problems are collectively referred to as &amp;lsquo;cardiotoxicity&amp;rsquo;.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;We&amp;rsquo;re interested in developing biomarkers that will help us identify which patients might be susceptible to cardiotoxicity, and in assessing the predictive power of these biomarkers.  Can you help me?&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;We&amp;rsquo;re interested in developing biomarkers that will help us identify which patients might be susceptible to cardiotoxicity, and in assessing the predictive power of these biomarkers.  Can you help me?&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;What follows will be my exploration into what Dr. A called 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Dose%E2%80%93response_relationship&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dose-response curves&lt;/a&gt;, and my approach on how to use these curves to assess biomarker diagnostic power.  I&amp;rsquo;ll do a walk through of some Python code that I&amp;rsquo;ve written up, where I&amp;rsquo;ll examine dose-response curves and their diagnostic power using the &lt;strong&gt;receiver operating characteristic&lt;/strong&gt; (
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Receiver_operating_characteristic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ROC&lt;/a&gt;) and the closely related &lt;strong&gt;area under the curve&lt;/strong&gt; (
@@ -4022,10 +4006,10 @@ plt.tight_layout()
 &lt;figure id=&#34;figure-example-casecontrol-datasets&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/Example.Histograms_hu3fd4354cc4807317c36f9db23aa54a3a_131982_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Example Case/Control datasets.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/Example.Histograms_hu_5e5b4e57a7c7a5e3.jpg&#34; data-caption=&#34;Example Case/Control datasets.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/Example.Histograms_hu3fd4354cc4807317c36f9db23aa54a3a_131982_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;432&#34;&gt;
+  &lt;img data-src=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/Example.Histograms_hu_5e5b4e57a7c7a5e3.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;432&#34;&gt;
 &lt;/a&gt;
 
 
@@ -4057,9 +4041,6 @@ for mean, case_data in samples.items():
 
 
 
-  
-  
-
 
 
 
@@ -4073,10 +4054,10 @@ for mean, case_data in samples.items():
 &lt;figure id=&#34;figure-roc-curves-for-example-datasets&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/Example.ROC.Curves_hub481d6f71bf7ebea89899b0a7048eba2_73909_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;ROC curves for example datasets.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;Example.ROC.Curves.jpg&#34; data-caption=&#34;ROC curves for example datasets.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/Example.ROC.Curves_hub481d6f71bf7ebea89899b0a7048eba2_73909_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;432&#34;&gt;
+  &lt;img src=&#34;Example.ROC.Curves.jpg&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -4183,9 +4164,6 @@ plt.tight_layout()
 
 
 
-  
-  
-
 
 
 
@@ -4199,10 +4177,10 @@ plt.tight_layout()
 &lt;figure id=&#34;figure-intercept-distributions-for-synthetic-dose-response-curves&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.Intercepts_hua52c747286aa8e02ed6e6f3f9284fd3e_50701_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Intercept distributions for synthetic dose-response curves.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;DR.Intercepts.jpg&#34; data-caption=&#34;Intercept distributions for synthetic dose-response curves.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.Intercepts_hua52c747286aa8e02ed6e6f3f9284fd3e_50701_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
+  &lt;img src=&#34;DR.Intercepts.jpg&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -4230,9 +4208,6 @@ plt.tight_layout()
 
 
 
-  
-  
-
 
 
 
@@ -4246,10 +4221,10 @@ plt.tight_layout()
 &lt;figure id=&#34;figure-slope-distributions-for-synthetic-dose-response-curves&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.Slopes_hu1357c4832cc06dad7fe19891c932d38e_54436_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Slope distributions for synthetic dose-response curves.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;DR.Slopes.jpg&#34; data-caption=&#34;Slope distributions for synthetic dose-response curves.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.Slopes_hu1357c4832cc06dad7fe19891c932d38e_54436_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
+  &lt;img src=&#34;DR.Slopes.jpg&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -4318,10 +4293,10 @@ plt.legend(custom_lines, [&#39;Control&#39;, &#39;Case&#39;], fontsize=20);
 &lt;figure id=&#34;figure-casecontrol-dose-response-curves&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.Curves_hube552fddd3db2e1c8078160f744ce767_111292_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Case/Control dose-response curves.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.Curves_hu_b70b7484f0a557c1.jpg&#34; data-caption=&#34;Case/Control dose-response curves.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.Curves_hube552fddd3db2e1c8078160f744ce767_111292_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
+  &lt;img data-src=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.Curves_hu_b70b7484f0a557c1.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
 &lt;/a&gt;
 
 
@@ -4349,9 +4324,6 @@ plt.yticks(fontsize=15);
 
 
 
-  
-  
-
 
 
 
@@ -4365,10 +4337,10 @@ plt.yticks(fontsize=15);
 &lt;figure id=&#34;figure-biomarker-distributions-ec50-for-cases-and-controls&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.ec50_hu708c2993441f485c03fd9143c770b8b4_45795_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Biomarker distributions: ec50 for Cases and Controls.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;DR.ec50.jpg&#34; data-caption=&#34;Biomarker distributions: ec50 for Cases and Controls.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.ec50_hu708c2993441f485c03fd9143c770b8b4_45795_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
+  &lt;img src=&#34;DR.ec50.jpg&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -4388,7 +4360,6 @@ plt.yticks(fontsize=15);
 
 
   
-  
 
 
 
@@ -4403,10 +4374,10 @@ plt.yticks(fontsize=15);
 &lt;figure id=&#34;figure-roc-curves-and-auc-for-each-ec-x-biomarker-level&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.ecCurves.All_hu55950f119f4e6eab959a42f36f20836c_76398_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;ROC curves and AUC for each ec-X biomarker level.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/DR.ecCurves.All.jpg&#34; data-caption=&#34;ROC curves and AUC for each ec-X biomarker level.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/dose-response-curves-and-biomarker-diagnostic-power/DR.ecCurves.All_hu55950f119f4e6eab959a42f36f20836c_76398_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
+  &lt;img src=&#34;/img/DR.ecCurves.All.jpg&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -4735,10 +4706,10 @@ for i,n in enumerate(N):
 &lt;figure id=&#34;figure-variance-stabilization-of-poisson-distribution&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/the-delta-method/Poisson_hu5e3c49a7388a40f7d11c771dd1270a61_74713_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Variance stabilization of Poisson distribution.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/the-delta-method/Poisson_hu_6b058b301fb5dd0d.jpg&#34; data-caption=&#34;Variance stabilization of Poisson distribution.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/the-delta-method/Poisson_hu5e3c49a7388a40f7d11c771dd1270a61_74713_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;432&#34;&gt;
+  &lt;img data-src=&#34;/post/the-delta-method/Poisson_hu_6b058b301fb5dd0d.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;432&#34;&gt;
 &lt;/a&gt;
 
 
@@ -4805,10 +4776,10 @@ for i,n in enumerate(N):
 &lt;figure id=&#34;figure-variance-stabilization-of-exponential-distribution&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/the-delta-method/Exponential_huea2034d5b1cd7cc9503f2c97f5f9221b_72157_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Variance stabilization of Exponential distribution.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/the-delta-method/Exponential_hu_655f8d79ce564514.jpg&#34; data-caption=&#34;Variance stabilization of Exponential distribution.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/the-delta-method/Exponential_huea2034d5b1cd7cc9503f2c97f5f9221b_72157_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;432&#34;&gt;
+  &lt;img data-src=&#34;/post/the-delta-method/Exponential_hu_655f8d79ce564514.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;432&#34;&gt;
 &lt;/a&gt;
 
 
@@ -4896,10 +4867,10 @@ plt.tight_layout()
 &lt;figure id=&#34;figure-bank-note-feature-distributions-based-on-note-class&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/the-delta-method/bank_notes_hu2e6b6012dbc427ee46e44a8dade0f2f1_73271_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Bank note feature distributions, based on note class.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/the-delta-method/bank_notes_hu_4b607e17cf909615.jpg&#34; data-caption=&#34;Bank note feature distributions, based on note class.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/the-delta-method/bank_notes_hu2e6b6012dbc427ee46e44a8dade0f2f1_73271_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
+  &lt;img data-src=&#34;/post/the-delta-method/bank_notes_hu_4b607e17cf909615.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
 &lt;/a&gt;
 
 
@@ -4976,10 +4947,10 @@ plt.tight_layout()
 &lt;figure id=&#34;figure-confidence-intervals-for-each-feature-computed-using-delta-method&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/the-delta-method/bank_notes_CI_hu581948ebf8121f540d3ba9752b606efb_109427_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Confidence intervals for each feature, computed using Delta Method.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/the-delta-method/bank_notes_CI_hu_2c6916e8fa78da21.jpg&#34; data-caption=&#34;Confidence intervals for each feature, computed using Delta Method.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/the-delta-method/bank_notes_CI_hu581948ebf8121f540d3ba9752b606efb_109427_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
+  &lt;img data-src=&#34;/post/the-delta-method/bank_notes_CI_hu_2c6916e8fa78da21.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;576&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5032,10 +5003,10 @@ plt.tight_layout()
 &lt;figure id=&#34;figure-example-of-cortical-map-and-array-of-connectivity-features&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/parcellation_huf0b3bb1bc41eebdcb9d4479e215063d3_232126_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Example of cortical map, and array of connectivity features.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/parcellation_hu_ff318333e3f2fe17.png&#34; data-caption=&#34;Example of cortical map, and array of connectivity features.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/parcellation_huf0b3bb1bc41eebdcb9d4479e215063d3_232126_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1296&#34; height=&#34;432&#34;&gt;
+  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/parcellation_hu_ff318333e3f2fe17.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1296&#34; height=&#34;432&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5193,10 +5164,10 @@ for l in labels:
 &lt;figure id=&#34;figure-empirical-distributions-of-within-region-top-and-between-region-bottom-d2-values--each-line-is-the-distribution-of-the-distance-of-samples-in-our-roi-to-a-whole-region&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/IntraInterMahal_hu396a8faeb9757ca8b446c8e1d4b3975d_82931_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Empirical distributions of within-region (top) and between-region (bottom) $d^{2}$ values.  Each line is the distribution of the distance of samples in our ROI to a whole region.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/IntraInterMahal_hu_4a20b8ed998a232e.jpg&#34; data-caption=&#34;Empirical distributions of within-region (top) and between-region (bottom) $d^{2}$ values.  Each line is the distribution of the distance of samples in our ROI to a whole region.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/IntraInterMahal_hu396a8faeb9757ca8b446c8e1d4b3975d_82931_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;864&#34;&gt;
+  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/IntraInterMahal_hu_4a20b8ed998a232e.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;864&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5253,10 +5224,10 @@ probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
 &lt;figure id=&#34;figure-density-and-qq-plot-of-null-distribution&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/Density.QQPlot_hu1d3559aae9fc2b76dfaee6ede7f1500d_47405_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Density and QQ plot of null distribution.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/Density.QQPlot_hu_ca5535fcd8e75fcd.png&#34; data-caption=&#34;Density and QQ plot of null distribution.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/Density.QQPlot_hu1d3559aae9fc2b76dfaee6ede7f1500d_47405_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;864&#34;&gt;
+  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/Density.QQPlot_hu_ca5535fcd8e75fcd.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;864&#34; height=&#34;864&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5294,10 +5265,10 @@ probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
 &lt;figure id=&#34;figure-region-of-interest&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/Region_LT_hu99f982ee794454d59a2b0bf97fc60dbf_189336_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Region of interest.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/Region_LT_hu_ac1dbc85f77489a3.png&#34; data-caption=&#34;Region of interest.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/Region_LT_hu99f982ee794454d59a2b0bf97fc60dbf_189336_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1440&#34; height=&#34;821&#34;&gt;
+  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/Region_LT_hu_ac1dbc85f77489a3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1440&#34; height=&#34;821&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5331,10 +5302,10 @@ probplot(D2.squeeze(), sparams=mle_chi2_theory, dist=chi2, plot=plt);
 &lt;figure id=&#34;figure-estimated-squared-mahalanobis-distances-overlaid-on-cortical-surface&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/MahalanobisDistance_hu9c9596cf29d1146f5fc3d3b7dde66282_764298_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Estimated squared Mahalanobis distances, overlaid on cortical surface.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/mahalanobis-distances-of-brain-connectivity/MahalanobisDistance_hu_d2a6bbc02ed1093d.png&#34; data-caption=&#34;Estimated squared Mahalanobis distances, overlaid on cortical surface.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/MahalanobisDistance_hu9c9596cf29d1146f5fc3d3b7dde66282_764298_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1440&#34; height=&#34;821&#34;&gt;
+  &lt;img data-src=&#34;/post/mahalanobis-distances-of-brain-connectivity/MahalanobisDistance_hu_d2a6bbc02ed1093d.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1440&#34; height=&#34;821&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5442,10 +5413,10 @@ for i in np.arange(iterations):
 &lt;figure id=&#34;figure-sample-mean-estimates-as-a-function-of-sample-size&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/convergence-in-probability/WLLN_Mean_hub07fe3b7d9c1af829dbcf59ec07d859c_56103_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Sample mean estimates as a function of sample size.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/convergence-in-probability/WLLN_Mean_hu_ae2f2ccb1d7207b4.jpg&#34; data-caption=&#34;Sample mean estimates as a function of sample size.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/convergence-in-probability/WLLN_Mean_hub07fe3b7d9c1af829dbcf59ec07d859c_56103_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;432&#34;&gt;
+  &lt;img data-src=&#34;/post/convergence-in-probability/WLLN_Mean_hu_ae2f2ccb1d7207b4.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;432&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5479,10 +5450,10 @@ for i in np.arange(iterations):
 &lt;figure id=&#34;figure-sample-variance-estimates-as-a-function-of-sample-size&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/convergence-in-probability/WLLN_Variance_hu105b8336e2721323d12490083206465a_57888_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Sample variance estimates as a function of sample size.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/convergence-in-probability/WLLN_Variance_hu_95d4c837a8a429fa.jpg&#34; data-caption=&#34;Sample variance estimates as a function of sample size.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/convergence-in-probability/WLLN_Variance_hu105b8336e2721323d12490083206465a_57888_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;432&#34;&gt;
+  &lt;img data-src=&#34;/post/convergence-in-probability/WLLN_Variance_hu_95d4c837a8a429fa.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;432&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5547,10 +5518,10 @@ for E in e:
 &lt;figure id=&#34;figure-empirical-probability-that-mean-estimate-exceeds-population-mean-by-epsilon&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/convergence-in-probability/ECDF_Mean_hud239a6530d10b86e3a0a175784090642_43944_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Empirical probability that mean estimate exceeds population mean by epsilon.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/convergence-in-probability/ECDF_Mean_hu_cd334f93e5a00130.jpg&#34; data-caption=&#34;Empirical probability that mean estimate exceeds population mean by epsilon.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/convergence-in-probability/ECDF_Mean_hud239a6530d10b86e3a0a175784090642_43944_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;360&#34;&gt;
+  &lt;img data-src=&#34;/post/convergence-in-probability/ECDF_Mean_hu_cd334f93e5a00130.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;360&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5584,10 +5555,10 @@ for E in e:
 &lt;figure id=&#34;figure-empirical-probability-that-variance-estimate-exceeds-population-variance-by-epsilon&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/convergence-in-probability/ECDF_Variance_hu4e0ed10e18641d62e69d3210311d0280_46360_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Empirical probability that variance estimate exceeds population variance by epsilon.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/convergence-in-probability/ECDF_Variance_hu_86a807d98a6f53a8.jpg&#34; data-caption=&#34;Empirical probability that variance estimate exceeds population variance by epsilon.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/convergence-in-probability/ECDF_Variance_hu4e0ed10e18641d62e69d3210311d0280_46360_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;360&#34;&gt;
+  &lt;img data-src=&#34;/post/convergence-in-probability/ECDF_Variance_hu_86a807d98a6f53a8.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;360&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5682,10 +5653,10 @@ P(\bar{Y} \mid N=n) &amp;amp;= \frac{P(\bar{Y} \; \cap \; N=n)}{P(N=n)} \\
 &lt;figure id=&#34;figure-diffusion-tractography-from-biomedical-image-computing-group-at-usc&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/tractography_hu8ae5fba2fb76724b387c190a224453c7_1527079_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Diffusion tractography from Biomedical Image Computing Group at USC.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/tractography_hu_f4f28825bd31c09e.png&#34; data-caption=&#34;Diffusion tractography from Biomedical Image Computing Group at USC.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/tractography_hu8ae5fba2fb76724b387c190a224453c7_1527079_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1194&#34; height=&#34;964&#34;&gt;
+  &lt;img data-src=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/tractography_hu_f4f28825bd31c09e.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1194&#34; height=&#34;964&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5725,10 +5696,10 @@ P(\bar{Y} \mid N=n) &amp;amp;= \frac{P(\bar{Y} \; \cap \; N=n)}{P(N=n)} \\
 &lt;figure id=&#34;figure-orientation-distribution-functions-from-vega-et-al-2009&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/ODFs_huceff4469533f5f4fc77dbf3d55079dc6_189490_2000x2000_fit_q90_lanczos.jpeg&#34; data-caption=&#34;Orientation distribution functions from Vega et al. 2009.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/ODFs_hu_fdda87b1063ac2f3.jpeg&#34; data-caption=&#34;Orientation distribution functions from Vega et al. 2009.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/ODFs_huceff4469533f5f4fc77dbf3d55079dc6_189490_2000x2000_fit_q90_lanczos.jpeg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;838&#34; height=&#34;556&#34;&gt;
+  &lt;img data-src=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/ODFs_hu_fdda87b1063ac2f3.jpeg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;838&#34; height=&#34;556&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5764,10 +5735,10 @@ P(\bar{Y} \mid N=n) &amp;amp;= \frac{P(\bar{Y} \; \cap \; N=n)}{P(N=n)} \\
 &lt;figure id=&#34;figure-surface-flow-seeded-tractography-from-st-onge-et-al-2018&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/StOngeSurfaceFlow_huccc9786cfee1a75fb9df9e205b998b03_376537_2000x2000_fit_lanczos_3.png&#34; data-caption=&#34;Surface-flow seeded tractography from St-Onge et al. 2018.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/StOngeSurfaceFlow_hu_1d6fd555aa09d468.png&#34; data-caption=&#34;Surface-flow seeded tractography from St-Onge et al. 2018.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/StOngeSurfaceFlow_huccc9786cfee1a75fb9df9e205b998b03_376537_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;821&#34; height=&#34;237&#34;&gt;
+  &lt;img data-src=&#34;/post/headfirst-into-uncommented-c&amp;#43;&amp;#43;/StOngeSurfaceFlow_hu_1d6fd555aa09d468.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;821&#34; height=&#34;237&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5863,10 +5834,10 @@ plt.imshow(data)
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/original_hu750cff2b29f8ab0c1202b1613b5f60dd_36557_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/original_hu_217e26846815c09b.jpg&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/image-transformations-with-opencv/original_hu750cff2b29f8ab0c1202b1613b5f60dd_36557_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;432&#34; height=&#34;432&#34;&gt;
+  &lt;img data-src=&#34;/post/image-transformations-with-opencv/original_hu_217e26846815c09b.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;432&#34; height=&#34;432&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5904,10 +5875,10 @@ plt.imshow(translated)
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/translated_hu94c81a5d7bb60bf4db2e87af659f010a_33254_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/translated_hu_2a216d917bfa49a0.jpg&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/image-transformations-with-opencv/translated_hu94c81a5d7bb60bf4db2e87af659f010a_33254_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;432&#34; height=&#34;432&#34;&gt;
+  &lt;img data-src=&#34;/post/image-transformations-with-opencv/translated_hu_2a216d917bfa49a0.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;432&#34; height=&#34;432&#34;&gt;
 &lt;/a&gt;
 
 
@@ -5944,10 +5915,10 @@ plt.imshow(rotated)
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/rotated_hue596f733d1d3cf78252003188d86a0a7_34285_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/rotated_hu_34be7ee45860ab04.jpg&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/image-transformations-with-opencv/rotated_hue596f733d1d3cf78252003188d86a0a7_34285_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;432&#34; height=&#34;432&#34;&gt;
+  &lt;img data-src=&#34;/post/image-transformations-with-opencv/rotated_hu_34be7ee45860ab04.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;432&#34; height=&#34;432&#34;&gt;
 &lt;/a&gt;
 
 
@@ -6017,10 +5988,10 @@ for rt in txfn:
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/Composed.1_hu9d0cf9c043b63202c6d7fbae794c90aa_75234_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/Composed.1_hu_1f304674ba06f616.jpg&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/image-transformations-with-opencv/Composed.1_hu9d0cf9c043b63202c6d7fbae794c90aa_75234_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;360&#34;&gt;
+  &lt;img data-src=&#34;/post/image-transformations-with-opencv/Composed.1_hu_1f304674ba06f616.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;360&#34;&gt;
 &lt;/a&gt;
 
 
@@ -6031,9 +6002,6 @@ for rt in txfn:
 
 
 
-
-  
-  
 
 
 
@@ -6048,10 +6016,10 @@ for rt in txfn:
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/Composed.5_hu9d0cf9c043b63202c6d7fbae794c90aa_79081_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;Composed.5.jpg&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/image-transformations-with-opencv/Composed.5_hu9d0cf9c043b63202c6d7fbae794c90aa_79081_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;360&#34;&gt;
+  &lt;img src=&#34;Composed.5.jpg&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -6062,9 +6030,6 @@ for rt in txfn:
 
 
 
-
-  
-  
 
 
 
@@ -6079,10 +6044,10 @@ for rt in txfn:
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/image-transformations-with-opencv/Composed.9_hu9d0cf9c043b63202c6d7fbae794c90aa_81096_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;Composed.9.jpg&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/image-transformations-with-opencv/Composed.9_hu9d0cf9c043b63202c6d7fbae794c90aa_81096_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;360&#34;&gt;
+  &lt;img src=&#34;Composed.9.jpg&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -6140,10 +6105,10 @@ for rt in txfn:
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/two-weeks-of-open-science/Couch_RickMorty_hua8d62f86464ff5493405d877a1b50d1e_453080_2000x2000_fit_lanczos_3.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/two-weeks-of-open-science/Couch_RickMorty_hu_c93f50d8d9bfe8df.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;/post/two-weeks-of-open-science/Couch_RickMorty_hua8d62f86464ff5493405d877a1b50d1e_453080_2000x2000_fit_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;950&#34; height=&#34;534&#34;&gt;
+  &lt;img data-src=&#34;/post/two-weeks-of-open-science/Couch_RickMorty_hu_c93f50d8d9bfe8df.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;950&#34; height=&#34;534&#34;&gt;
 &lt;/a&gt;
 
 
@@ -6152,7 +6117,7 @@ for rt in txfn:
 
 &lt;p&gt;The 
 &lt;a href=&#34;https://twitter.com/search?q=%23nh18&amp;amp;src=tyah&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#NH18&lt;/a&gt; participants varied in status from graduate students, to post-docs, to industry members, and traveled from all around the world to Seattle, but each one of us was, in one way or another, involved with neuroscience research.  As one of my new friends put it on Twitter: 
-&lt;a href=&#34;https://twitter.com/rxxqx/status/1027238653662093313&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Spent yesterday in a room full of relative strangers who were collaborating, mentoring, &amp;amp; supporting. Devoid of egos or tribalism. Feels like what science (&amp;amp; society) should be.&amp;rdquo;&lt;/a&gt;  The sense of community was strong, positivity was plentiful, and people supported one another &amp;ndash; without regard for experience or any sense of &lt;em&gt;return-on-investment&lt;/em&gt;.  We had an established &lt;strong&gt;Git person&lt;/strong&gt;, &lt;strong&gt;Python person&lt;/strong&gt;, &lt;strong&gt;data viz person&lt;/strong&gt;, &lt;strong&gt;fMRI person&lt;/strong&gt;, &lt;strong&gt;C++ person&lt;/strong&gt;, etc. &amp;ndash; if you had a question or ran into an issue, with high probability there was someone who could and would help you out.  Everyone was genuinely exicted to learn, to share, to create, to bond, and especially, &lt;em&gt;~to neuro/computer/data-science~&lt;/em&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://twitter.com/rxxqx/status/1027238653662093313&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Spent yesterday in a room full of relative strangers who were collaborating, mentoring, &amp;amp; supporting. Devoid of egos or tribalism. Feels like what science (&amp;amp; society) should be.&amp;rdquo;&lt;/a&gt;  The sense of community was strong, positivity was plentiful, and people supported one another &amp;ndash; without regard for experience or any sense of &lt;em&gt;return-on-investment&lt;/em&gt;.  We had an established &lt;strong&gt;Git person&lt;/strong&gt;, &lt;strong&gt;Python person&lt;/strong&gt;, &lt;strong&gt;data viz person&lt;/strong&gt;, &lt;strong&gt;fMRI person&lt;/strong&gt;, &lt;strong&gt;C++ person&lt;/strong&gt;, etc. &amp;ndash; if you had a question or ran into an issue, with high probability there was someone who could and would help you out.  Everyone was genuinely exicted to learn, to share, to create, to bond, and especially, &lt;em&gt;&lt;del&gt;to neuro/computer/data-science&lt;/del&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&amp;mdash; &lt;strong&gt;to science&lt;/strong&gt; &amp;mdash;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;(origin: probably Newton)&lt;/li&gt;
@@ -6715,6 +6680,14 @@ X = (A-BD^{-1}C)^{-1}BD^{-1} = A^{-1}B(D-CA^{-1}B)^{-1} \\
     </item>
     
     <item>
+      <title>Analysis of Structural Connectivity in 6 Cases of Hemispherectomy</title>
+      <link>/publication/hemi/hemi/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/hemi/hemi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Individual Differences in General/Fluid Intelligence Are Evoked by Functional Integration and the Efficiency of Long-Distance Connections in the Brain</title>
       <link>/publication/fluid_intelligence/fluid_intelligence/</link>
       <pubDate>Wed, 12 Mar 2014 00:00:00 +0000</pubDate>
@@ -6727,14 +6700,6 @@ X = (A-BD^{-1}C)^{-1}BD^{-1} = A^{-1}B(D-CA^{-1}B)^{-1} \\
       <link>/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/cv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Analysis of Structural Connectivity in 6 Cases of Hemispherectomy</title>
-      <link>/publication/hemi/hemi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/publication/hemi/hemi/</guid>
       <description></description>
     </item>
     

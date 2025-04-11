@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Data Scientist">
+  <meta name="description" content="Data Scientist &#43; Engineer">
 
   
   <link rel="alternate" hreflang="en-us" href="/tag/ai/">
@@ -204,61 +204,15 @@
   <link rel="stylesheet" href="/css/academic.css">
 
   
-
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-186337108-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-186337108-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-  
-
-
-  
   
 
   
-  <link rel="alternate" href="/tag/ai/index.xml" type="application/rss+xml" title="A Rambling On">
+  <link rel="alternate" href="/tag/ai/index.xml" type="application/rss+xml" title="">
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_ab7c00cfe4a5c449.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_12651b7f5ca1ac92.png">
 
   <link rel="canonical" href="/tag/ai/">
 
@@ -274,10 +228,10 @@
   
   <meta property="twitter:card" content="summary_large_image">
   
-  <meta property="og:site_name" content="A Rambling On">
+  <meta property="og:site_name" content="">
   <meta property="og:url" content="/tag/ai/">
-  <meta property="og:title" content="AI | A Rambling On">
-  <meta property="og:description" content="Data Scientist"><meta property="og:image" content="/img/Bayes.jpg">
+  <meta property="og:title" content="AI | ">
+  <meta property="og:description" content="Data Scientist &#43; Engineer"><meta property="og:image" content="/img/Bayes.jpg">
   <meta property="twitter:image" content="/img/Bayes.jpg"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2021-02-14T23:24:17-07:00">
@@ -297,7 +251,7 @@
 
 
 
-  <title>AI | A Rambling On</title>
+  <title>AI | </title>
 
 </head>
 
@@ -348,7 +302,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">A Rambling On</a>
+      <a class="navbar-brand" href="/"></a>
     </div>
     
 
@@ -361,7 +315,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">A Rambling On</a>
+      <a class="navbar-brand" href="/"></a>
     </div>
     
 
@@ -511,28 +465,6 @@
         
         
 
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/files/Resume.pdf"><span>Resume</span></a>
-        </li>
-
-        
-        
-
       
 
         
@@ -616,6 +548,7 @@
       <div class="article-style">
         
           Background As I mentioned in my previous post on constrained graph attention networks, graph neural networks suffer from overfitting and oversmoothing as network depth increases. These issues can ultimately be linked to the local topologies of the graph.
+
         
       </div>
     </div>
@@ -627,7 +560,8 @@
       <h2><a href="/post/constrained-gat/" >Constrained Graph Attention Networks</a></h2>
       <div class="article-style">
         
-          In their recent paper, Wang et al. propose a few updates to the Graph Attention Network (GAT) neural network algorithm (if you want to skip the technical bit and get to the code, click here). Briefly, GATs are a recently-developed neural network architecture applied to data distributed over a graph domain.
+          In their recent paper, Wang et al. propose a few updates to the Graph Attention Network (GAT) neural network algorithm (if you want to skip the technical bit and get to the code, click here). Briefly, GATs are a recently-developed neural network architecture applied to data distributed over a graph domain. We can think of graph convolutional networks as progressively transforming and aggregating signals from within a local neighborhood of a node. At each iteration of this process, we implicitly merge signals from larger and larger neighborhoods of the node of interest, and thereby learn unique representations of nodes that are dependent on their surroundings.
+
         
       </div>
     </div>
@@ -639,7 +573,8 @@
       <h2><a href="/post/gaussian-kernel-convolution/" >Gaussian Graph Convolutional Networks</a></h2>
       <div class="article-style">
         
-          I&rsquo;m using graph convolutional networks as a tool to segment the cortical surface of the brain. This research resides in the domain of node classification using inductive learning. By node classification, I mean that we wish to assign a discrete label to cortical surface locations (nodes / vertices in a graph) on the basis of some feature data and brain network topology.
+          I&rsquo;m using graph convolutional networks as a tool to segment the cortical surface of the brain. This research resides in the domain of node classification using inductive learning. By node classification, I mean that we wish to assign a discrete label to cortical surface locations (nodes / vertices in a graph) on the basis of some feature data and brain network topology. By inductive learning, I mean that we will train, validate, and test on datasets with possibly different graph topologies &ndash; this is in contrast to transductive learning that learns models that do not generalize to arbitrary network topology.
+
         
       </div>
     </div>
@@ -751,7 +686,7 @@
     
     
     
-    <script src="/js/academic.min.cd45a9c0bbdd3dfb1c126917c601c9f2.js"></script>
+    <script src="/js/academic.min.625093851a77bbf06d06d7f8a6cf3f7b.js"></script>
 
     
 

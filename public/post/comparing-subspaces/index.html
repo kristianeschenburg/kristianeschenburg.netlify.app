@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="I&rsquo;m working with some multi-dimensional float-valued data &ndash; I&rsquo;ll call a single instance of this data $X \in \mathbb{R}^{n \times k}$. I have multiple samples $X_{1}, X_{2}&hellip;X_{t}$, and want to compare these subspaces &ndash; namely, I want to compute the distance between pairs of subspaces.">
+  <meta name="description" content="I&rsquo;m working with some multi-dimensional float-valued data &ndash; I&rsquo;ll call a single instance of this data $X \in \mathbb{R}^{n \times k}$.  I have multiple samples $X_{1}, X_{2}&hellip;X_{t}$, and want to compare these subspaces &ndash; namely, I want to compute the distance between pairs of subspaces.">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/comparing-subspaces/">
@@ -204,59 +204,13 @@
   <link rel="stylesheet" href="/css/academic.css">
 
   
-
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-186337108-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-186337108-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-  
-
-
-  
   
 
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_ab7c00cfe4a5c449.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_12651b7f5ca1ac92.png">
 
   <link rel="canonical" href="/post/comparing-subspaces/">
 
@@ -272,10 +226,10 @@
   
   <meta property="twitter:card" content="summary_large_image">
   
-  <meta property="og:site_name" content="A Rambling On">
+  <meta property="og:site_name" content="">
   <meta property="og:url" content="/post/comparing-subspaces/">
-  <meta property="og:title" content="Distances Between Subspaces | A Rambling On">
-  <meta property="og:description" content="I&rsquo;m working with some multi-dimensional float-valued data &ndash; I&rsquo;ll call a single instance of this data $X \in \mathbb{R}^{n \times k}$. I have multiple samples $X_{1}, X_{2}&hellip;X_{t}$, and want to compare these subspaces &ndash; namely, I want to compute the distance between pairs of subspaces."><meta property="og:image" content="/post/comparing-subspaces/featured.jpg">
+  <meta property="og:title" content="Distances Between Subspaces | ">
+  <meta property="og:description" content="I&rsquo;m working with some multi-dimensional float-valued data &ndash; I&rsquo;ll call a single instance of this data $X \in \mathbb{R}^{n \times k}$.  I have multiple samples $X_{1}, X_{2}&hellip;X_{t}$, and want to compare these subspaces &ndash; namely, I want to compute the distance between pairs of subspaces."><meta property="og:image" content="/post/comparing-subspaces/featured.jpg">
   <meta property="twitter:image" content="/post/comparing-subspaces/featured.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -318,13 +272,13 @@
   
   "publisher": {
     "@type": "Organization",
-    "name": "A Rambling On",
+    "name": "",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hue3d34eb7f27f0837dcea880d4d221db4_377404_192x192_fill_lanczos_center_3.png"
+      "url": "/images/icon_hu_12651b7f5ca1ac92.png"
     }
   },
-  "description": "I\u0026rsquo;m working with some multi-dimensional float-valued data \u0026ndash; I\u0026rsquo;ll call a single instance of this data $X \\in \\mathbb{R}^{n \\times k}$. I have multiple samples $X_{1}, X_{2}\u0026hellip;X_{t}$, and want to compare these subspaces \u0026ndash; namely, I want to compute the distance between pairs of subspaces."
+  "description": "\u003cp\u003eI\u0026rsquo;m working with some multi-dimensional float-valued data \u0026ndash; I\u0026rsquo;ll call a single instance of this data $X \\in \\mathbb{R}^{n \\times k}$.  I have multiple samples $X_{1}, X_{2}\u0026hellip;X_{t}$, and want to compare these subspaces \u0026ndash; namely, I want to compute the distance between pairs of subspaces.\u003c/p\u003e"
 }
 </script>
 
@@ -342,7 +296,7 @@
 
 
 
-  <title>Distances Between Subspaces | A Rambling On</title>
+  <title>Distances Between Subspaces | </title>
 
 </head>
 
@@ -393,7 +347,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">A Rambling On</a>
+      <a class="navbar-brand" href="/"></a>
     </div>
     
 
@@ -406,7 +360,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">A Rambling On</a>
+      <a class="navbar-brand" href="/"></a>
     </div>
     
 
@@ -551,28 +505,6 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/personal"><span>Personal</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/files/Resume.pdf"><span>Resume</span></a>
         </li>
 
         
@@ -766,11 +698,11 @@
 <figure id="figure-intersecting-2d-linear-subspaceshttpswwwresearchgatenetpublication327930102_optimal_exploitation_of_subspace_prior_information_in_matrix_sensing">
 
 
-  <a data-fancybox="" href="/post/comparing-subspaces/subspaces_hub081a28bf258255fb45bfa4cda66f295_17202_2000x2000_fit_lanczos_3.png" data-caption="Intersecting 2D linear 
+  <a data-fancybox="" href="/post/comparing-subspaces/subspaces_hu_664436aa30d376e4.png" data-caption="Intersecting 2D linear 
 subspaces.">
 
 
-  <img data-src="/post/comparing-subspaces/subspaces_hub081a28bf258255fb45bfa4cda66f295_17202_2000x2000_fit_lanczos_3.png" class="lazyload" alt="" width="640" height="483">
+  <img data-src="/post/comparing-subspaces/subspaces_hu_664436aa30d376e4.png" class="lazyload" alt="" width="640" height="483">
 </a>
 
 
@@ -829,11 +761,11 @@ d(X_{i}, X_{j}) = \sqrt{\sum_{n=1}^{k} cos^{-1}(\sigma_{n})^{2}}
 <figure id="figure-grassmann-manifold-and-its-tangent-spacehttpsdeepaiorgpublicationautomatic-recognition-of-space-time-constellations-by-learning-on-the-grassmann-manifold-extended-version">
 
 
-  <a data-fancybox="" href="/post/comparing-subspaces/grassmann_hu2cd3f58cc8fbe46f24a9a6bd61a80bd2_41873_2000x2000_fit_lanczos_3.png" data-caption="Grassmann manifold and its 
+  <a data-fancybox="" href="/post/comparing-subspaces/grassmann_hu_27eb0bb5a47e713.png" data-caption="Grassmann manifold and its 
 tangent space.">
 
 
-  <img data-src="/post/comparing-subspaces/grassmann_hu2cd3f58cc8fbe46f24a9a6bd61a80bd2_41873_2000x2000_fit_lanczos_3.png" class="lazyload" alt="" width="398" height="249">
+  <img data-src="/post/comparing-subspaces/grassmann_hu_27eb0bb5a47e713.png" class="lazyload" alt="" width="398" height="249">
 </a>
 
 
@@ -865,13 +797,13 @@ tangent space.">
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/subspaces/">subspaces</a>
+  <a class="badge badge-light" href="/tag/subspaces/">Subspaces</a>
   
-  <a class="badge badge-light" href="/tag/manifold/">manifold</a>
+  <a class="badge badge-light" href="/tag/manifold/">Manifold</a>
   
   <a class="badge badge-light" href="/tag/riemannian/">Riemannian</a>
   
-  <a class="badge badge-light" href="/tag/metrics/">metrics</a>
+  <a class="badge badge-light" href="/tag/metrics/">Metrics</a>
   
 </div>
 
@@ -964,12 +896,12 @@ tangent space.">
     <div class="media author-card content-widget-hr">
       
         
-        <img class="avatar mr-3 avatar-circle" src="/author/avatar_hu1d33f7c1c3956865c98823fdaf357458_38773_270x270_fill_q90_lanczos_center.jpg" alt="">
+        <img class="avatar mr-3 avatar-circle" src="/author/avatar_hu_1ade8766b2e7b61d.png" alt="">
       
 
       <div class="media-body">
         <h5 class="card-title"><a href="/"></a></h5>
-        <h6 class="card-subtitle">Data Scientist</h6>
+        <h6 class="card-subtitle">Data Scientist + Engineer</h6>
         
         <ul class="network-icon" aria-hidden="true">
   
@@ -985,23 +917,6 @@ tangent space.">
     <li>
       <a href="mailto:keschenb@uw.edu" >
         <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://twitter.com/keschh" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
       </a>
     </li>
   
@@ -1166,7 +1081,7 @@ tangent space.">
     
     
     
-    <script src="/js/academic.min.cd45a9c0bbdd3dfb1c126917c601c9f2.js"></script>
+    <script src="/js/academic.min.625093851a77bbf06d06d7f8a6cf3f7b.js"></script>
 
     
 

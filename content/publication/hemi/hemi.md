@@ -11,11 +11,11 @@ authors:
   - Susan Y. Bookheimer
   - Noriko Salamon
   - Paul Thompson
-date: "2014-04-2"
+date: "2014-04-02"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2014-04-2"
+publishDate: "2014-04-02"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

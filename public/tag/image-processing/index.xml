@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>image processing | A Rambling On</title>
+    <title>Image Processing | </title>
     <link>/tag/image-processing/</link>
       <atom:link href="/tag/image-processing/index.xml" rel="self" type="application/rss+xml" />
-    <description>image processing</description>
+    <description>Image Processing</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 25 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>image processing</title>
+      <title>Image Processing</title>
       <link>/tag/image-processing/</link>
     </image>
     
@@ -64,10 +64,10 @@
 &lt;figure id=&#34;figure-model-convergence-in-synthetic-data&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/rainier_hu5d2e9382f73667cb57e9f1f1ea45c0f7_123667_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Model convergence in synthetic data.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/rainier_hu_4a515d883e4ebd29.jpg&#34; data-caption=&#34;Model convergence in synthetic data.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/fieldmodel/rainier_hu5d2e9382f73667cb57e9f1f1ea45c0f7_123667_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;494&#34; height=&#34;490&#34;&gt;
+  &lt;img data-src=&#34;/project/fieldmodel/rainier_hu_4a515d883e4ebd29.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;494&#34; height=&#34;490&#34;&gt;
 &lt;/a&gt;
 
 
@@ -151,10 +151,10 @@ G.plot(field=&#39;sigma&#39;)
 &lt;figure id=&#34;figure-fitted-fieldmodel-density&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/pdf_hu5198acae7b46ecb9e697721f643f0ffb_61407_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Fitted fieldmodel density.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/pdf_hu_21cc538ecef37fc6.jpg&#34; data-caption=&#34;Fitted fieldmodel density.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/fieldmodel/pdf_hu5198acae7b46ecb9e697721f643f0ffb_61407_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;647&#34; height=&#34;302&#34;&gt;
+  &lt;img data-src=&#34;/project/fieldmodel/pdf_hu_21cc538ecef37fc6.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;647&#34; height=&#34;302&#34;&gt;
 &lt;/a&gt;
 
 
@@ -188,10 +188,10 @@ G.plot(field=&#39;sigma&#39;)
 &lt;figure id=&#34;figure-estimated-model-amplitude-for-each-candidate-mean-location&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/amplitude_huefc18c93caf304dc635a2b50ed6a8bbc_60179_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Estimated model amplitude for each candidate mean location.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/amplitude_hu_2200610931a81dd8.jpg&#34; data-caption=&#34;Estimated model amplitude for each candidate mean location.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/fieldmodel/amplitude_huefc18c93caf304dc635a2b50ed6a8bbc_60179_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;641&#34; height=&#34;286&#34;&gt;
+  &lt;img data-src=&#34;/project/fieldmodel/amplitude_hu_2200610931a81dd8.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;641&#34; height=&#34;286&#34;&gt;
 &lt;/a&gt;
 
 
@@ -225,10 +225,10 @@ G.plot(field=&#39;sigma&#39;)
 &lt;figure id=&#34;figure-estimated-model-sigma-for-each-candidate-mean-location&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/sigma_huefc18c93caf304dc635a2b50ed6a8bbc_57686_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Estimated model sigma for each candidate mean location.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/fieldmodel/sigma_hu_473de23bdc739dc9.jpg&#34; data-caption=&#34;Estimated model sigma for each candidate mean location.&#34;&gt;
 
 
-  &lt;img data-src=&#34;/project/fieldmodel/sigma_huefc18c93caf304dc635a2b50ed6a8bbc_57686_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;625&#34; height=&#34;286&#34;&gt;
+  &lt;img data-src=&#34;/project/fieldmodel/sigma_hu_473de23bdc739dc9.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;625&#34; height=&#34;286&#34;&gt;
 &lt;/a&gt;
 
 

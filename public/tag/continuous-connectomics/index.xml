@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>continuous connectomics | A Rambling On</title>
+    <title>Continuous Connectomics | </title>
     <link>/tag/continuous-connectomics/</link>
       <atom:link href="/tag/continuous-connectomics/index.xml" rel="self" type="application/rss+xml" />
-    <description>continuous connectomics</description>
+    <description>Continuous Connectomics</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 15 Jan 2015 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/Bayes.jpg</url>
-      <title>continuous connectomics</title>
+      <title>Continuous Connectomics</title>
       <link>/tag/continuous-connectomics/</link>
     </image>
     

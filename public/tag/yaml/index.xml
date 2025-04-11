@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>YAML | A Rambling On</title>
+    <title>YAML | </title>
     <link>/tag/yaml/</link>
       <atom:link href="/tag/yaml/index.xml" rel="self" type="application/rss+xml" />
     <description>YAML</description>
