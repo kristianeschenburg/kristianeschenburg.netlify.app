@@ -38,7 +38,7 @@ My partner and I like exploring smaller, lesser known areas of countries the bes
 
 {{< figure src="04.jpg" title="" caption="Meandering through the alleys of Matera." lightbox="true" >}}
 
-{{< figure src="05.jpg" title="" caption="Poopy fields and farmhouses." lightbox="true" >}}
+{{< figure src="05.jpg" title="" caption="Poppy fields and farmhouses." lightbox="true" >}}
 
 {{< figure src="06.jpg" title="" caption="Fields and fields of poppies, all througout Puglia." lightbox="true" >}}
 
