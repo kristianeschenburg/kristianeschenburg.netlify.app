@@ -1,5 +1,6 @@
 ---
 # Display name
+title: Kristian M. Eschenburg
 name: Kristian M. Eschenburg
 
 # Username (this should match the folder name)
@@ -18,7 +19,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: "I build the platforms that scientific research and manufacturing run on."
+bio: "Data platform engineer in Seattle. Formerly MRI and machine learning research."
 
 interests:
 - Cloud architectures and distributed systems
@@ -67,12 +68,10 @@ social:
 
 I build the platforms that scientific research and manufacturing run on.
 
-Today that means a small biologics company, where I own most of the stack: event-driven ingestion from lab instruments, orchestration pipelines, a medallion lakehouse with schema contracts, PostgreSQL backends, and the APIs and dashboards our internal applications sit on. All of it has to hold up to FDA scrutiny.
+I work at a biologics company, where I own most of the stack: event-driven ingestion from lab instruments, orchestration pipelines, a medallion lakehouse with schema contracts, PostgreSQL backends, and the APIs and dashboards our internal applications sit on. It's an FDA-regulated environment, which shapes a lot of how it gets built.
 
-I came to this from research. Seven years of a PhD in biomedical engineering, working with MRI (structural, functional, diffusion, arterial spin labeling) and building machine learning models on top of it, including graph neural networks for cortical segmentation, with processing and training pipelines running across GPU-backed HPCs.
+I also ship models for antibody design and property prediction, trained with PyTorch DDP on an in-house multi-GPU cluster I help maintain, plus the inference infrastructure that serves them.
 
-More recently I've shipped production models for antibody design and property prediction, trained with PyTorch DDP across an in-house multi-GPU cluster I help maintain, along with the inference infrastructure that serves them.
+Before this I spent seven years on a PhD in biomedical engineering at the University of Washington, working with MRI (structural, functional, diffusion, arterial spin labeling) and building machine learning models on top of it, including graph neural networks for cortical segmentation. Processing and training ran across GPU-backed HPCs.
 
-I've been the researcher waiting on infrastructure that didn't exist.  Now, I build it.
-
-Outside of work, I enjoy backcountry skiing, trail running, travel, practicing new languages, and gardening.
+Outside of work I like backcountry skiing, trail running, travel, practicing new languages, and gardening.
