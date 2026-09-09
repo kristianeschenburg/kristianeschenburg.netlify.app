@@ -52,8 +52,11 @@ description = ""
 
 # Enable source code highlighting? true/false
 # Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
-highlight = true
-highlight_languages = ["r"]  # Add support for highlighting additional languages
+# Highlighting is done at build time by Hugo's Chroma (see [markup.highlight]
+# in config.toml), not by the theme's client-side highlight.js. Leave this
+# false or both will run and fight over the same <code> elements.
+highlight = false
+highlight_languages = ["r"]  # Unused while highlight = false
 # highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable LaTeX math rendering? true/false
@@ -171,6 +174,14 @@ plugins_js  = []
 
   # Choose a shape for avatar images. Options: circle, square.
   shape = "circle"
+
+  # Which part of the photo shows inside the crop, as CSS object-position.
+  # "50% 50%" is centred; lower the second number to move the visible area up.
+  # Pick a value by dragging in scripts/avatar-position.html.
+  position = "37.1% 16.4%"
+
+  # How far the photo is scaled inside the crop. 1 is unzoomed.
+  zoom = 1.10
 
 # Available address formats.
 [address_formats]

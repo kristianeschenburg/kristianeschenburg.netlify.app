@@ -5,8 +5,8 @@ title: "Rendering LaTex In Markdown Using Jekyll"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [Jekyll, LaTeX]
+categories: [software engineering]
 date: 2018-08-11T02:14:14-07:00
 lastmod: 2018-08-12T02:14:14-07:00
 featured: false
@@ -47,7 +47,7 @@ In short, the following steps solved the problem of LaTex not rendering for me. 
 
 Within this file, I pasted the following two sections of HTML code:
 
-```html:
+```html
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {

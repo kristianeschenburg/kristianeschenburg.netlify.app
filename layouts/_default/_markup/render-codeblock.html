@@ -1,0 +1,27 @@
+{{- /*
+  Generic code block render hook.
+
+  Enabling `codeFences` in config.toml (so Chroma can highlight HCL, which
+  the theme's highlight.js could not) also activates Hugo's built-in
+  codeblock render hooks. Two things fall out of that and are handled here.
+
+  1. GoAT. An unlabelled fence falls through to Hugo's ASCII-diagram-to-SVG
+     renderer, which rewrote every architecture diagram in the infrastructure
+     posts as an SVG with one <text> element per character. Fences with no
+     language are handed to Chroma as plain text instead. A fence explicitly
+     marked ```goat still resolves to render-codeblock-goat.html, which is
+     more specific than this file, so real diagrams are unaffected.
+
+  2. Mermaid. The theme renders diagrams client-side: academic.js looks for
+     `.language-mermaid`, unwraps the <pre>, and hands the element's contents
+     to mermaid.js. Chroma would tokenize that content into <span> elements
+     first, so mermaid would receive markup instead of diagram source and
+     fail. Mermaid fences are therefore emitted as plain <code> and left for
+     the theme's JS. Pages using one need `diagram: true` in front matter.
+*/ -}}
+{{- if eq .Type "mermaid" -}}
+<pre><code class="language-mermaid">{{ .Inner }}</code></pre>
+{{- else -}}
+{{- $lang := default "text" .Type -}}
+{{- highlight .Inner $lang .Options -}}
+{{- end -}}

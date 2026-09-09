@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Avatar position picker</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 2.5rem 1.5rem;
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex; flex-direction: column; align-items: center; gap: 1.25rem;
+  }
+  h1 { font-size: 1.15rem; font-weight: 600; margin: 0; }
+  p.hint { margin: 0; opacity: .65; font-size: .875rem; text-align: center; max-width: 36rem; }
+
+  .stage { display: flex; gap: 2.5rem; align-items: flex-start; flex-wrap: wrap; justify-content: center; }
+  .frame-wrap { text-align: center; }
+  .frame-wrap span { display: block; margin-top: .5rem; font-size: .8rem; opacity: .6; }
+
+  /* Mirrors the site: frame owns size + clipping, image pans and scales inside. */
+  .frame {
+    display: block; overflow: hidden; margin: 0 auto; border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(128,128,128,.35); background: rgba(128,128,128,.12);
+    cursor: grab; user-select: none; touch-action: none;
+  }
+  .frame.square { border-radius: 3px; }
+  .frame:active { cursor: grabbing; }
+  .frame img { width: 100%; height: 100%; object-fit: cover; display: block;
+               transform-origin: center center; -webkit-user-drag: none; pointer-events: none; }
+
+  #big   { width: 270px; height: 270px; }
+  #small { width: 150px; height: 150px; }
+
+  .readout { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; justify-content: center; }
+  code {
+    font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre;
+    padding: .55rem .75rem; border-radius: 6px; background: rgba(128,128,128,.15);
+  }
+  button {
+    font: inherit; padding: .45rem .9rem; border-radius: 6px; cursor: pointer;
+    border: 1px solid rgba(128,128,128,.45); background: transparent; color: inherit;
+  }
+  button:hover { background: rgba(128,128,128,.15); }
+  .controls { display: flex; gap: 1.5rem; align-items: center; font-size: .85rem; flex-wrap: wrap; justify-content: center; }
+  .controls label { display: flex; align-items: center; gap: .5rem; }
+  input[type=range] { width: 200px; }
+  .err { color: #c0392b; max-width: 34rem; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>Avatar position picker</h1>
+<p class="hint">
+  Drag the photo to pan. Scroll on it, or use the slider, to zoom.
+  Arrow keys nudge by 1% (shift for 5%); <kbd>+</kbd> / <kbd>&minus;</kbd> zoom.
+  Then paste both lines into <code>config/_default/params.toml</code> under <code>[avatar]</code>.
+</p>
+
+<div class="stage">
+  <div class="frame-wrap">
+    <span class="frame" id="big"><img src="../content/authors/admin/avatar.png" alt="avatar" draggable="false"></span>
+    <span>270px, homepage</span>
+  </div>
+  <div class="frame-wrap">
+    <span class="frame" id="small"><img src="../content/authors/admin/avatar.png" alt="avatar small" draggable="false"></span>
+    <span>150px, mobile</span>
+  </div>
+</div>
+
+<div class="controls">
+  <label>zoom <input type="range" id="zoom" min="1" max="4" step="0.05" value="1"><span id="zoomVal">1.00</span></label>
+  <label><input type="checkbox" id="square"> square shape</label>
+  <button id="reset">reset</button>
+</div>
+
+<div class="readout">
+  <code id="out">position = "50% 50%"
+zoom = 1.0</code>
+  <button id="copy">copy</button>
+</div>
+
+<p class="err" id="err" hidden>
+  Could not load <code>../content/authors/admin/avatar.png</code>.
+  Open this file from inside the repo so the relative path resolves.
+</p>
+
+<script>
+  const big    = document.getElementById('big');
+  const imgs   = document.querySelectorAll('.frame img');
+  const out    = document.getElementById('out');
+  const zoomEl = document.getElementById('zoom');
+  const zoomVal= document.getElementById('zoomVal');
+
+  let x = 50, y = 50, z = 1;
+  let dragging = false, startX = 0, startY = 0, baseX = 50, baseY = 50;
+
+  const clamp  = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+  const trim   = v => v.toFixed(1).replace(/\.0$/, '');
+
+  function apply() {
+    const pos = `${trim(x)}% ${trim(y)}%`;
+    imgs.forEach(i => { i.style.objectPosition = pos; i.style.transform = `scale(${z.toFixed(2)})`; });
+    zoomEl.value = z;
+    zoomVal.textContent = z.toFixed(2);
+    out.textContent = `position = "${pos}"\nzoom = ${z.toFixed(2)}`;
+  }
+
+  big.addEventListener('pointerdown', e => {
+    dragging = true; startX = e.clientX; startY = e.clientY;
+    baseX = x; baseY = y; big.setPointerCapture(e.pointerId);
+  });
+
+  big.addEventListener('pointermove', e => {
+    if (!dragging) return;
+    // Zooming in magnifies the effect of a drag, so divide by the scale.
+    x = clamp(baseX - (e.clientX - startX) / big.clientWidth  * 100 / z, 0, 100);
+    y = clamp(baseY - (e.clientY - startY) / big.clientHeight * 100 / z, 0, 100);
+    apply();
+  });
+
+  const stop = e => { dragging = false; try { big.releasePointerCapture(e.pointerId); } catch (_) {} };
+  big.addEventListener('pointerup', stop);
+  big.addEventListener('pointercancel', stop);
+
+  big.addEventListener('wheel', e => {
+    e.preventDefault();
+    z = clamp(z - e.deltaY * 0.002, 1, 4);
+    apply();
+  }, { passive: false });
+
+  zoomEl.addEventListener('input', () => { z = parseFloat(zoomEl.value); apply(); });
+
+  document.addEventListener('keydown', e => {
+    const step = e.shiftKey ? 5 : 1;
+    if      (e.key === 'ArrowLeft')  x = clamp(x - step, 0, 100);
+    else if (e.key === 'ArrowRight') x = clamp(x + step, 0, 100);
+    else if (e.key === 'ArrowUp')    y = clamp(y - step, 0, 100);
+    else if (e.key === 'ArrowDown')  y = clamp(y + step, 0, 100);
+    else if (e.key === '+' || e.key === '=') z = clamp(z + 0.05, 1, 4);
+    else if (e.key === '-' || e.key === '_') z = clamp(z - 0.05, 1, 4);
+    else return;
+    e.preventDefault(); apply();
+  });
+
+  document.getElementById('square').addEventListener('change', e => {
+    document.querySelectorAll('.frame').forEach(f => f.classList.toggle('square', e.target.checked));
+  });
+
+  document.getElementById('reset').addEventListener('click', () => { x = 50; y = 50; z = 1; apply(); });
+
+  document.getElementById('copy').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(out.textContent); } catch (_) {}
+  });
+
+  imgs.forEach(i => i.addEventListener('error', () => { document.getElementById('err').hidden = false; }));
+
+  apply();
+</script>
+</body>
+</html>

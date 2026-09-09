@@ -5,8 +5,8 @@ title: "Mahalanobis Distances of Brain Connectivity"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [distance metrics, neuroimaging, graphs, statistics]
+categories: [mathematics, neuroscience]
 date: 2018-12-07T05:12:32-07:00
 lastmod: 2018-12-08T05:12:32-07:00
 featured: false
@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-For one of the projects I'm working on, I have an array of multivariate data relating to brain connectivity patterns.  Briefly, each brain is represented as a surface mesh, which we represent as a graph $G = (V,E)$, where $V$ is a set of $n$ vertices, and $E$ are the set of edges between vertices.
+For one of the projects I'm working on, I have an array of multivariate data relating to brain connectivity patterns.  Briefly, each brain is represented as a surface mesh, which we represent as a graph $G = (V,E)$, where $V$ is a set of $n$ vertices, and $E$ is the set of edges between vertices.
 
 Additionally, for each vertex $v \in V$, we also have an associated scalar *label*, which we'll denote $l(v)$, that identifies what region of the cortex each vertex belongs to, the set of regions which we define as $L = \{1, 2, ... k\}$.  And finally, for each vertex $v \in V$, we also have a multivariate feature vector $r(v) \in \mathbb{R}^{1 \times k}$, that describes the strength of connectivity between it, and every region $l \in L$.
 
@@ -66,7 +66,7 @@ $$\begin{align}
 \Sigma = U \Lambda U^{T}
 \end{align}$$
 
-and consequentially, because $U$ is an orthogonal matrix, and because $\Lambda$ is diagonal, we know that $\Sigma^{-1}$ is:
+and consequently, because $U$ is an orthogonal matrix, and because $\Lambda$ is diagonal, we know that $\Sigma^{-1}$ is:
 
 $$\begin{align}
 \Sigma^{-1} &= (U \Lambda U^{T})^{-1} \\\\
@@ -94,7 +94,7 @@ $$\begin{align}
 &= Z^{T}Z
 \end{align}$$
 
-the sum of $p$ standard Normal random variables, which is the definition of a $\chi_{p}^{2}$ distribution with $p$ degrees of freedom.  So, given that we start with a $MVN$ random variable, the squared Mahalanobis distance is $\chi^{2}_{p}$ distributed.  Because the sample mean and sample covariance are consistent estimators of the population mean and population covariance parameters, we can use these estimates in our computation of the Mahalanobis distance.
+the sum of $p$ squared standard Normal random variables, which is the definition of a $\chi_{p}^{2}$ distribution with $p$ degrees of freedom.  So, given that we start with a $MVN$ random variable, the squared Mahalanobis distance is $\chi^{2}_{p}$ distributed.  Because the sample mean and sample covariance are consistent estimators of the population mean and population covariance parameters, we can use these estimates in our computation of the Mahalanobis distance.
 
 Also, of particular importance is the fact that the Mahalanobis distance is **not symmetric**.  That is to say, if we define the Mahalanobis distance as:
 
@@ -110,7 +110,7 @@ First, I'll estimate the covariance matrix, $\Sigma_{T}$, of our target region, 
 
 Next, in order to assess whether this intra-regional similarity is actually informative, I'll also compute the similarity of $l_{T}$ to every other region, $\\{ l_{k} \\; : \\; \forall \\; k \in L \setminus \\{T\\} \\}$ -- that is, I'll compute $M^{2}(A, B) \\; \forall \\; B \in L \setminus T$.  If the connectivity samples of our region of interest are as similar to one another as they are to other regions, then $d^{2}$ doesn't really offer us any discriminating information -- I don't expect this to be the case, but we need to verify this.
 
-Then, as a confirmation step to ensure that our empirical data actually follows the theoretical $\chi_{p}^{2}$ distribution, I'll compute the location and scale [Maximumim Likelihood](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation)(MLE) parameter estimates of our $d^{2}$ distribution, keeping the *d.o.f.* (e.g. $p$) fixed.
+Then, as a confirmation step to ensure that our empirical data actually follows the theoretical $\chi_{p}^{2}$ distribution, I'll compute the location and scale [Maximum Likelihood](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation)(MLE) parameter estimates of our $d^{2}$ distribution, keeping the *d.o.f.* (i.e. $p$) fixed.
 
 See below for Python code and figures...
 
@@ -191,7 +191,7 @@ for l in labels:
 
 {{< figure  src="IntraInterMahal.jpg" title="Empirical distributions of within-region (top) and between-region (bottom) $d^{2}$ values.  Each line is the distribution of the distance of samples in our ROI to a whole region." lightbox="true" >}}
 
-As expected, the distribution of $d^{2}$ the distance of samples in our region of interest, $l_{T}$, to distributions computed from other regions are (considerably) larger and much more variable, while the profile of points within $l_{T}$ looks to have much smaller variance -- this is good!  This means that we have high intra-regional similarity when compared to inter-regional similarities.  This fits what's known in neuroscience as the ["cortical field hypothesis"](https://www.ncbi.nlm.nih.gov/pubmed/9651489).
+As expected, the distribution of $d^{2}$, the distance of samples in our region of interest, $l_{T}$, to distributions computed from other regions, is (considerably) larger and much more variable, while the profile of points within $l_{T}$ looks to have much smaller variance -- this is good!  This means that we have high intra-regional similarity when compared to inter-regional similarities.  This fits what's known in neuroscience as the ["cortical field hypothesis"](https://www.ncbi.nlm.nih.gov/pubmed/9651489).
 
 ### Step 2: Distributional QC-Check
 

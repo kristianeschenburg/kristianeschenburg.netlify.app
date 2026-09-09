@@ -5,8 +5,8 @@ title: "Overview of Poisson-Multinomial Relationship"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [probability, probability distributions, statistics]
+categories: [mathematics]
 date: 2018-11-08T01:12:32-07:00
 lastmod: 2018-11-09T01:12:32-07:00
 featured: false

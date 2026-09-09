@@ -5,8 +5,8 @@ title: "Exploring Neurological Dynamical Systems: Part 2"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [dynamical systems, dynamic mode decomposition, linear algebra]
+categories: [mathematics, neuroscience]
 date: 2018-05-24T11:30:43-07:00
 lastmod: 2018-05-25T11:30:43-07:00
 featured: false
@@ -64,7 +64,7 @@ $$\begin{align}
 Y = AX^{\ast}
 \end{align}$$
 
-For simplicity, since we are no longer using the full matrix, I'll just refer to $X^{\ast}$ as $X$.  In the previous post, we made the constraint that $n > m$, and that rank($X$) $\leq m < n$.  Here, however, we'll reverse this assumption, and such that $m > n$, and that rank($X$) $\leq m < n$, such that $XX^{T}$ is invertible, so by multiplying both sides by $X^{T}$ we have
+For simplicity, since we are no longer using the full matrix, I'll just refer to $X^{\ast}$ as $X$.  In the previous post, we made the constraint that $n > m$, and that rank($X$) $\leq m < n$.  Here, however, we'll reverse this assumption, such that $m > n$, and that rank($X$) $\leq m < n$, such that $XX^{T}$ is invertible, so by multiplying both sides by $X^{T}$ we have
 
 $$\begin{align}
 AXX^{T} &= YX^{T} \\\\
@@ -72,7 +72,7 @@ A &= YX^{T}(XX^{T})^{-1} \\\\
 A &= QP\_{x}
 \end{align}$$
 
-where $Q = YX^{T}$ and $P_{x} = (XX^{T})^{-1}$.  Now, let's say you observe some new data $x_{m+1}, y_{m+1}$, and you want to incorporate this new data into your $A$ matrix.  As in the previous post on [rank-one updates]( {{< relref "/post/rank-one-updates/index.md" >}} ), we saw that directly computing the inverse could potentially be costly, so we want to refrain from doing that if possible.  Instead, we'll use the Shermann-Morrison-Woodbury theorem again to incorporate our new $x_{m+1}$ sample into our inverse matrix, just as before:
+where $Q = YX^{T}$ and $P_{x} = (XX^{T})^{-1}$.  Now, let's say you observe some new data $x_{m+1}, y_{m+1}$, and you want to incorporate this new data into your $A$ matrix.  As in the previous post on [rank-one updates]( {{< relref "/post/rank-one-updates/index.md" >}} ), we saw that directly computing the inverse could potentially be costly, so we want to refrain from doing that if possible.  Instead, we'll use the Sherman-Morrison-Woodbury theorem again to incorporate our new $x_{m+1}$ sample into our inverse matrix, just as before:
 
 $$\begin{align}
 (X_{m+1}X^{T}_{m+1})^{-1} = P_{x} + \frac{P_{x}x_{m+1}x_{m+1}^{T}P_{x}}{1 + x_{m+1}^{T}P_{x}x_{m+1}}

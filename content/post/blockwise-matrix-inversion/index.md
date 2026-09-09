@@ -5,8 +5,8 @@ title: "Blockwise Matrix Inversion"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [linear algebra, matrix inversion, Gauss-Markov, statistics]
+categories: [mathematics]
 date:   2018-05-08T23:24:17-07:00
 lastmod: 2018-06-08T23:24:17-07:00
 featured: false
@@ -37,7 +37,7 @@ A & B \\\\
 C & D
 \\end{bmatrix}$$
 
-We specifically interested in finding
+We are specifically interested in finding
 
 $$ R^{-1} = \\begin{bmatrix}
 W & X \\\\
@@ -124,4 +124,4 @@ W = (A-BD^{-1}C)^{-1} = C^{-1}D(D-CA^{-1}B)^{-1}CA^{-1} \\\\
 X = (A-BD^{-1}C)^{-1}BD^{-1} = A^{-1}B(D-CA^{-1}B)^{-1} \\\\
 \\end{aligned}$$
 
-Importantly, blockwise matrix inversion allows us to define the inverse of a larger matrix, with respect to its subcomponents.  Likewise, from here, we can go on to derive the Sherman-Morrison formula and Woodbury theorem, which allows us to do all kinds of cool stuff, like rank-one matrix updates.  In the next few posts, I'll go over a few examples of where blockwise matrix inversions are useful, and common scenarios where rank-one updates of matrices are applicable in the next few posts.
+Importantly, blockwise matrix inversion allows us to define the inverse of a larger matrix, with respect to its subcomponents.  Likewise, from here, we can go on to derive the Sherman-Morrison formula and Woodbury theorem, which allow us to do all kinds of cool stuff, like rank-one matrix updates.  In the next few posts, I'll go over a few examples of where blockwise matrix inversions are useful, and common scenarios where rank-one updates of matrices are applicable.

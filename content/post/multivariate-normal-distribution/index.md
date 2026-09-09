@@ -5,8 +5,8 @@ title: "Multivariate Normal Distribution"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [probability, probability distributions, Gauss-Markov, statistics]
+categories: [mathematics]
 date: 2018-05-12T03:14:14-07:00
 lastmod: 2018-05-13T13:29:22-07:00
 featured: false
@@ -42,7 +42,7 @@ $$ \Sigma = \begin{bmatrix}
 \Sigma_{21} & \Sigma_{22}
 \end{bmatrix}$$
 
-and, using the inversion lemmas from [Blockwise Matrix Inversion]({% post_url 2018-05-08-blockwise-matrix-inversion %}), define its inverse $\Sigma^{-1} = V$ as
+and, using the inversion lemmas from [Blockwise Matrix Inversion]({{< relref "/post/blockwise-matrix-inversion/index.md" >}}), define its inverse $\Sigma^{-1} = V$ as
 
 $$
 V = \begin{bmatrix}
@@ -109,7 +109,7 @@ $$\begin{align}
 (y_{1} - \mu_{1})^{T} V_{11}^{-1}(y_{1}-\mu_{1}) + 2(y_{1}-\mu_{1})^{T}V_{12}(y_{2}-\mu_{2}) + (y_{2} - \mu_{2})^{T}V_{22}(y_{2}-\mu_{2})
 \end{align}$$
 
-Let us, for simpliciy set $z_{1} = (y_{1} - \mu_{1})$ and $z_{2} = (y_{2} - \mu_{2})$.  Substituting back in our definitions of $V_{11}$,$V_{12}$,$V_{21}$, and $V_{22}$, and and using the Sherman-Morrison-Woodbury definition for $V_{11}$, we have the following
+Let us, for simplicity, set $z_{1} = (y_{1} - \mu_{1})$ and $z_{2} = (y_{2} - \mu_{2})$.  Substituting back in our definitions of $V_{11}$,$V_{12}$,$V_{21}$, and $V_{22}$, and using the Sherman-Morrison-Woodbury definition for $V_{11}$, we have the following
 
 $$\begin{align}
 &z_{1}^{T}(\Sigma_{11}^{-1} + \Sigma_{11}^{-1}\Sigma_{12}(\Sigma_{22} - \Sigma_{21}\Sigma_{11}^{-1}\Sigma_{12})^{-1}\Sigma_{21}\Sigma_{11})z_{1} \\\\

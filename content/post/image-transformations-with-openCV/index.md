@@ -5,8 +5,8 @@ title: "Image Transformations With OpenCV"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [OpenCV, Python, neuroimaging]
+categories: [software engineering, neuroscience]
 date: 2018-09-01T17:12:32-07:00
 lastmod: 2018-09-02T17:12:32-07:00
 featured: false

@@ -5,8 +5,8 @@ title: "Submitting Batch Jobs with qsub"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [HPC, bash]
+categories: [software engineering]
 date: 2020-05-05T14:24:17-07:00
 lastmod: 2020-05-06T14:24:17-07:00
 featured: false

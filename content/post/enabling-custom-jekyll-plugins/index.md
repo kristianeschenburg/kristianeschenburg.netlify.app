@@ -5,8 +5,8 @@ title: "Enabling Custom Jekyll Plugins with TravisCI"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [Jekyll, CI/CD]
+categories: [software engineering]
 date: 2018-08-12T02:14:14-07:00
 lastmod: 2018-08-13T02:14:14-07:00
 featured: false

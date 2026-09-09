@@ -4,8 +4,8 @@ title: "Entropy and Mutual Information"
 subtitle: ""
 summary: ""
 authors: []
-tags: [probability, entropy, mutual information]
-categories: []
+tags: [probability, information theory]
+categories: [mathematics]
 date:   2021-10-08T15:24:17-07:00
 lastmod: 2021-10-08T15:24:17-07:00
 featured: false
@@ -71,7 +71,7 @@ H(Y|X) &= -\sum_{x}\sum_{y} = p(x,y)  \cdot log(\frac{p(x,y)}{p(x)}) \\\\
 &= -\sum_{x} p(x) \sum_{y} p(y|X=x) \cdot log(p(y|X=x))
 \end{align}$$
 
-where $H(Y|X=x) = -\sum_{y} p(y|X=x) \cdot log(p(y|X=x))$, the conditional of entropy of $Y$ given that $X=x$.  Here, we've used the fact that $p(x,y) = p(y|x) \cdot p(x) = p(x|y) \cdot p(y)$.To compute $H(Y|X)$, we take the weighted average of these conditional entropies, where weights are defined by the marginal probabilities of $X$.
+where $H(Y|X=x) = -\sum_{y} p(y|X=x) \cdot log(p(y|X=x))$, the conditional entropy of $Y$ given that $X=x$.  Here, we've used the fact that $p(x,y) = p(y|x) \cdot p(x) = p(x|y) \cdot p(y)$.  To compute $H(Y|X)$, we take the weighted average of these conditional entropies, where weights are defined by the marginal probabilities of $X$.
 
 # Mutual Information
 

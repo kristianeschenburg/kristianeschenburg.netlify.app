@@ -5,8 +5,8 @@ title: "Rank One Updates"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [linear algebra, matrix inversion]
+categories: [mathematics]
 date: 2018-05-11T16:53:45-07:00
 lastmod: 2018-05-12T16:53:45-07:00
 featured: false
@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-In this post, I'm going to go over some examples of rank-one updates of matrices.  To compute rank-one updates, we rely on the Sherman-Morrison-Woodbury theorem.  From the previous post on [Blockwise Matrix Inversion]({% post_url 2018-05-08-blockwise-matrix-inversion %}), recall that, given a matrix and its inverse
+In this post, I'm going to go over some examples of rank-one updates of matrices.  To compute rank-one updates, we rely on the Sherman-Morrison-Woodbury theorem.  From the previous post on [Blockwise Matrix Inversion]({{< relref "/post/blockwise-matrix-inversion/index.md" >}}), recall that, given a matrix and its inverse
 
 $$R = \\begin{bmatrix} 
 A & B \\\\

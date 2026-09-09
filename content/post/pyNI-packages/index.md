@@ -5,8 +5,8 @@ title: "Lab Meeting: pip and the Python Packaging Index"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [Python, packaging, neuroimaging]
+categories: [software engineering]
 date: 2020-06-07T10:20:09-07:00
 # lastmod: 2020-06-07T10:20:09-07:00
 featured: false
@@ -33,7 +33,7 @@ What follows are the contents of part of a lab meeting presentation I gave recen
 
 # Creating Python Packages
 
-In this lesson, I'll show you how to build your own Python package that you can then install locally or upload to the [Python Packaging Index](https://pip.pypa.io/en/stable/) (for those of you familar with [R](https://www.r-project.org/about.html), think [CRAN](https://cran.r-project.org/), but for Python).
+In this lesson, I'll show you how to build your own Python package that you can then install locally or upload to the [Python Packaging Index](https://pip.pypa.io/en/stable/) (for those of you familiar with [R](https://www.r-project.org/about.html), think [CRAN](https://cran.r-project.org/), but for Python).
 
 I'm going to be basing a lot of the material off of this [documentation](https://packaging.python.org/tutorials/packaging-projects/), but will also show a real example using some of my own personal code.
 
@@ -43,7 +43,7 @@ I'm sure most of you are familiar with packages and libraries already, either fr
 
 Within a package, you can have different groupings of code, where each grouping does some unique or discrete computing.  These groupings are called **submodules**.  A common submodule in many packages is an **Input / Output (io)** module that will read and write data that this package interacts with or produces.  Another common submodule is often related to **plotting** the outputs of your code.  And then almost always, there are submodules that perform the brunt of the algorithmic work.  So inside modules, you'll find snippets of code that relate to the goal or concept of the module.
 
-Think of a package as a *toolbox* with a bunch of drawers, each with a label: *wood-working*, *welding*, *gardening*, *flooring*, etc.  These drawers are submodules.  You can tell by their names that they each cover certain topics.  Each drawer contains a set of tools:  *woord-working* might contain *saw*, *nail*, *sandpaper*, *wood glue*, while *welding* might containg *solder*, *flux*, *oxygen*, *glove*.  These tools are the functions, classes, and scripts that relate to that submodule.
+Think of a package as a *toolbox* with a bunch of drawers, each with a label: *wood-working*, *welding*, *gardening*, *flooring*, etc.  These drawers are submodules.  You can tell by their names that they each cover certain topics.  Each drawer contains a set of tools:  *wood-working* might contain *saw*, *nail*, *sandpaper*, *wood glue*, while *welding* might contain *solder*, *flux*, *oxygen*, *glove*.  These tools are the functions, classes, and scripts that relate to that submodule.
 
 Overall, this toolbox performs some stuff related to construction, homebuilding, repair, and has discrete bundles of code useful for a variety of those tasks.
 
@@ -86,7 +86,7 @@ from .submodule_b import (b_1, b_2)
 
 ```test/``` is a directory in which you would want to write [unit tests](http://softwaretestingfundamentals.com/unit-testing/) for your code.
 
-```setup.py``` is what allows your to install your package.  It's a set of instructions that get supplied to [setuptools](https://setuptools.readthedocs.io/en/latest/) package.
+```setup.py``` is what allows you to install your package.  It's a set of instructions that get supplied to [setuptools](https://setuptools.readthedocs.io/en/latest/) package.
 
 ```python
 from setuptools import setup, find_packages

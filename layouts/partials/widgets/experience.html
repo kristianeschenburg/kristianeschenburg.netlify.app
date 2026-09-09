@@ -1,0 +1,167 @@
+{{ $ := .root }}
+{{ $page := .page }}
+
+{{/* Experience widget (site override of themes/academic).
+
+     Two supported shapes for each `[[experience]]` block:
+
+     1. Company-grouped — one card per company, with nested roles:
+
+          [[experience]]
+            order = 1
+            company = "Just-Evotec Biologics"
+            company_url = "https://..."
+            location = "Seattle, WA"
+            [[experience.roles]]
+              title = "Senior Data Platform Engineer"
+              date_start = "2025-10-01"
+              date_end = ""            # empty = current
+              details_open = true       # expand this role's details by default
+              description = """ ... """
+
+     2. Flat (the stock theme shape) — `title`/`company`/`date_start` on the
+        block itself. Both shapes may be mixed in one file.
+
+     Ordering: if the first block defines `order`, blocks are sorted by it
+     ascending (so you control the sequence). Otherwise the theme's default
+     `date_end` descending sort applies. */}}
+
+<!-- Experience widget -->
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+  </div>
+  <div class="col-12 col-lg-8">
+    {{ with $page.Content }}{{ . }}{{ end }}
+
+    {{ if $page.Params.experience }}
+    {{ $date_fmt := $page.Params.date_format | default "January 2006" }}
+    {{ $details_label := $page.Params.details_label | default "Details" }}
+    {{ $exp := $page.Params.experience }}
+    {{ if (index $exp 0).order }}
+      {{ $exp = sort $exp ".order" "asc" }}
+    {{ else }}
+      {{ $exp = sort $exp ".date_end" "desc" }}
+    {{ end }}
+    {{ $exp_len := len $exp }}
+
+    {{ range $idx, $entry := $exp }}
+      {{/* Normalise both shapes into `$roles`, then derive the company-level
+           date span from the roles it contains. */}}
+      {{ $roles := $entry.roles | default (slice $entry) }}
+      {{ $ongoing := false }}
+      {{ $starts := slice }}
+      {{ $ends := slice }}
+      {{ range $roles }}
+        {{ if .date_end }}
+          {{ $ends = $ends | append .date_end }}
+        {{ else }}
+          {{ $ongoing = true }}
+        {{ end }}
+        {{ with .date_start }}{{ $starts = $starts | append . }}{{ end }}
+      {{ end }}
+
+    <div class="row experience">
+      <!-- Timeline -->
+      <div class="col-auto text-center flex-column d-none d-sm-flex exp-timeline">
+        <div class="row h-50">
+          <div class="col {{ if gt $idx 0 }}border-right{{ end }}">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border {{ if $ongoing }}exp-fill{{ end }}">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col {{ if lt $idx (sub $exp_len 1) }}border-right{{ end }}">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+
+            {{ if $entry.roles }}
+            {{/* --- Company header --- */}}
+            <h4 class="card-title exp-company exp-company-header my-0">
+              {{- with $entry.company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end -}}
+              {{- $entry.company | markdownify | emojify -}}
+              {{- with $entry.company_url }}</a>{{ end -}}
+            </h4>
+            <div class="text-muted exp-meta exp-company-meta">
+              {{ with $starts }}{{ (time (index (sort .) 0)).Format $date_fmt }} –{{ end }}
+              {{ if $ongoing }}
+                {{ i18n "present" | default "Present" }}
+              {{ else if $ends }}
+                {{ (time (index (sort $ends "value" "desc") 0)).Format $date_fmt }}
+              {{ end }}
+              {{ with $entry.location }}
+                <span class="middot-divider"></span>
+                <span>{{ . }}</span>
+              {{ end }}
+            </div>
+
+            {{/* --- Roles within this company --- */}}
+            <ol class="exp-roles">
+              {{ range $role := $roles }}
+              <li class="exp-role">
+                <h5 class="exp-title text-muted mt-0 mb-1">{{ .title | markdownify | emojify }}</h5>
+                <div class="text-muted exp-meta">
+                  {{ with .date_start }}{{ (time .).Format $date_fmt }} –{{ end }}
+                  {{ if .date_end }}
+                    {{ (time .date_end).Format $date_fmt }}
+                  {{ else }}
+                    {{ i18n "present" | default "Present" }}
+                  {{ end }}
+                  {{ with .location }}
+                    <span class="middot-divider"></span>
+                    <span>{{ . }}</span>
+                  {{ end }}
+                </div>
+                {{ with $role.description }}
+                <details class="exp-details"{{ if $role.details_open }} open{{ end }}>
+                  <summary>{{ $details_label }}</summary>
+                  <div class="card-text">{{ . | markdownify | emojify }}</div>
+                </details>
+                {{ end }}
+              </li>
+              {{ end }}
+            </ol>
+
+            {{ else }}
+            {{/* --- Flat entry (stock theme shape) --- */}}
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">{{ $entry.title | markdownify | emojify }}</h4>
+            <h4 class="card-title exp-company text-muted my-0">
+              {{- with $entry.company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end -}}
+              {{- $entry.company | markdownify | emojify -}}
+              {{- with $entry.company_url }}</a>{{ end -}}
+            </h4>
+            <div class="text-muted exp-meta">
+              {{ (time $entry.date_start).Format $date_fmt }} –
+              {{ if $entry.date_end }}
+                {{ (time $entry.date_end).Format $date_fmt }}
+              {{ else }}
+                {{ i18n "present" | default "Present" }}
+              {{ end }}
+              {{ with $entry.location }}
+                <span class="middot-divider"></span>
+                <span>{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ with $entry.description }}
+            <details class="exp-details"{{ if $entry.details_open }} open{{ end }}>
+              <summary>{{ $details_label }}</summary>
+              <div class="card-text">{{ . | markdownify | emojify }}</div>
+            </details>
+            {{ end }}
+            {{ end }}
+
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>

@@ -5,8 +5,8 @@ title: "The Delta Method"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [statistics, asymptotics]
+categories: [mathematics]
 date: 2019-03-19T12:43:32-07:00
 lastmod: 2019-03-20T12:43:32-07:00
 featured: false
@@ -47,7 +47,7 @@ g(x) = g(\theta) + g\prime(\theta)(x-\theta) + O()
 
 where $O()$ is the remainder of higher-order Taylor Series terms that converges to 0.
 
-By [Slutsky's Theorem](https://en.wikipedia.org/wiki/Slutsky%27s_theorem) and the [Continious Mapping Theorem](https://en.wikipedia.org/wiki/Continuous_mapping_theorem), we know that since $\bar{\theta} \xrightarrow{p} \theta$, we know that $g\prime(\bar{\theta}) \xrightarrow{p} g\prime(\theta)$
+By [Slutsky's Theorem](https://en.wikipedia.org/wiki/Slutsky%27s_theorem) and the [Continuous Mapping Theorem](https://en.wikipedia.org/wiki/Continuous_mapping_theorem), we know that since $\bar{\theta} \xrightarrow{p} \theta$, we know that $g\prime(\bar{\theta}) \xrightarrow{p} g\prime(\theta)$
 
 Plugging this back in to our original equation and applying Slutsky's Perturbation Theorem, we have:
 
@@ -84,7 +84,7 @@ from scipy.stats import norm, poisson, expon
 import numpy as np
 ```
 
-Here, we define two simple functions -- one to compute the difference between our estimate and its population paramter, and the other to compute the function of our random variable as described by the Central Limit Theorem.
+Here, we define two simple functions -- one to compute the difference between our estimate and its population parameter, and the other to compute the function of our random variable as described by the Central Limit Theorem.
 
 ```python
 def conv_prob(n, est, pop):
@@ -142,7 +142,7 @@ for i,n in enumerate(N):
 
 {{< figure src="Normal_CLT.jpg" title="Central Limit Theorem applied to Normal Distribution." lightbox="true" >}}
 
-As expected, we see that the Normal distribution mean and variance estimates are independent of the sample size.  In this case, we don't need to apply a variance stabiliing transformation.  We also see that the variance fluctuates around $5$.  Now, let's apply a simple function $g(\theta) = \theta^{2}$ to our data.  So $g\prime(\theta) = 2\theta$, and the variance of our function becomes $g\prime(\mu)^{2}\sigma^{2} = (2\mu)^{2} \sigma^{2} = 4\mu^{2}\sigma^{2}$.  Let's look at a few plots, as a function of changing $\mu$.
+As expected, we see that the Normal distribution mean and variance estimates are independent of the sample size.  In this case, we don't need to apply a variance stabilizing transformation.  We also see that the variance fluctuates around $5$.  Now, let's apply a simple function $g(\theta) = \theta^{2}$ to our data.  So $g\prime(\theta) = 2\theta$, and the variance of our function becomes $g\prime(\mu)^{2}\sigma^{2} = (2\mu)^{2} \sigma^{2} = 4\mu^{2}\sigma^{2}$.  Let's look at a few plots, as a function of changing $\mu$.
 
 ```python
 # set sample sample sizes, and number of sampling iterations
@@ -252,7 +252,7 @@ for i,n in enumerate(N):
 
 #### Variance Stabilization for the Exponential Distribution
 
-Applying the same method to the Exponential distribtuion, we'll find that the variance stabilizing transformation is $g(\theta) = log(\theta)$.  We'll apply that here:
+Applying the same method to the Exponential distribution, we'll find that the variance stabilizing transformation is $g(\theta) = log(\theta)$.  We'll apply that here:
 
 ```python
 theta = 0.5
@@ -293,7 +293,7 @@ for i,n in enumerate(N):
 
 #### Example of Standard Error Computation Using Delta Method for Polynomial Regression
 
-As an example of applying the Delta Method to a real-world dataset,  I've downloaded the [**banknote**](https://archive.ics.uci.edu/ml/datasets/banknote+authentication) dataset from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).  In this exercise, I'll apply the [logistic function](https://en.wikipedia.org/wiki/Logistic_function) via logistic regression to assess whether or not a banknote is real or fake, using a set of features.   I'll compute confidence intervals of our prediction probabilities using the Delta Method.  There are four unique predictors in this case: the **variance**, **skew**, **kurtosis**, and **entropy** of the Wavelet-transformed banknote image.  I'll treat each of these predictors independently, using polynomial basis function of degree 3.
+As an example of applying the Delta Method to a real-world dataset,  I've downloaded the [**banknote**](https://archive.ics.uci.edu/ml/datasets/banknote+authentication) dataset from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).  In this exercise, I'll apply the [logistic function](https://en.wikipedia.org/wiki/Logistic_function) via logistic regression to assess whether or not a banknote is real or fake, using a set of features.   I'll compute confidence intervals of our prediction probabilities using the Delta Method.  There are four unique predictors in this case: the **variance**, **skew**, **kurtosis**, and **entropy** of the Wavelet-transformed banknote image.  I'll treat each of these predictors independently, using polynomial basis functions of degree 3.
 
 In this example, we're interested in the standard error of our probability estimate.  Our function is the Logistic Function, as follows:
 

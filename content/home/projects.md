@@ -2,7 +2,10 @@
 # A Projects section created with the Portfolio widget.
 widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
+#   Hidden for now: every entry is PhD-era research code from 2020, which
+#   duplicates the Research section above and dates the site. Re-enable
+#   once there is current work to show (e.g. the Kubernetes projects).
 weight = 65  # Order that this section will appear.
 
 title = "Software"

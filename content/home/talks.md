@@ -4,7 +4,10 @@
 
 widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
+#   Hidden: every entry is 2017-2019 PhD-era speaking, the same staleness
+#   that took the Software section off the homepage. The talks themselves
+#   are the `[[item]]` blocks at the bottom of this file, not `content/talk/`.
 weight = 70  # Order that this section will appear.
 
 title = "Talks and Presentations"

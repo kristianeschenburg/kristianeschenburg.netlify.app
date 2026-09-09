@@ -64,7 +64,16 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
     [markup.goldmark.renderer]
       unsafe = true  # Enable user to embed HTML snippets in Markdown content.
   [markup.highlight]
-    codeFences = false  # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
+    # Chroma (build-time) replaces the theme's client-side highlight.js.
+    # highlight.js only had the `r` lexer loaded and has no HCL lexer, so
+    # Terraform blocks rendered untokenized. Chroma handles hcl/terraform,
+    # yaml, dockerfile, make, python, json and bash out of the box.
+    # Set `highlight = false` in params.toml so the two don't both run.
+    codeFences = true
+    noClasses = false      # emit CSS classes so dark mode can be themed (assets/scss/_chroma.scss)
+    guessSyntax = false    # an unlabelled fence stays plain rather than being mis-detected
+    lineNos = false
+    tabWidth = 2
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3

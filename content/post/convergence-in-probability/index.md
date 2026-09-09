@@ -5,8 +5,8 @@ title: "Convergence In Probability"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [probability, asymptotics, statistics]
+categories: [mathematics]
 date: 2018-11-28T13:12:32-07:00
 lastmod: 2018-11-29T13:12:32-07:00
 featured: false
@@ -42,7 +42,7 @@ $$\begin{align}
 \lim_{n \to \infty} P(|\bar{X}\_{n} - \mu | \geq \epsilon) = 0
 \end{align}$$
 
-which we can take to mean that the sample mean converges in probability to the population mean as the sample size goes to infinity.  If we have finite variance (that is $Var(X) < \infty$), we can prove this using Chebyshev's Law
+which we can take to mean that the sample mean converges in probability to the population mean as the sample size goes to infinity.  If we have finite variance (that is $Var(X) < \infty$), we can prove this using Chebyshev's Inequality
 
 $$\begin{align}
  &= P(|\bar{X}\_{n} - \mu | \geq \epsilon) \\\\

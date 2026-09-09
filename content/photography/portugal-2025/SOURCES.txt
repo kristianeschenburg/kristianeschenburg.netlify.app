@@ -1,0 +1,14 @@
+Portugal
+Google Photos share links, in order. Save each as NN.jpg in this folder.
+
+01.jpg  https://photos.google.com/share/AF1QipO3b9ajJ7EMKsgN7CXLaRhHaRsH_PM6rWBl8H6Ea2IBCsWv99GQg36eM1Kk8jfDZA/photo/AF1QipNXaMC5KNlRQbypVdpFkYQ6tLWXbMNdboKh-SaE
+02.jpg  https://photos.google.com/share/AF1QipO3b9ajJ7EMKsgN7CXLaRhHaRsH_PM6rWBl8H6Ea2IBCsWv99GQg36eM1Kk8jfDZA/photo/AF1QipOADZkm0cjDvJ9luON1sDXk929wmH3x-LY672W5
+03.jpg  https://photos.google.com/share/AF1QipMGdUTlUkA2qWBA2b4zb2Mw7LmUQNIWxWH7BepncU9LIwuS8aCTh-IIoy-BflSbqg/photo/AF1QipMm5K3GqRaadwx08Rya1d7jomJegNoKXiHcZUua
+04.jpg  https://photos.google.com/share/AF1QipNiszyJQTt2cbX84h6WcnttFF_zbpM066iTviaLermsAvPWI2XRC82zU7ul_6jzEA/photo/AF1QipNim289QhXjX4Yj8CvgPaksFJOlOFwdkNDxmEA1
+05.jpg  https://photos.google.com/share/AF1QipNiszyJQTt2cbX84h6WcnttFF_zbpM066iTviaLermsAvPWI2XRC82zU7ul_6jzEA/photo/AF1QipNio9-mfUXb2Z4Ujby6uz3QoLHBobLtBX7oity_
+06.jpg  https://photos.google.com/share/AF1QipNiszyJQTt2cbX84h6WcnttFF_zbpM066iTviaLermsAvPWI2XRC82zU7ul_6jzEA/photo/AF1QipPj90oJnx5zY0ulLyU3Bu0SuE4kAzvKWbvpgcAt
+07.jpg  https://photos.google.com/share/AF1QipNiszyJQTt2cbX84h6WcnttFF_zbpM066iTviaLermsAvPWI2XRC82zU7ul_6jzEA/photo/AF1QipOAXAXdPhuz9Ly07-eRraPVIvJ9ZFt5UhZKNX-m
+08.jpg  https://photos.google.com/share/AF1QipMhEYZPIoklcKoqx-6mvYEm2Go1T-ZQ8U70I4AkKoBWQcCAx4p0k-cJvzydcAlYfw/photo/AF1QipN2OydR9kZkZJNwolSdV02RnBkmu3M_63TTKN-5
+09.jpg  https://photos.google.com/share/AF1QipMhEYZPIoklcKoqx-6mvYEm2Go1T-ZQ8U70I4AkKoBWQcCAx4p0k-cJvzydcAlYfw/photo/AF1QipOMHyzNLL1ZlQdYSG05-YndaKFnFT2iArBPWr1z
+10.jpg  https://photos.google.com/share/AF1QipMhEYZPIoklcKoqx-6mvYEm2Go1T-ZQ8U70I4AkKoBWQcCAx4p0k-cJvzydcAlYfw/photo/AF1QipOnw_bHzTc578QIZbohPZFkz0Gz9ZIC1DPFMsFH
+11.jpg  https://photos.google.com/share/AF1QipMhEYZPIoklcKoqx-6mvYEm2Go1T-ZQ8U70I4AkKoBWQcCAx4p0k-cJvzydcAlYfw/photo/AF1QipO7clPOrpH3Omy8NoL0MhALN2vB0TFu1v2hACWc

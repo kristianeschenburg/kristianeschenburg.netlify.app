@@ -1,0 +1,189 @@
+/* ---------------------------------------------------------------
+   Syntax highlighting (Chroma).
+   The theme shipped client-side highlight.js with only the `r`
+   lexer loaded, so any other language fell through untokenized and
+   inherited the `pre, code { color: #c7254e }` rule from _root.scss.
+   That is why Terraform blocks rendered as a wall of red: nothing
+   was highlighting them, and red is the inline-code colour.
+   highlight.js has no HCL lexer on the theme's CDN anyway.
+   Hugo's built-in Chroma does, along with YAML, Dockerfile, make,
+   Python, JSON and bash, and it runs at build time rather than
+   shipping a highlighter to the browser.
+   Palettes match what the theme used to load: github for light,
+   dracula for dark.
+   --------------------------------------------------------------- */
+
+/* Code blocks own their colours; inline `code` keeps the theme's
+   red. Both live on `code`, so scope every override to .chroma. */
+.chroma,
+.chroma code {
+  color: #1f2328;
+}
+
+/* Only the inner <code> goes transparent, to clear the inline-code
+   pink (#f9f2f4) that _root.scss puts on every `code`. The <pre>
+   itself must keep a background: `.chroma` outranks the theme's
+   bare `pre` selector, so setting it transparent here silently
+   flattened every code block on the site. */
+.chroma code {
+  background-color: transparent;
+}
+
+.highlight pre.chroma,
+pre.chroma {
+  background-color: rgb(248, 248, 248);
+  border-color: rgb(248, 248, 248);
+  padding: 0.85rem 1rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.dark .chroma,
+.dark .chroma code {
+  color: #f8f8f2;
+}
+
+/* Dracula's tokens are designed against #282a36; the theme's default
+   dark `pre` background (#44475a) drops comment contrast too far. */
+.dark pre.chroma,
+.dark .highlight pre.chroma {
+  background-color: #282a36;
+  border-color: #282a36;
+}
+
+
+/* ---- light (github) ---- */
+.chroma .err { color: #f6f8fa; background-color: #82071e }
+.chroma .lnlinks { outline: none; text-decoration: none; color: inherit }
+.chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+.chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
+.chroma .hl { background-color: #e5e5e5 }
+.chroma .lnt { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+.chroma .ln { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+.chroma .line { display: flex; }
+.chroma .k { color: #cf222e }
+.chroma .kc { color: #cf222e }
+.chroma .kd { color: #cf222e }
+.chroma .kn { color: #cf222e }
+.chroma .kp { color: #cf222e }
+.chroma .kr { color: #cf222e }
+.chroma .kt { color: #cf222e }
+.chroma .na { color: #1f2328 }
+.chroma .nb { color: #6639ba }
+.chroma .bp { color: #6a737d }
+.chroma .nc { color: #1f2328 }
+.chroma .no { color: #0550ae }
+.chroma .nd { color: #0550ae }
+.chroma .ni { color: #6639ba }
+.chroma .nf { color: #6639ba }
+.chroma .nl { color: #990000; font-weight: bold }
+.chroma .nn { color: #24292e }
+.chroma .nx { color: #1f2328 }
+.chroma .nt { color: #0550ae }
+.chroma .nv { color: #953800 }
+.chroma .vc { color: #953800 }
+.chroma .vg { color: #953800 }
+.chroma .vi { color: #953800 }
+.chroma .s { color: #0a3069 }
+.chroma .sa { color: #0a3069 }
+.chroma .sb { color: #0a3069 }
+.chroma .sc { color: #0a3069 }
+.chroma .dl { color: #0a3069 }
+.chroma .sd { color: #0a3069 }
+.chroma .s2 { color: #0a3069 }
+.chroma .se { color: #0a3069 }
+.chroma .sh { color: #0a3069 }
+.chroma .si { color: #0a3069 }
+.chroma .sx { color: #0a3069 }
+.chroma .sr { color: #0a3069 }
+.chroma .s1 { color: #0a3069 }
+.chroma .ss { color: #032f62 }
+.chroma .m { color: #0550ae }
+.chroma .mb { color: #0550ae }
+.chroma .mf { color: #0550ae }
+.chroma .mh { color: #0550ae }
+.chroma .mi { color: #0550ae }
+.chroma .il { color: #0550ae }
+.chroma .mo { color: #0550ae }
+.chroma .o { color: #0550ae }
+.chroma .ow { color: #0550ae }
+.chroma .p { color: #1f2328 }
+.chroma .c { color: #57606a }
+.chroma .ch { color: #57606a }
+.chroma .cm { color: #57606a }
+.chroma .c1 { color: #57606a }
+.chroma .cs { color: #57606a }
+.chroma .cp { color: #57606a }
+.chroma .cpf { color: #57606a }
+.chroma .gd { color: #82071e; background-color: #ffebe9 }
+.chroma .ge { color: #1f2328 }
+.chroma .gi { color: #116329; background-color: #dafbe1 }
+.chroma .go { color: #1f2328 }
+.chroma .gl { text-decoration: underline }
+.chroma .w { color: #ffffff }
+
+/* ---- dark (dracula) ---- */
+.dark .bg { color: #f8f8f2; background-color: #282a36; }
+.dark .chroma { color: #f8f8f2; background-color: #282a36; }
+.dark .chroma .lnlinks { outline: none; text-decoration: none; color: inherit }
+.dark .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+.dark .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
+.dark .chroma .hl { background-color: #3d3f4a }
+.dark .chroma .lnt { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+.dark .chroma .ln { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+.dark .chroma .line { display: flex; }
+.dark .chroma .k { color: #ff79c6 }
+.dark .chroma .kc { color: #ff79c6 }
+.dark .chroma .kd { color: #8be9fd; font-style: italic }
+.dark .chroma .kn { color: #ff79c6 }
+.dark .chroma .kp { color: #ff79c6 }
+.dark .chroma .kr { color: #ff79c6 }
+.dark .chroma .kt { color: #8be9fd }
+.dark .chroma .na { color: #50fa7b }
+.dark .chroma .nb { color: #8be9fd; font-style: italic }
+.dark .chroma .nc { color: #50fa7b }
+.dark .chroma .nf { color: #50fa7b }
+.dark .chroma .nl { color: #8be9fd; font-style: italic }
+.dark .chroma .nt { color: #ff79c6 }
+.dark .chroma .nv { color: #8be9fd; font-style: italic }
+.dark .chroma .vc { color: #8be9fd; font-style: italic }
+.dark .chroma .vg { color: #8be9fd; font-style: italic }
+.dark .chroma .vi { color: #8be9fd; font-style: italic }
+.dark .chroma .s { color: #f1fa8c }
+.dark .chroma .sa { color: #f1fa8c }
+.dark .chroma .sb { color: #f1fa8c }
+.dark .chroma .sc { color: #f1fa8c }
+.dark .chroma .dl { color: #f1fa8c }
+.dark .chroma .sd { color: #f1fa8c }
+.dark .chroma .s2 { color: #f1fa8c }
+.dark .chroma .se { color: #f1fa8c }
+.dark .chroma .sh { color: #f1fa8c }
+.dark .chroma .si { color: #f1fa8c }
+.dark .chroma .sx { color: #f1fa8c }
+.dark .chroma .sr { color: #f1fa8c }
+.dark .chroma .s1 { color: #f1fa8c }
+.dark .chroma .ss { color: #f1fa8c }
+.dark .chroma .m { color: #bd93f9 }
+.dark .chroma .mb { color: #bd93f9 }
+.dark .chroma .mf { color: #bd93f9 }
+.dark .chroma .mh { color: #bd93f9 }
+.dark .chroma .mi { color: #bd93f9 }
+.dark .chroma .il { color: #bd93f9 }
+.dark .chroma .mo { color: #bd93f9 }
+.dark .chroma .o { color: #ff79c6 }
+.dark .chroma .ow { color: #ff79c6 }
+.dark .chroma .c { color: #6272a4 }
+.dark .chroma .ch { color: #6272a4 }
+.dark .chroma .cm { color: #6272a4 }
+.dark .chroma .c1 { color: #6272a4 }
+.dark .chroma .cs { color: #6272a4 }
+.dark .chroma .cp { color: #ff79c6 }
+.dark .chroma .cpf { color: #ff79c6 }
+.dark .chroma .gd { color: #ff5555 }
+.dark .chroma .ge { text-decoration: underline }
+.dark .chroma .gh { font-weight: bold }
+.dark .chroma .gi { color: #50fa7b; font-weight: bold }
+.dark .chroma .go { color: #44475a }
+.dark .chroma .gu { font-weight: bold }
+.dark .chroma .gl { text-decoration: underline }

@@ -1,0 +1,321 @@
+// Site-level style overrides. Imported last by the theme's main.scss.
+
+@import "chroma";
+
+/* ---------------------------------------------------------------
+   Tighten vertical rhythm.
+   The theme ships 110px of padding above and below every home
+   section (220px of dead space between each), which makes the
+   homepage require a lot of scrolling to reach the second section.
+   --------------------------------------------------------------- */
+.home-section {
+  padding: 55px 0 55px 0;
+}
+
+.home-section:first-of-type {
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    padding: 35px 0 35px 0;
+  }
+}
+
+/* Section headings sit in a mostly-empty 1/3-width column. Pull them
+   up level with the content and stop them wrapping so eagerly. */
+.section-heading h1 {
+  font-size: 2.1rem;
+  margin: 0 0 8px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .section-heading {
+    padding-right: 1.5rem;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Experience timeline: denser cards.
+   --------------------------------------------------------------- */
+.experience .card-body {
+  padding: 0.9rem 1.1rem;
+}
+
+.experience .card-text ul {
+  margin-bottom: 0;
+  padding-left: 1.1rem;
+}
+
+.experience .card-text li {
+  margin-bottom: 0.35rem;
+}
+
+.experience .exp-meta {
+  font-size: 0.9rem;
+}
+
+/* Collapsible role details */
+.experience .exp-details > summary {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #b2b2b2;
+  list-style: none;
+  outline: none;
+}
+
+.experience .exp-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.experience .exp-details > summary::after {
+  content: " \25be";
+}
+
+.experience .exp-details[open] > summary::after {
+  content: " \25b4";
+}
+
+.experience .exp-details > summary:hover {
+  color: $sta-link;
+}
+
+.experience .exp-details[open] > .card-text {
+  margin-top: 0.5rem;
+}
+
+/* ---------------------------------------------------------------
+   Company-grouped experience cards.
+   One card per company; roles stack inside it, separated by a rule.
+   --------------------------------------------------------------- */
+.experience .exp-company-header {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: inherit !important;
+}
+
+.dark .experience .exp-company-header {
+  color: rgb(248, 248, 242) !important;
+}
+
+.experience .exp-company-header a {
+  color: inherit;
+}
+
+.experience .exp-company-meta {
+  margin-bottom: 0.25rem;
+}
+
+.experience .exp-roles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.experience .exp-role {
+  padding: 0.7rem 0 0.1rem 0;
+}
+
+.experience .exp-role + .exp-role {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.experience .exp-role .exp-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.dark .experience .exp-roles,
+.dark .experience .exp-role + .exp-role {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ---------------------------------------------------------------
+   Featurette (Skills): four items across one row, each with a
+   left-aligned bullet list under a centered icon and heading.
+   The `.featurette` element IS the row, so it takes the flex
+   properties directly.
+   --------------------------------------------------------------- */
+.featurette {
+  justify-content: center;
+}
+
+.featurette-item {
+  margin-bottom: 1.25rem;
+}
+
+.featurette .featurette-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.featurette h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+/* Bullets read as a list, not centered prose. Constrain the width and
+   center the block itself so short lists stay under their icon. */
+.featurette-desc ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  padding-left: 1.1rem;
+  max-width: 22rem;
+}
+
+.featurette-desc li {
+  margin-bottom: 0.3rem;
+}
+
+.featurette-desc li:last-child {
+  margin-bottom: 0;
+}
+
+/* Give each column a hairline separator on wide screens so the four
+   groups read as distinct without adding boxes. */
+@media screen and (min-width: 992px) {
+  .featurette-item + .featurette-item {
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+  }
+
+  .dark .featurette-item + .featurette-item {
+    border-left-color: rgba(255, 255, 255, 0.12);
+  }
+}
+
+/* Function labels leading each skill bullet. */
+.featurette-desc li strong {
+  font-weight: 600;
+  color: #333;
+}
+
+.dark .featurette-desc li strong {
+  color: #fff;
+}
+
+/* ---------------------------------------------------------------
+   Research section (homepage).
+   Drop the author lists here only: on your own homepage, under your
+   own name, co-author lists are the least informative text in the
+   block and compete with the summaries. The `/publication/` index
+   and individual paper pages keep them, where credit matters.
+   --------------------------------------------------------------- */
+#publications .stream-meta.article-metadata {
+  display: none;
+}
+
+#publications .article-style {
+  margin-bottom: 0.4rem;
+}
+
+#publications .stream-item {
+  margin-bottom: 1.4rem;
+}
+
+/* Camera settings line under photography captions (read from EXIF). */
+.figure-exif {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  opacity: 0.65;
+}
+
+/* Album-level camera/lens line. */
+.album-gear {
+  margin: -0.25rem 0 1.5rem 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  opacity: 0.6;
+}
+
+/* ---------------------------------------------------------------
+   Experience timeline marker.
+   The theme centres the dot between two `h-50` rows, which reads
+   fine on a one-role card. Company-grouped cards are tall enough
+   for several roles, so a centred "current" dot drifts down beside
+   a past role. Pin it near the top instead, level with the company
+   name and the most recent role.
+   --------------------------------------------------------------- */
+.exp-timeline > .row:first-child {
+  height: auto !important;
+  flex: 0 0 1.6rem;
+}
+
+.exp-timeline > .row:last-child {
+  height: auto !important;
+  flex: 1 1 auto;
+}
+
+/* ---------------------------------------------------------------
+   Avatar frame.
+   The theme put the size, shape and crop on the <img> itself, so
+   there was no way to scale the photo inside its circle: a
+   transform on the image would have enlarged the circle too. The
+   frame now owns the size and clipping, and the image pans with
+   `object-position` and zooms with `transform: scale()`.
+   --------------------------------------------------------------- */
+.avatar-frame {
+  display: block;
+  width: 270px;
+  height: 270px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.avatar-frame .avatar {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  transform-origin: center center;
+}
+
+@media screen and (max-width: 767px) {
+  .wg-about .avatar-frame {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Article measure.
+   The theme caps article content at 760px, which is a comfortable
+   measure for prose but tight for the wide code blocks in the
+   infrastructure posts: Terraform and YAML lines wrap or scroll
+   well before they need to. 880px still reads as a column rather
+   than full-bleed text, and buys about a dozen characters per line.
+   Only applies above the breakpoint; narrower screens are already
+   viewport-constrained, not max-width-constrained.
+   --------------------------------------------------------------- */
+@media screen and (min-width: 992px) {
+  .article-container {
+    max-width: 880px;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Mermaid diagrams.
+   Mermaid sizes the generated <svg> from its own layout and writes
+   an inline `max-width: <natural>px`, so a wide graph renders at its
+   natural width and runs straight off the side of the article
+   column. Override the inline cap so the SVG always scales down to
+   the column, and keep `overflow-x` on the wrapper so a diagram that
+   is still too dense to read when scaled can be scrolled instead.
+   --------------------------------------------------------------- */
+.mermaid {
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.mermaid svg {
+  max-width: 100% !important;
+  height: auto;
+}

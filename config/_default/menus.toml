@@ -13,10 +13,11 @@
   url = "#posts"
   weight = 20
 
-[[main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 30
+# Re-enable alongside the Software widget in `content/home/projects.md`.
+# [[main]]
+#   name = "Projects"
+#   url = "#projects"
+#   weight = 30
 
 [[main]]
   name = "Research"
@@ -31,6 +32,6 @@
 #   weight = 70
 
 [[main]]
-  name = "Personal"
-  url = "/personal"
+  name = "Photography"
+  url = "/photography"
   weight = 70

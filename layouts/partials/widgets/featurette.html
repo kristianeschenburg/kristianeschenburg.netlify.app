@@ -1,0 +1,40 @@
+{{ $ := .root }}
+{{ $page := .page }}
+
+{{/* Featurette widget (site override of themes/academic).
+
+     Differences from the stock widget:
+       - Columns are `col-12 col-sm-6 col-lg-3`, so four features sit on one
+         row at desktop width instead of 3 + an orphan. Falls back to 2-up on
+         tablets and 1-up on phones.
+       - The description is emitted in a `div`, not a `p`, so a Markdown
+         bullet list in `description` renders as a real `<ul>` rather than an
+         invalid `<p><ul>` nesting. */}}
+
+<div class="row featurette">
+  {{ with $page.Title }}
+  <div class="col-md-12 section-heading">
+    <h1>{{ . | markdownify | emojify }}</h1>
+    {{ if $page.Params.subtitle }}<p>{{ $page.Params.subtitle | markdownify | emojify }}</p>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $page.Content }}
+  <div class="col-md-12">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  {{ range $page.Params.feature }}
+  {{ $pack := or .icon_pack "fas" }}
+  {{ $pack_prefix := $pack }}
+  {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+    {{ $pack_prefix = "fa" }}
+  {{ end }}
+  <div class="col-12 col-sm-6 col-lg-3 featurette-item">
+    {{ with .icon }}<div class="featurette-icon"><i class="{{ $pack }} {{ $pack_prefix }}-{{ . }}"></i></div>{{ end }}
+    <h3>{{ .name | markdownify | emojify }}</h3>
+    {{ with .description }}<div class="featurette-desc">{{ . | markdownify | emojify }}</div>{{ end }}
+  </div>
+  {{ end }}
+</div>

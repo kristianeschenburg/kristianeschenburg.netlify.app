@@ -5,8 +5,8 @@ title: "Gaussian Graph Convolutional Networks"
 subtitle: ""
 summary: ""
 authors: []
-tags: [pytorch, AI, graph convolution networks]
-categories: []
+tags: [PyTorch, graph neural networks]
+categories: [machine learning]
 date:   2020-12-07T23:24:17-07:00
 lastmod: 2020-12-07T23:24:17-07:00
 featured: false
@@ -30,14 +30,14 @@ projects: [parcellearning]
 
 I'm using [graph convolutional networks](https://tkipf.github.io/graph-convolutional-networks/) as a tool to segment the cortical surface of the brain.  This research resides in the domain of *node classification* using *inductive learning*.  By node classification, I mean that we wish to assign a discrete label to cortical surface locations (nodes / vertices in a graph) on the basis of some feature data and brain network topology.  By inductive learning, I mean that we will train, validate, and test on datasets with possibly different graph topologies -- this is in contrast to *transductive learning* that learns models that do not generalize to arbitrary network topology.
 
-In conventional convolutions over regular grid domains, such as images, using approaches like[ConvNet](https://en.wikipedia.org/wiki/Convolutional_neural_network), we learn the parameters of a sliding filter that convolves the signal around a pixel of interest $p_{i,j}$, such that we aggregate the information from pixels $p_{\Delta i, \Delta j}$ for some fixed distance $\Delta$ away from $p$. Oftentimes, however, we encounter data that is distributed over a graphical domain, such as social networks, journal citations, brain connectivity, or the electrical power grid.  In such cases, concepts like "up", "down", "left", and "right" do not make sense -- what does it mean to be "up" from something in a network? -- so we need some other notion of neighborhood.
+In conventional convolutions over regular grid domains, such as images, using approaches like [ConvNet](https://en.wikipedia.org/wiki/Convolutional_neural_network), we learn the parameters of a sliding filter that convolves the signal around a pixel of interest $p_{i,j}$, such that we aggregate the information from pixels $p_{\Delta i, \Delta j}$ for some fixed distance $\Delta$ away from $p$. Oftentimes, however, we encounter data that is distributed over a graphical domain, such as social networks, journal citations, brain connectivity, or the electrical power grid.  In such cases, concepts like "up", "down", "left", and "right" do not make sense -- what does it mean to be "up" from something in a network? -- so we need some other notion of neighborhood.
 
 In come graph convolutional networks (GCNs).  GCNs generalize the idea of neighborhood aggregation to the graph domain by utilizing the adjacency structure of a network -- we can now aggregate signals near a node by using some neighborhood around it.  While vanilla GCNs learn rotationally-invariant filters, recent developments in the world of [Transformer networks](https://arxiv.org/abs/1706.03762) have opened up the door for much more flexible and inductive models (see: [Graph Attention Networks](https://arxiv.org/abs/1710.10903), [GraphSAGE](https://cs.stanford.edu/people/jure/pubs/graphsage-nips17.pdf)).
 
 
 {{< figure src="https://tkipf.github.io/graph-convolutional-networks/images/gcn_web.png" title="" caption="Demonstration of graph convolution network from [Thomas Kipf](https://tkipf.github.io/graph-convolutional-networks/)." lightbox="true" >}}
 
-I was specifically interested in applying the methodology described [here](http://arxiv.org/abs/1803.10336), where the authors utilitize Gaussian kernels as filters over the neighborhood of nodes.  However, the authors did not open-source their code -- as such, I needed to implement this method myself.  Assume our input data to layer $l$ is $Y^{(l)} \in \mathbb{R}^{N \times q}$ for $N$ nodes in the graph.  We can define the Gaussian kernel-weighted convolution as follows:
+I was specifically interested in applying the methodology described [here](http://arxiv.org/abs/1803.10336), where the authors utilize Gaussian kernels as filters over the neighborhood of nodes.  However, the authors did not open-source their code -- as such, I needed to implement this method myself.  Assume our input data to layer $l$ is $Y^{(l)} \in \mathbb{R}^{N \times q}$ for $N$ nodes in the graph.  We can define the Gaussian kernel-weighted convolution as follows:
 
 $$
 \begin{align}
@@ -55,9 +55,9 @@ $$
 
 Extrinsically, the kernel weights are represented by edges in a sparse affinity matrix, such that index $(i,j)$ is the Gaussian kernel weight between node $i$ and node $j$ for the $k$-th kernel in the $l$-th layer, where nodes $j$ are restricted to be within a certain neighborhood or distance of node $i$.  This can be seen more clearly here:
 
-{{< figure src="./gaussian_radius.png" title="" caption="Figure from [Wu et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7052684/).  $v_{i}$ is our voxel of interest, and $v_{k}^{i}$, for demonstration purposes, is an adjacent node.  Both $v_{i}$ and $v_{k}^{i}$ are characterized by embedding vectors $e_{i}, e_{k}^{i} \in \mathbb{R}^{q}$, from which we compute the kernel weight $\phi_{i,k}$ characterizing how similar the two vertices' embedding vectors are." lightbox="true" >}}
+{{< figure src="gaussian_radius.png" title="" caption="Figure from [Wu et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7052684/).  $v_{i}$ is our voxel of interest, and $v_{k}^{i}$, for demonstration purposes, is an adjacent node.  Both $v_{i}$ and $v_{k}^{i}$ are characterized by embedding vectors $e_{i}, e_{k}^{i} \in \mathbb{R}^{q}$, from which we compute the kernel weight $\phi_{i,k}$ characterizing how similar the two vertices' embedding vectors are." lightbox="true" >}}
 
-I implemented a new convolutional layer called ```GAUSConv``` (available [here](https://github.com/kristianeschenburg/parcellearning/blob/master/parcellearning/layers/gausconv.py)).  To implement this algorithm, I utilized the [Deep Graph Library](https://www.dgl.ai/) (DGL), which offers a stellar single unifed API based on message passing (I'm using [Pytorch](https://pytorch.org/) as the backend).  I noticed that I could formulate this problem using attention mechanisms described in the [Graph Attention Network](https://arxiv.org/abs/1710.10903) paper -- however, instead of computing attention weights using a fully connected layer as described in that work, I would compute kernel weights using Gaussian filters.  Similarly, just as the GAT paper describes *multi-head attention* for multiple attention channels, I could analogize my fomulation to *multi-head kernels* for multiple kernel channels.  To this end, I could make use of the [```GATConv```](https://github.com/dmlc/dgl/blob/master/python/dgl/nn/pytorch/conv/gatconv.py) API quite easily by replacing the attention computations with the Gaussian kernel filtrations.  Likewise, I utilized the [```GraphConv```](https://github.com/dmlc/dgl/blob/master/python/dgl/nn/pytorch/conv/graphconv.py) API to incorporate linear weights from the [Graph Convolution Network](https://arxiv.org/pdf/1609.02907.pdf) paper.  
+I implemented a new convolutional layer called ```GAUSConv``` (available [here](https://github.com/kristianeschenburg/parcellearning/blob/master/parcellearning/layers/gausconv.py)).  To implement this algorithm, I utilized the [Deep Graph Library](https://www.dgl.ai/) (DGL), which offers a stellar single unified API based on message passing (I'm using [Pytorch](https://pytorch.org/) as the backend).  I noticed that I could formulate this problem using attention mechanisms described in the [Graph Attention Network](https://arxiv.org/abs/1710.10903) paper -- however, instead of computing attention weights using a fully connected layer as described in that work, I would compute kernel weights using Gaussian filters.  Similarly, just as the GAT paper describes *multi-head attention* for multiple attention channels, I could analogize my formulation to *multi-head kernels* for multiple kernel channels.  To this end, I could make use of the [```GATConv```](https://github.com/dmlc/dgl/blob/master/python/dgl/nn/pytorch/conv/gatconv.py) API quite easily by replacing the attention computations with the Gaussian kernel filtrations.  Likewise, I utilized the [```GraphConv```](https://github.com/dmlc/dgl/blob/master/python/dgl/nn/pytorch/conv/graphconv.py) API to incorporate linear weights from the [Graph Convolution Network](https://arxiv.org/pdf/1609.02907.pdf) paper.  
 
 The ```GAUSConv``` layer is similar to both the ```GraphConv``` and ```GATConv``` layers but differs in a few places.  Rather than initializing the layer with attention heads, we initialize it with the number of kernels and a kernel dropout probability.
 
@@ -90,7 +90,7 @@ self.sigma = nn.Parameter(
     th.Tensor(num_kernels, 1), requires_grad=True)
 ```
 
-Now here is the clever part, and where the [DGL message passing interface](https://docs.dgl.ai/en/0.4.x/api/python/function.html) really shines through.  DGL fuses the ```send``` and ```receive``` messages so that no messages between nodes are ever explicitly stored, using built-in **message** and **reduce** functions.  To compute the kernel weights between all pairs of source and destrination nodes, we use these built-in functions.  The important steps are: 
+Now here is the clever part, and where the [DGL message passing interface](https://docs.dgl.ai/en/0.4.x/api/python/function.html) really shines through.  DGL fuses the ```send``` and ```receive``` messages so that no messages between nodes are ever explicitly stored, using built-in **message** and **reduce** functions.  To compute the kernel weights between all pairs of source and destination nodes, we use these built-in functions.  The important steps are: 
 
 1) compute node feature differences between all source / destination node pairs
 
@@ -127,7 +127,7 @@ graph.update_all(fn.copy_e('a', 'm'), fn.sum('m', 'h'))
 rst = graph.ndata['h']
 ```
 
-As an example, given a graph and features, we instantiate a ```GAUSConv``` layer and propogate our features through the network via:
+As an example, given a graph and features, we instantiate a ```GAUSConv``` layer and propagate our features through the network via:
 
 
 ```python
