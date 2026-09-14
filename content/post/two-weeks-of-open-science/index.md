@@ -8,7 +8,7 @@ authors: []
 tags: [open science]
 categories: [neuroscience]
 date: 2018-08-17T01:12:33-07:00
-date: 2018-08-18T01:12:33-07:00
+lastmod: 2018-08-18T01:12:33-07:00
 featured: false
 draft: false
 

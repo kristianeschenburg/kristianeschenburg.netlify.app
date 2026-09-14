@@ -1,3 +1,7 @@
 public/
 resources/
 .hugo_build.lock
+
+# Private per-post notes (interview talking points, things I learned).
+# The repo is public, so these must never be committed.
+*.private.md
