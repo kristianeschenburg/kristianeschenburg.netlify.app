@@ -33,7 +33,7 @@ I come from an ML-heavy academic research background, where I applied machine le
 
 My more recent work has moved away from ML development and toward cluster management, specifically deploying and scaling many applications on our cluster. At Just, we've used AWS ECS almost exclusively for this.
 
-I wanted to learn Kubernetes, specifically for machine learning training and inference. ECS has worked well for us, but a lot of the open-source tooling for ML platforms is built for Kubernetes. I also wanted to see how Kubernetes compares to the different HPC schedulers I've used for training. This series covers my exploration of Kubernetes (K8s) for machine learning engineering. It starts with foundational topics like Pods and Services, moves to intermediate topics like role-based access control (RBAC) and networking, and ends with topics specific to ML platforms like horizontal pod autoscaling (HPA), multi-tenant namespaces, and job queuing.
+I wanted to learn Kubernetes, specifically for machine learning training, inference, and monitoring. ECS has worked well for us, but a lot of the open-source tooling for ML platforms is built for Kubernetes. I also wanted to see how Kubernetes compares to the different HPC schedulers I've used for training. This series covers my exploration of Kubernetes (K8s) for machine learning engineering. It starts with foundational topics like Pods and Services, moves to intermediate topics like role-based access control (RBAC) and networking, and ends with topics specific to ML platforms like horizontal pod autoscaling (HPA), multi-tenant namespaces, and job queuing.
 
 ## What's coming
 
