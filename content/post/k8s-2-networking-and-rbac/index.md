@@ -26,6 +26,8 @@ In the [last post]( {{< relref "/post/k8s-1-why-kubernetes-for-ml-engineering/in
 
 In this post, I'll expand on topics related to authentication, authorization, and networking.  See below for a rough architecture diagram of this post's content.  Again, this *is not* a tutorial.  This is a series of posts documenting my path to development with Kubernetes.  In each post, I'll progressively integrate more and more K8s functionality, culminating in an application towards ML training and inference pipelines.
 
+Code for this post can be found [here](https://github.com/kristianeschenburg/k8s-for-mle-part-2).
+
 ## Architecture and Overview
 
 The theme of this post is networking, roles, and permission boundaries.  A shared cluster has multiple boundaries that matter:
