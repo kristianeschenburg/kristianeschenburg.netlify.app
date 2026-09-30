@@ -3,7 +3,7 @@
 
 title: "The Delta Method"
 subtitle: ""
-summary: "Using Taylor expansion to approximate the distribution of functions of random variables."
+summary: "Deriving the delta method from a Taylor expansion and simulating its use for variance stabilizing transformations of Poisson and exponential data and for standard errors in polynomial regression."
 authors: []
 tags: [statistics, asymptotics]
 categories: [mathematics]

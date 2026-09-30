@@ -3,7 +3,7 @@
 
 title: "Convergence In Probability"
 subtitle: ""
-summary: "Definitions and relationships between convergence in probability, almost sure convergence, and convergence in distribution."
+summary: "Working through the definition of convergence in probability from Casella and Berger, using Chebyshev's inequality to show the weak law of large numbers for the sample mean and variance, and simulating normal samples to watch both estimates converge."
 authors: []
 tags: [probability, asymptotics, statistics]
 categories: [mathematics]

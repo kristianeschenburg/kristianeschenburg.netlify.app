@@ -3,7 +3,7 @@
 
 title: "Dose-Response Curves and Biomarker Diagnostic Power"
 subtitle: ""
-summary: "Dose-response analysis and computing ROC curves to evaluate the diagnostic power and specificity of biomarkers."
+summary: "A friend asked how to tell whether a biomarker can predict cardiotoxicity. I build ROC curves by hand on synthetic case and control data, then use them to assess the diagnostic power of simulated dose-response curves."
 authors: []
 tags: [statistics, biomarkers]
 categories: [mathematics]

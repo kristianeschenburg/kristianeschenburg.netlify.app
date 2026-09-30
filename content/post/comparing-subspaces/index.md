@@ -3,7 +3,7 @@
 
 title: "Distances Between Subspaces"
 subtitle: ""
-summary: "Computing principal angles between subspaces using QR decomposition and SVD to quantify how far apart two subspaces are."
+summary: "Principal angles between two subspaces come from the SVD of the product of their orthonormal bases. Most subspace distances, including the Grassmann distance, are functions of those angles."
 authors: []
 tags: [subspaces, distance metrics]
 categories: [mathematics]

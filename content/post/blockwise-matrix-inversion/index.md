@@ -3,7 +3,7 @@
 
 title: "Blockwise Matrix Inversion"
 subtitle: ""
-summary: "Documentation of blockwise matrix inversion lemmas encountered during a linear models course, with formulas and derivations."
+summary: "Deriving each block of the inverse of a 2x2 partitioned matrix using the Schur complements of A and D. I kept running into these identities in a linear models course, including on a midterm."
 authors: []
 tags: [linear algebra, matrix inversion, Gauss-Markov, statistics]
 categories: [mathematics]

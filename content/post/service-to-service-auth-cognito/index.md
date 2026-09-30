@@ -3,7 +3,7 @@
 
 title: "Service-to-Service Auth with Cognito Scopes"
 subtitle: ""
-summary: "Implementing machine-to-machine authentication between microservices using AWS Cognito client credentials flow."
+summary: "Why we replaced a shared bearer token with Cognito's client-credentials flow, so each service has its own identity and each endpoint requires a specific scope. Covers resource servers, custom scopes, token validation, and a couple of ALB rule gotchas."
 authors: []
 tags: [AWS, Cognito, FastAPI, OAuth2, middleware, Terraform]
 categories: [software engineering, data platform]

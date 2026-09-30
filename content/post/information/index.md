@@ -2,7 +2,7 @@
 
 title: "Entropy and Mutual Information"
 subtitle: ""
-summary: "Information theory applied to neuroscience: using entropy and mutual information to quantify temporal coupling between brain regions."
+summary: "A review of entropy, conditional entropy, and mutual information, with the basic proofs. I then set up how I plan to use mutual information to relate spatial mappings between cortical regions to their temporal coupling."
 authors: []
 tags: [probability, information theory]
 categories: [mathematics]

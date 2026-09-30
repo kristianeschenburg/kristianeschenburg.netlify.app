@@ -3,7 +3,7 @@
 
 title: "Correlation IDs and Request Lineage Across Services"
 subtitle: ""
-summary: "Adding request correlation IDs to trace calls through distributed microservices for debugging and monitoring."
+summary: "When a scientist says a dashboard was slow this morning, our logs couldn't tell us which requests were theirs. I built a request context, stored in a ContextVar and forwarded as HTTP headers, that stamps request, session, user, and service IDs onto every log line. The post covers the middleware, why a logging filter beats a LoggerAdapter, and fixes for noisy health checks and unhelpful 403s."
 authors: []
 tags: [AWS, FastAPI, middleware, observability, Python]
 categories: [software engineering, data platform]

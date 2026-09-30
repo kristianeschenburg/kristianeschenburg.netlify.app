@@ -3,7 +3,7 @@
 
 title: "Constrained Graph Attention Networks"
 subtitle: ""
-summary: "Graph attention networks that incorporate structural constraints to improve feature aggregation on graphs."
+summary: "Wang et al. argue that graph attention networks overfit their attention weights and oversmooth signals across class boundaries. Their fix adds two margin-based losses and aggregates only over the top-k attended neighbors. I walk through the method and my implementation of the layer in DGL."
 authors: []
 tags: [PyTorch, graph neural networks]
 categories: [machine learning]

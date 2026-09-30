@@ -3,7 +3,7 @@
 
 title: "Cross-Entropy With Structure"
 subtitle: ""
-summary: "Cross-entropy loss for structured prediction with complex output spaces beyond single-label classification."
+summary: "A loss term that penalizes predicting cortical labels that aren't adjacent to the true label. Implemented in PyTorch and DGL and used as a regularizer alongside standard cross-entropy."
 authors: []
 tags: [PyTorch, loss functions, information theory]
 categories: [machine learning]

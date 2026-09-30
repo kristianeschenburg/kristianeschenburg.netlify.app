@@ -3,7 +3,7 @@
 
 title: "Submitting Batch Jobs with qsub"
 subtitle: ""
-summary: "Submitting batch jobs to HPC schedulers like Sun Grid Engine using qsub with various resource specifications."
+summary: "Wrapping a Python script in a bash script so it can be submitted to a Sun Grid Engine cluster with qsub."
 authors: []
 tags: [HPC, bash]
 categories: [software engineering]

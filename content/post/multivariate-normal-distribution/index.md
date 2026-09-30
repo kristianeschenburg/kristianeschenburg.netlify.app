@@ -3,7 +3,7 @@
 
 title: "Multivariate Normal Distribution"
 subtitle: ""
-summary: "Properties of the multivariate normal distribution, conditional distributions, and statistical inference."
+summary: "Deriving the marginal and conditional distributions of a partitioned multivariate normal."
 authors: []
 tags: [probability, probability distributions, Gauss-Markov, statistics]
 categories: [mathematics]

@@ -3,7 +3,7 @@
 
 title: "Deploying Dagster to AWS ECS, Part 2: Pipelines"
 subtitle: ""
-summary: "Building data pipelines with Dagster on ECS: pipeline definitions, error handling, monitoring, and Terraform infrastructure."
+summary: "The per-pipeline Terraform module that plugs into the platform, with two task definitions per pipeline, Cloud Map registration so the daemon can find each code server, four IAM roles, and secrets handling."
 authors: []
 tags: [Dagster, AWS, ECS, Terraform]
 categories: [data platform, software engineering]

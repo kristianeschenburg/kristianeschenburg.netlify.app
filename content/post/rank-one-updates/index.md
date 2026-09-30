@@ -3,7 +3,7 @@
 
 title: "Rank One Updates"
 subtitle: ""
-summary: "Sherman-Morrison formula and related techniques for efficiently updating matrix inverses under low-rank perturbations."
+summary: "Using the Sherman-Morrison-Woodbury identity to update a matrix inverse after a low-rank change. The example is updating linear regression coefficients with a new observation without refitting the model."
 authors: []
 tags: [linear algebra, matrix inversion]
 categories: [mathematics]

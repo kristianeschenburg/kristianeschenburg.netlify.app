@@ -3,7 +3,7 @@
 
 title: "Gaussian Graph Convolutional Networks"
 subtitle: ""
-summary: "Implementing Gaussian kernel filtering for image smoothing and analyzing properties of Gaussian convolution."
+summary: "Implementing a graph convolution layer whose filters are learned Gaussian kernels over node features, written as a custom DGL message-passing layer for segmenting the cortical surface."
 authors: []
 tags: [PyTorch, graph neural networks]
 categories: [machine learning]

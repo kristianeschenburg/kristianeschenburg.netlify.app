@@ -3,7 +3,7 @@
 
 title: "Lab Meeting: pip and the Python Packaging Index"
 subtitle: ""
-summary: "Survey of Python packages for neuroimaging: tools for brain image analysis, registration, and visualization."
+summary: "Notes from a lab meeting talk on how to structure, build, and upload a Python package to PyPI, with an example from my own code."
 authors: []
 tags: [Python, packaging, neuroimaging]
 categories: [software engineering]

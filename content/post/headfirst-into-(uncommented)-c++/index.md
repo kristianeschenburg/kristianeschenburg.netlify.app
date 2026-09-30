@@ -3,7 +3,7 @@
 
 title: "Headfirst into (Uncommented) C++"
 subtitle: ""
-summary: "Learning C++ pragmatically by diving into real codebases and reading uncommented production code."
+summary: "I modified FSL's probtrackx2 so streamlines start out heading in a fixed direction into the white matter, which meant reading a lot of poorly documented C++. The post covers why I needed the change and three lessons from it: write meaningful documentation, get comfortable in other people's code, and don't dismiss compiled languages."
 authors: []
 tags: [C++]
 categories: [software engineering]

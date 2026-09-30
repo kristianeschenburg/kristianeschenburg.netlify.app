@@ -3,7 +3,7 @@
 
 title: "Exploring Neurological Dynamical Systems: Part 1"
 subtitle: ""
-summary: "Applying dynamical systems theory to neuroscience: using ODEs and phase space analysis to model neural activity and brain dynamics."
+summary: "An introduction to dynamic mode decomposition, which splits spatiotemporal data into spatial modes and their time dynamics. I derive the algorithm using a truncated SVD, with resting-state MRI as the motivating use case."
 authors: []
 tags: [dynamical systems, dynamic mode decomposition, linear algebra]
 categories: [mathematics, neuroscience]

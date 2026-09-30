@@ -3,7 +3,7 @@
 
 title: "Deploying Dagster to AWS ECS, Part 1: The Platform"
 subtitle: ""
-summary: "Setting up Dagster for data orchestration on AWS ECS, covering infrastructure setup and configuration."
+summary: "The long-lived half of our Dagster deployment on AWS ECS: the daemon, read-only and admin webservers behind a Cognito-authenticated ALB, and the Terraform that ties them together. Most of the post is about networking, security groups, service discovery, and IAM, which is where most of my time went. Written for anyone running Dagster without Dagster+."
 authors: []
 tags: [Dagster, AWS, ECS, Terraform]
 categories: [data platform, software engineering]

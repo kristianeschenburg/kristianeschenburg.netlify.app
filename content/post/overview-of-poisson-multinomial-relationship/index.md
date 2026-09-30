@@ -3,7 +3,7 @@
 
 title: "Overview of Poisson-Multinomial Relationship"
 subtitle: ""
-summary: "The asymptotic relationship between Poisson and multinomial distributions, with implications for limit theorems."
+summary: "A sum of independent Poisson variables is Poisson with the summed rate. Conditioned on that sum, the individual counts follow a multinomial distribution."
 authors: []
 tags: [probability, probability distributions, statistics]
 categories: [mathematics]

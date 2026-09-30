@@ -3,7 +3,7 @@
 
 title: "Mahalanobis Distances of Brain Connectivity"
 subtitle: ""
-summary: "Using Mahalanobis distances to compare brain connectivity patterns while accounting for correlations in multivariate data."
+summary: "Using the squared Mahalanobis distance, which is chi-squared distributed under multivariate normality, to compare connectivity fingerprints between one cortical region and every other region, with Ledoit-Wolf covariance estimates and a check that the empirical distances follow the expected distribution."
 authors: []
 tags: [distance metrics, neuroimaging, graphs, statistics]
 categories: [mathematics, neuroscience]

@@ -1,7 +1,7 @@
 ---
 title: "CI/CD Part 1: Gitlab Pipelines and Package Registries"
 subtitle: ""
-summary: "Setting up Gitlab CI/CD pipelines: anatomy of `.gitlab-ci.yml`, job stages, and publishing Python packages to a package registry using twine."
+summary: "How a .gitlab-ci.yml file is put together, how to make jobs run only on certain merge request events, and how to set up .pypirc and .netrc tokens so a pipeline can build a Python package and push it to a Gitlab package registry."
 authors: []
 tags: [Python, CI/CD, Gitlab, YAML, Docker, packaging, bash]
 categories: [software engineering]

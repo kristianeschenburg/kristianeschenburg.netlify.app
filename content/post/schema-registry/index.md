@@ -3,7 +3,7 @@
 
 title: "Building a Schema Registry from Scratch for a Scientific Data Platform"
 subtitle: ""
-summary: "Building a custom schema registry from scratch using Python classes serialized to YAML, designed for scientific data platforms."
+summary: "Design decisions behind the schema registry I built for our scientific data platform, where schemas are written as Pandera models in Python, exported to YAML, published to S3, and rebuilt as live validators at runtime, with strict versioning and queryable metadata."
 authors: []
 tags: [Pandera, YAML, AWS]
 categories: [data platform, software engineering]

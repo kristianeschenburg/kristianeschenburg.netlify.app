@@ -3,7 +3,7 @@
 
 title: "Exploring Neurological Dynamical Systems: Part 2"
 subtitle: ""
-summary: "Bifurcations, limit cycles, and chaotic behavior in neural systems, with applications to understanding neural computation."
+summary: "Using rank-one updates to fold new observations into the DMD linear operator without recomputing a full matrix inverse."
 authors: []
 tags: [dynamical systems, dynamic mode decomposition, linear algebra]
 categories: [mathematics, neuroscience]

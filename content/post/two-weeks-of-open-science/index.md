@@ -3,7 +3,7 @@
 
 title: "Two Weeks of Open Science: A Rekindled Flame"
 subtitle: ""
-summary: "Reflections on participating in open science efforts and collaborative research initiatives."
+summary: "What I took away from Neurohackademy 2018 at the UW eScience Institute. Mostly it was learning how to write software with a team, while building parcellation_fragmenter."
 authors: []
 tags: [open science]
 categories: [neuroscience]

@@ -3,7 +3,7 @@
 
 title: "Image Transformations With OpenCV"
 subtitle: ""
-summary: "Geometric transformations in OpenCV: affine transforms, perspective warping, and morphological operations."
+summary: "Translating, rotating, and warping an MRI slice with OpenCV, as a first step toward simulating head motion."
 authors: []
 tags: [OpenCV, Python, neuroimaging]
 categories: [software engineering, neuroscience]

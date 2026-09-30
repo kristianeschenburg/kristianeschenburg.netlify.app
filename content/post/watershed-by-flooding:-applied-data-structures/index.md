@@ -3,7 +3,7 @@
 
 title: "Watershed by Flooding: Applied Data Structures"
 subtitle: ""
-summary: "Implementing watershed segmentation on triangulated meshes using the flooding algorithm with efficient data structures."
+summary: "Computing a gradient map on a cortical surface mesh by regressing scalar values onto neighbors projected into the tangent plane. The gradient map is then segmented with a priority-flooding watershed algorithm built on a heap-based priority queue."
 authors: []
 tags: [data structures, graphs]
 categories: [software engineering, neuroscience]

@@ -3,7 +3,7 @@
 
 title: "Jumping-Knowledge Representation Learning With LSTMs"
 subtitle: ""
-summary: "Graph neural networks that aggregate information across multiple hops using jumping knowledge connections."
+summary: "Jumping knowledge networks let each node combine embeddings from every layer, so the effective neighborhood size can vary across the graph. I explain the influence distribution argument and the LSTM attention aggregator. Then I apply a jumping knowledge GAT to cortical segmentation, where it holds up better than a plain GAT as depth increases."
 authors: []
 tags: [PyTorch, graph neural networks, sequence models]
 categories: [machine learning]
