@@ -1,7 +1,7 @@
 ---
 title: "CI/CD Part 1: Gitlab Pipelines and Package Registries"
 subtitle: ""
-summary: "Setting up Gitlab CI/CD pipelines to build and publish Python packages to a package registry."
+summary: "Gitlab CI/CD pipelines for Python packages. Building, testing, and publishing to a package registry."
 authors: []
 tags: [Python, CI/CD, Gitlab, YAML, Docker, packaging, bash]
 categories: [software engineering]

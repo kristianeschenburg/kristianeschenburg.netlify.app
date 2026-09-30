@@ -3,7 +3,7 @@
 
 title: "Distances Between Subspaces"
 subtitle: ""
-summary: "Subspace similarity metrics for high-dimensional spaces."
+summary: "Subspace similarity."
 authors: []
 tags: [subspaces, distance metrics]
 categories: [mathematics]

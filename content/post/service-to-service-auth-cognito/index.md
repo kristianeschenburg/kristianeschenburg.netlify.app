@@ -3,7 +3,7 @@
 
 title: "Service-to-Service Auth with Cognito Scopes"
 subtitle: ""
-summary: "Machine-to-machine authentication with AWS Cognito."
+summary: "M2M authentication."
 authors: []
 tags: [AWS, Cognito, FastAPI, OAuth2, middleware, Terraform]
 categories: [software engineering, data platform]

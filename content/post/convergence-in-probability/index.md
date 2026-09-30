@@ -3,7 +3,7 @@
 
 title: "Convergence In Probability"
 subtitle: ""
-summary: "Convergence in probability, almost sure convergence, and convergence in distribution."
+summary: "Convergence in probability, almost sure convergence, and convergence in distribution, with relationships between the modes."
 authors: []
 tags: [probability, asymptotics, statistics]
 categories: [mathematics]

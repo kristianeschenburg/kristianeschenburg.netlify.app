@@ -3,7 +3,7 @@
 
 title: "Image Transformations With OpenCV"
 subtitle: ""
-summary: "Affine and perspective transforms, warping, and morphological operations."
+summary: "Affine and perspective transformations, warping, and morphological operations in OpenCV."
 authors: []
 tags: [OpenCV, Python, neuroimaging]
 categories: [software engineering, neuroscience]

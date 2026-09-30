@@ -3,7 +3,7 @@
 
 title: "Blockwise Matrix Inversion"
 subtitle: ""
-summary: "Inversion lemmas for partitioned matrices. Essential techniques for working with Gauss-Markov models and multivariate normal distributions."
+summary: "Inversion lemmas for partitioned matrices used in Gauss-Markov models, multivariate normal distributions, and statistical inference."
 authors: []
 tags: [linear algebra, matrix inversion, Gauss-Markov, statistics]
 categories: [mathematics]

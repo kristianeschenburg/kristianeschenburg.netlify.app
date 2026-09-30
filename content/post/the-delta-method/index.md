@@ -3,7 +3,7 @@
 
 title: "The Delta Method"
 subtitle: ""
-summary: "Delta method for distributions of transformed random variables."
+summary: "Delta method."
 authors: []
 tags: [statistics, asymptotics]
 categories: [mathematics]
