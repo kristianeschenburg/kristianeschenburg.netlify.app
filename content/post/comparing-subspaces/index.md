@@ -3,7 +3,7 @@
 
 title: "Distances Between Subspaces"
 subtitle: ""
-summary: "Subspace similarity."
+summary: "Computing principal angles between subspaces using QR decomposition and SVD to quantify how far apart two subspaces are."
 authors: []
 tags: [subspaces, distance metrics]
 categories: [mathematics]

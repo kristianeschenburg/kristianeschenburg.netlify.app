@@ -3,7 +3,7 @@
 
 title: "Enabling Custom Jekyll Plugins with TravisCI"
 subtitle: ""
-summary: "Custom Jekyll plugins in Ruby for extended functionality without third-party hosting."
+summary: "Creating custom Jekyll plugins in Ruby to extend site generation capabilities without using third-party-hosted Jekyll."
 authors: []
 tags: [Jekyll, CI/CD]
 categories: [software engineering]

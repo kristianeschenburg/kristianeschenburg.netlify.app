@@ -3,7 +3,7 @@
 
 title: "Multivariate Normal Distribution"
 subtitle: ""
-summary: "Properties."
+summary: "Properties of the multivariate normal distribution, conditional distributions, and statistical inference."
 authors: []
 tags: [probability, probability distributions, Gauss-Markov, statistics]
 categories: [mathematics]

@@ -3,7 +3,7 @@
 
 title: "Headfirst into (Uncommented) C++"
 subtitle: ""
-summary: "Learning C++ through reading and modifying real codebases."
+summary: "Learning C++ pragmatically by diving into real codebases and reading uncommented production code."
 authors: []
 tags: [C++]
 categories: [software engineering]

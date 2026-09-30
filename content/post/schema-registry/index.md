@@ -3,7 +3,7 @@
 
 title: "Building a Schema Registry from Scratch for a Scientific Data Platform"
 subtitle: ""
-summary: "Schema management for Kafka. Centralized versioning and validation of data schemas across pipelines."
+summary: "Building a custom schema registry from scratch using Python classes serialized to YAML, designed for scientific data platforms."
 authors: []
 tags: [Pandera, YAML, AWS]
 categories: [data platform, software engineering]

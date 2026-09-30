@@ -2,7 +2,7 @@
 
 title: "Entropy and Mutual Information"
 subtitle: ""
-summary: "Entropy and mutual information for measuring temporal coupling between brain regions. Using information theory to quantify information flow in brain networks."
+summary: "Information theory applied to neuroscience: using entropy and mutual information to quantify temporal coupling between brain regions."
 authors: []
 tags: [probability, information theory]
 categories: [mathematics]

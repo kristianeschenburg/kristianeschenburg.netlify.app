@@ -3,7 +3,7 @@
 
 title: "Overview of Poisson-Multinomial Relationship"
 subtitle: ""
-summary: "Relationship between Poisson and multinomial distributions and limit theorems."
+summary: "The asymptotic relationship between Poisson and multinomial distributions, with implications for limit theorems."
 authors: []
 tags: [probability, probability distributions, statistics]
 categories: [mathematics]

@@ -3,7 +3,7 @@
 
 title: "Exploring Neurological Dynamical Systems: Part 2"
 subtitle: ""
-summary: "Chaos and bifurcations."
+summary: "Bifurcations, limit cycles, and chaotic behavior in neural systems, with applications to understanding neural computation."
 authors: []
 tags: [dynamical systems, dynamic mode decomposition, linear algebra]
 categories: [mathematics, neuroscience]

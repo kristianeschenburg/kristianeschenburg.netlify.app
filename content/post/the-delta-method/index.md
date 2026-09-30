@@ -3,7 +3,7 @@
 
 title: "The Delta Method"
 subtitle: ""
-summary: "Delta method."
+summary: "Using Taylor expansion to approximate the distribution of functions of random variables."
 authors: []
 tags: [statistics, asymptotics]
 categories: [mathematics]

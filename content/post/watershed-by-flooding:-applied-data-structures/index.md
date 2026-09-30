@@ -3,7 +3,7 @@
 
 title: "Watershed by Flooding: Applied Data Structures"
 subtitle: ""
-summary: "Watershed segmentation on triangulated meshes using graph flooding and data structures."
+summary: "Implementing watershed segmentation on triangulated meshes using the flooding algorithm with efficient data structures."
 authors: []
 tags: [data structures, graphs]
 categories: [software engineering, neuroscience]

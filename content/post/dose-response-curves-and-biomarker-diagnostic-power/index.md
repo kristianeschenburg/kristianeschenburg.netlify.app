@@ -3,7 +3,7 @@
 
 title: "Dose-Response Curves and Biomarker Diagnostic Power"
 subtitle: ""
-summary: "Biomarker validation."
+summary: "Dose-response analysis and computing ROC curves to evaluate the diagnostic power and specificity of biomarkers."
 authors: []
 tags: [statistics, biomarkers]
 categories: [mathematics]

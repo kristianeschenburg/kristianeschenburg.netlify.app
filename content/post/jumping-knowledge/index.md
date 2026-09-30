@@ -3,7 +3,7 @@
 
 title: "Jumping-Knowledge Representation Learning With LSTMs"
 subtitle: ""
-summary: "Networks."
+summary: "Graph neural networks that aggregate information across multiple hops using jumping knowledge connections."
 authors: []
 tags: [PyTorch, graph neural networks, sequence models]
 categories: [machine learning]

@@ -3,7 +3,7 @@
 
 title: "Two Weeks of Open Science: A Rekindled Flame"
 subtitle: ""
-summary: "Open science."
+summary: "Reflections on participating in open science efforts and collaborative research initiatives."
 authors: []
 tags: [open science]
 categories: [neuroscience]

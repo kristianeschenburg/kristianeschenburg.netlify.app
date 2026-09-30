@@ -3,7 +3,7 @@
 
 title: "Submitting Batch Jobs with qsub"
 subtitle: ""
-summary: "Job submission to HPC schedulers."
+summary: "Submitting batch jobs to HPC schedulers like Sun Grid Engine using qsub with various resource specifications."
 authors: []
 tags: [HPC, bash]
 categories: [software engineering]

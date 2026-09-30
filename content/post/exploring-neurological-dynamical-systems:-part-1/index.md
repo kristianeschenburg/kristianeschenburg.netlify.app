@@ -3,7 +3,7 @@
 
 title: "Exploring Neurological Dynamical Systems: Part 1"
 subtitle: ""
-summary: "Dynamical systems theory applied to brain modeling. Using ODEs to understand neural dynamics and behavior."
+summary: "Applying dynamical systems theory to neuroscience: using ODEs and phase space analysis to model neural activity and brain dynamics."
 authors: []
 tags: [dynamical systems, dynamic mode decomposition, linear algebra]
 categories: [mathematics, neuroscience]
