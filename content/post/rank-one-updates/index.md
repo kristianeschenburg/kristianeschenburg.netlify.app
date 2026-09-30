@@ -3,7 +3,7 @@
 
 title: "Rank One Updates"
 subtitle: ""
-summary: ""
+summary: "Sherman-Morrison formula and low-rank matrix updates."
 authors: []
 tags: [linear algebra, matrix inversion]
 categories: [mathematics]

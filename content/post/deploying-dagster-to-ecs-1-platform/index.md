@@ -3,7 +3,7 @@
 
 title: "Deploying Dagster to AWS ECS, Part 1: The Platform"
 subtitle: ""
-summary: ""
+summary: "Setting up Dagster on AWS ECS for data orchestration."
 authors: []
 tags: [Dagster, AWS, ECS, Terraform]
 categories: [data platform, software engineering]

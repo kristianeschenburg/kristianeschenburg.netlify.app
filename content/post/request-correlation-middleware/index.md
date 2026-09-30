@@ -3,7 +3,7 @@
 
 title: "Correlation IDs and Request Lineage Across Services"
 subtitle: ""
-summary: ""
+summary: "Request tracing across microservices with correlation IDs."
 authors: []
 tags: [AWS, FastAPI, middleware, observability, Python]
 categories: [software engineering, data platform]

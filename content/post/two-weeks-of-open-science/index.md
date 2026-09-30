@@ -3,7 +3,7 @@
 
 title: "Two Weeks of Open Science: A Rekindled Flame"
 subtitle: ""
-summary: ""
+summary: "Notes from open science participation."
 authors: []
 tags: [open science]
 categories: [neuroscience]

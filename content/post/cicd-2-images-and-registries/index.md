@@ -1,7 +1,7 @@
 ---
 title: "CI/CD Part 2: Docker Images and Container Registries"
 subtitle: ""
-summary: ""
+summary: "Multi-stage Docker builds and pushing images to container registries via CI/CD."
 authors: []
 tags: [CI/CD, Gitlab, YAML, Docker, AWS]
 categories: [software engineering]

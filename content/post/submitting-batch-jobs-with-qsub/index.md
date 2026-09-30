@@ -3,7 +3,7 @@
 
 title: "Submitting Batch Jobs with qsub"
 subtitle: ""
-summary: ""
+summary: "Submitting batch jobs to HPC schedulers with qsub."
 authors: []
 tags: [HPC, bash]
 categories: [software engineering]

@@ -3,7 +3,7 @@
 
 title: "Enabling Custom Jekyll Plugins with TravisCI"
 subtitle: ""
-summary: ""
+summary: "Custom Jekyll plugins for site generation without third-party hosting."
 authors: []
 tags: [Jekyll, CI/CD]
 categories: [software engineering]

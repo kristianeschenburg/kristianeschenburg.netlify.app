@@ -2,7 +2,7 @@
 
 title: "Entropy and Mutual Information"
 subtitle: ""
-summary: ""
+summary: "Entropy and mutual information for measuring temporal coupling between brain regions."
 authors: []
 tags: [probability, information theory]
 categories: [mathematics]

@@ -27,13 +27,15 @@ image:
 projects: []
 ---
 
-## Why Kubernetes, and why now
+## Why Kubernetes
 
-I come from an ML-heavy academic research background, where I applied machine learning methods to medical imaging and brain network analysis. My work focused primarily on segmentation and computer vision, and I developed graph neural network approaches to better understand brain architecture. In my current role at Just-Evotec Biologics, I've built and deployed protein language models for antibody optimization and antibody property prediction. In all of these cases, I've had access to on-prem GPU compute and used schedulers like Slurm and Sun Grid Engine for training and inference.
+I come from an ML-heavy academic research background, where I applied machine learning methods to medical imaging and brain network analysis. My work focused heavily on 3- and 4-D image and mesh-based segmentation and computer vision, as well on the development and application of graph neural network architectures to better understand brain architecture. In my current role at Just-Evotec Biologics, I've built and deployed protein language models for antibody optimization and antibody property prediction. In all of these cases, I've had access to on-prem GPU compute and used schedulers like Slurm and Sun Grid Engine for training and inference.
 
-My more recent work has moved away from ML development and toward cluster management, specifically deploying and scaling many applications on our cluster. At Just, we've used AWS ECS almost exclusively for this.
+My more recent work has moved away from ML development and toward data engineering efforts, cloud architecture setup, and data platform design.
 
-I wanted to learn Kubernetes, specifically for machine learning training, inference, and monitoring. ECS has worked well for us, but a lot of the open-source tooling for ML platforms is built for Kubernetes. I also wanted to see how Kubernetes compares to the different HPC schedulers I've used for training. This series covers my exploration of Kubernetes (K8s) for machine learning engineering. It starts with foundational topics like Pods and Services, moves to intermediate topics like role-based access control (RBAC) and networking, and ends with topics specific to ML platforms like horizontal pod autoscaling (HPA), multi-tenant namespaces, and job queuing.
+I wanted to learn Kubernetes, specifically for machine learning training, inference, and monitoring. ECS has worked well for us, but a lot of the open-source tooling for ML platforms is built for Kubernetes. I also wanted to see how Kubernetes compares to the different HPC schedulers I've used for training. This series covers my exploration of Kubernetes (K8s) for machine learning and AI engineering. It starts with foundational topics like Pods and Services, moves to intermediate topics like role-based access control (RBAC) and networking, and ends with topics specific to ML platforms like horizontal pod autoscaling (HPA), multi-tenant namespaces, and job queuing.
+
+I want to stress that this *wont* be a tutorial.  There are plenty of those online already.  This is simply going to be a documentation of my path to learning K8s, with a specific application towards ML and AI.
 
 ## What's coming
 

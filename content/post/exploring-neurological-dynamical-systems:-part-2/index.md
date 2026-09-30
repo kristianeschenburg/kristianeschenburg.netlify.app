@@ -3,7 +3,7 @@
 
 title: "Exploring Neurological Dynamical Systems: Part 2"
 subtitle: ""
-summary: ""
+summary: "Bifurcations, chaos, and neural computation."
 authors: []
 tags: [dynamical systems, dynamic mode decomposition, linear algebra]
 categories: [mathematics, neuroscience]

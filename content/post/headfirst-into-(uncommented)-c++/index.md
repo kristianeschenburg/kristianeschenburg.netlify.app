@@ -3,7 +3,7 @@
 
 title: "Headfirst into (Uncommented) C++"
 subtitle: ""
-summary: ""
+summary: "Learning C++ by reading and modifying existing code."
 authors: []
 tags: [C++]
 categories: [software engineering]

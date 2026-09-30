@@ -3,7 +3,7 @@
 
 title: "Rendering LaTex In Markdown Using Jekyll"
 subtitle: ""
-summary: ""
+summary: "Rendering LaTeX equations in Markdown with Jekyll."
 authors: []
 tags: [Jekyll, LaTeX]
 categories: [software engineering]

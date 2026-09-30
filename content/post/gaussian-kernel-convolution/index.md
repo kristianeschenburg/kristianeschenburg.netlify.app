@@ -3,7 +3,7 @@
 
 title: "Gaussian Graph Convolutional Networks"
 subtitle: ""
-summary: ""
+summary: "Image smoothing with Gaussian kernels."
 authors: []
 tags: [PyTorch, graph neural networks]
 categories: [machine learning]

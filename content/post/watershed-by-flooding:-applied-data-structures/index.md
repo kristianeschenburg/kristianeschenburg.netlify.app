@@ -3,7 +3,7 @@
 
 title: "Watershed by Flooding: Applied Data Structures"
 subtitle: ""
-summary: ""
+summary: "Watershed segmentation on meshes using graph algorithms."
 authors: []
 tags: [data structures, graphs]
 categories: [software engineering, neuroscience]
