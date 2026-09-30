@@ -3,7 +3,7 @@
 
 title: "Mahalanobis Distances of Brain Connectivity"
 subtitle: ""
-summary: "Mahalanobis distances for brain connectivity comparison."
+summary: "Mahalanobis distances for brain connectivity comparison. Accounts for correlations in multivariate brain data."
 authors: []
 tags: [distance metrics, neuroimaging, graphs, statistics]
 categories: [mathematics, neuroscience]

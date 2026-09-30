@@ -3,7 +3,7 @@
 
 title: "Exploring Neurological Dynamical Systems: Part 1"
 subtitle: ""
-summary: "Dynamical systems theory and brain modeling."
+summary: "Dynamical systems theory and brain modeling. Using differential equations to model neural behavior."
 authors: []
 tags: [dynamical systems, dynamic mode decomposition, linear algebra]
 categories: [mathematics, neuroscience]

@@ -3,7 +3,7 @@
 
 title: "Constrained Graph Attention Networks"
 subtitle: ""
-summary: "Graph attention networks with structural constraints."
+summary: "Graph attention networks with structural constraints. Improves feature aggregation on graph-structured data."
 authors: []
 tags: [PyTorch, graph neural networks]
 categories: [machine learning]

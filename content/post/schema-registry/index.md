@@ -3,7 +3,7 @@
 
 title: "Building a Schema Registry from Scratch for a Scientific Data Platform"
 subtitle: ""
-summary: "Schema versioning and validation for Kafka."
+summary: "Schema versioning and validation for Kafka. Centralized schema management for streaming pipelines."
 authors: []
 tags: [Pandera, YAML, AWS]
 categories: [data platform, software engineering]

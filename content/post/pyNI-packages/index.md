@@ -3,7 +3,7 @@
 
 title: "Lab Meeting: pip and the Python Packaging Index"
 subtitle: ""
-summary: "Python tools for brain imaging analysis."
+summary: "Python tools for brain imaging analysis. A survey of neuroimaging packages and their applications."
 authors: []
 tags: [Python, packaging, neuroimaging]
 categories: [software engineering]

@@ -3,7 +3,7 @@
 
 title: "Cross-Entropy With Structure"
 subtitle: ""
-summary: "Structured prediction with cross-entropy loss."
+summary: "Structured prediction with cross-entropy loss. Handling complex output spaces beyond classification."
 authors: []
 tags: [PyTorch, loss functions, information theory]
 categories: [machine learning]
