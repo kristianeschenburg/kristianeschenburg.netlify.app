@@ -53,7 +53,7 @@ My most important takeaway from our project was learning how to collaboratively 
 Here are a few things I learned, that I'm going to incorporate into my own work (and hopefully convince people in my lab to do the same):
 
   * Unit-test my code using ```pytest``` and ```nose```
-  * Incorporate continuous integration (I've already made use of [TravisCI]({{< relref "/post/enabling-custom-jekyll-plugins/index.md" >}})!)
+  * Incorporate continuous integration (I've already made use of TravisCI!)
   * Learn web-dev, and specifically, JavaScript (to use D3, and develop interactive posters and publications)
   * Contribute to issues / create pull-requests on GitHub repos that I use or find interesting
   * Pre-register my papers and submit to open-source journals
