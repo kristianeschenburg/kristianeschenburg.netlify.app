@@ -35,13 +35,13 @@ I replaced that solution with Cognito's OAuth2 client-credentials flow.  Here ea
 
 The bearer token approach was really easy, but it wasn't a viable approach in the long run, for a few reasons:
 
-**No expiry.** A static token has no TTL. If it leaks through a log line, a memory dump, or a compromised container, it stays valid until you manually rotate it and run a redeploy of every service holding it. There is no safe window during rotation where both the old and new values work, unless you write that special-casing yourself.
+**No expiry.** A static token has no TTL. If it leaks through a log line, a memory dump, or a compromised container, it stays valid until you manually rotate it and run a redeploy of every service holding it. There is no safe window during rotation where both the old and new values work.
 
-**No identity.** When service B receives the token, it can verify the value matches what it was given, but it can't tell *who* sent it. Every caller is indistinguishable, so you can only observe that the token was used.
+**No identity.** When service B receives the token, it can verify the value matches what it was given, but it can't tell *who* sent it. Every caller is indistinguishable, so you can only observe that the token was used and not who made the call.
 
 **No scope.** The receiving service has no way to enforce what the caller may do. Either it accepts the token and grants full access, or it rejects it. There's no way to express "service A may read but not write".
 
-**Shared blast radius.** The same secret works everywhere. One compromised service exposes the key to every other service, so a single breach leaves a huge hole.
+**Shared blast radius.** The same secret works everywhere. One compromised service exposes the key to every other service.  This is a huge vulnerability.
 
 Comparing these two solutions against each other, we have:
 
@@ -62,11 +62,11 @@ Being able to attribute traffic to a caller enhances the utility of logs, which 
 
 There are two authentication and authorization gates in this architecture:
 
-**Gate 1 is the ALB.** Everything in our system is either accesible from outside our VPC via the ALB, or has ingress/egress restricted to within the VPC.  The ALB decides only *how a request gets in*: either this is an authenticated browser user who must complete an interactive Cognito login, or it's a caller to hand straight to the service. The ALB knows nothing about your application's permissions.
+**Gate 1 is the ALB.** Everything in our system is either accesible from outside our VPC via a VPN connection through the ALB, or has ingress/egress restricted to within the VPC.  The ALB decides only *how a request gets in*: either this is an authenticated browser user who must complete an interactive Cognito login, or it's a caller to hand straight to the service. The ALB knows nothing about your application's permissions.
 
-**Gate 2 is the service.** It validates *identity* and enforces *scope*. This is the real authorization check for S2S communication.  It behaves identically no matter what language or host the caller runs on.
+**Gate 2 is the service.** It validates *identity* and enforces *scope*. This is where the real authorization check happens for service-to-service communication.
 
-An incoming request has to clear both. A browser user who hasn't been authenticated gets a 302 status to the Cognito login page via Gate 1 and never reaches the dashboard or API. A service with a valid token but the wrong scope passes Gate 1 but receives a 403 at Gate 2.
+An incoming request has to clear both the authentication and the authorization. A browser user who hasn't been authenticated gets a 302 status to the Cognito login page via Gate 1 and never reaches the dashboard or API, whereas a service with a valid token but the wrong scope passes Gate 1 but receives a 403 at Gate 2.
 
 ```
 caller ──▶ [ Gate 1: ALB ] ──▶ [ Gate 2: service ] ──▶ your handler
@@ -81,7 +81,7 @@ caller ──▶ [ Gate 1: ALB ] ──▶ [ Gate 2: service ] ──▶ your ha
 
 ## What services can call what
 
-Below is a diagram of allowed communication.  Solid arrows are requests, and each one is labeled with the scope it must present. Dashed arrows are token issuance.
+Below is an example diagram of allowed communication.  Solid arrows are requests, and each one is labeled with the scope it requires.
 
 ```mermaid
 graph LR
@@ -116,7 +116,7 @@ graph LR
 
 A browser user reaches the dashboard with no scope at all, because the ALB already authenticated them interactively and the dashboard is the thing they're allowed to look at. The dashboard's own token is *narrower* than service A's: it can read service A and service B, but nothing grants it write access to service C. If the dashboard is compromised, the write path isn't reachable from there.
 
-The permissions are just a table, so adding a consumer means adding a row, not changing any service's code:
+The permissions are a table, which makes adding a consumer easy.  You don't have to change any of the actual code:
 
 | App client (the caller) | Allowed scopes |
 |---|---|
@@ -164,7 +164,7 @@ resource "aws_cognito_resource_server" "service_b" {
 ```
 
 The `identifier` field becomes the prefix of every scope the
-resource server defines, so the three scopes above are really:
+resource server defines, so the three scopes above are represented as
 
 ```
 https://api.example.com/service-b/read
@@ -173,20 +173,14 @@ https://api.example.com/service-b/admin
 ```
 
 That full string is what a client requests, what appears in the JWT's `scope`
-claim, and what a service compares against. `name` is a display label in the
-console and is referenced by nothing.
+claim, and what a service compares against, whereas `name` is just a display label in the
+console.
 
 ### Only custom scopes work for machine-to-machine
 
 The client-credentials flow works **only** with custom scopes from a resource server.  I defined these scope manually in my FastAPI applications, and decorated the relevant endpoints with their respective scopes.  The built-in OpenID scopes (`openid`, `email`, `profile`, `aws.cognito.signin.user.admin`)
-are for user-facing flows, and asking for one with `grant_type=client_credentials`
-fails. Every machine caller needs at least one resource server to exist,
+are for user-facing flows (e.g. logins). Every machine caller needs at least one resource server to exist,
 even if the service it calls has exactly one capability.
-
-The app client also needs a secret and the flow explicitly enabled. A client
-without `generate_secret` cannot do client credentials at all, and the user pool
-needs a domain configured, since the token endpoint lives at
-`https://<domain>.auth.<region>.amazoncognito.com/oauth2/token`.
 
 ### The app client selects a subset
 
@@ -217,32 +211,26 @@ resource "aws_cognito_user_pool_client" "service_a_m2m" {
 }
 ```
 
-Service A is granted `read` on service B, and `write` on service C. It cannot write to service B even though that scope exists, because its app client never lists it as a viable permissions.  Cognito rejects an app client referencing a scope that doesn't exist yet, and Terraform sees no dependency between the two resources because the scope is a hand-written string rather than a reference to the resource server's attributes.
-
-**Scopes model capabilities, not consumers.** Service B declares that reading,
+Service A is granted `read` on service B, and `write` on service C. Service A can't write to service B even though that scope exists, because its app client never lists it as a viable permissions.  **Scopes model capabilities, not consumers.** Service B declares that reading,
 writing, and administering are things that can be done to it (this is defined both in the FastAPI code via decorated endpoints, and in the Cognito resource server). But Service B doesn't say anything about who can take those actions. Consumers get assigned action permissions through their app client's allowed-scopes list.
 
-That separation lets you onboard a caller without touching the
-service being called. A new consumer is one app client and one secret. Service B
-does not redeploy, does not learn the new caller's name, and does not grow a
-config entry. Its code already says `require_scope("read")` and will keep saying
-that no matter how many services eventually call it.
+This separation lets you onboard a caller without disrupting the callee. A new consumer is one app client and one secret. Service B
+does not redeploy, does not learn the new caller's name, and does not grow a config entry. Its code already says `require_scope("read")`.
 
-### Two possible gotchas
+### Two headaches I ran 
 
 **An omitted scope parameter is not the same as no scopes.** If a token request
-leaves `scope` off entirely, Cognito issues a token carrying *every* scope the app
-client is allowed. This means that every downstream call then presents maximum privilege. Always request scopes explicitly, one per downstream call. This is also why caching tokens per scope rather than per client matters.
+leaves `scope` off, Cognito issues a token carrying *every* scope the app
+client is allowed. This means that every downstream call then presents maximum privilege.  Basically, everything is open, unless specified otherwise.
 
-**Removing a scope is harder than adding one.** Cognito will not let you delete a
+**Removing a scope is harder than adding one.** Cognito won't let you delete a
 scope from a resource server while an app client still lists it in
 `allowed_oauth_scopes`. The order is: remove it from every app client, apply, then
-remove it from the resource server. In Terraform that's two applies, and doing it
-in one produces an error that names the resource server rather than the app client that's actually the problem.
+remove it from the resource server. This was actually quite annoying, and I couldn't figure out initially why changing and removing scopes was such a headache.
 
 ## Validating a token
 
-The receiving side has to check four things:
+The receiver has to check four things:
 
 1. The **signature**, against Cognito's public JWKS for the pool.
 2. The **issuer**, so a token from some other pool isn't accepted.
@@ -269,7 +257,7 @@ def _decode_token(self, token: str) -> dict:
     return claims
 ```
 
-Client-credentials tokens have no `aud` claim.  Instead, they carry `client_id` , so leaving audience verification on rejects every valid S2S token with a confusing error. Turning it off here is valid, but only because `token_use` and the issuer are being checked instead.
+Client-credentials tokens have no `aud` claim -- they carry `client_id` , so leaving audience verification on rejects every valid S2S token with a confusing error. Turning it off here is valid, but only because `token_use` and the issuer are being checked instead.
 
 Scope enforcement then becomes a dependency on the router:
 
@@ -283,8 +271,6 @@ if full_scope not in claims.get("scope", "").split():
 app    = FastAPI(dependencies=[Depends(auth)])                       # authenticated everywhere
 router = APIRouter(dependencies=[Depends(auth.require_scope("read"))])  # plus a scope
 ```
-
-There is also a design decision buried here. Browser requests arriving with ALB OIDC headers pass the scope check without a scope, since the ALB already authenticated the human interactively and browser sessions have no scopes to check.
 
 ---
 
@@ -313,8 +299,6 @@ async def get_token(self, scope: str) -> str:
         self._tokens[scope] = await self._fetch_new_token(scope)
         return self._tokens[scope].access_token
 ```
-
-Expiry is stored with a 60 second skew subtracted, so a token is treated as expired slightly before Cognito thinks so. Without that, a token that passes the check and then spends 400ms in flight can arrive already invalid.
 
 ---
 
