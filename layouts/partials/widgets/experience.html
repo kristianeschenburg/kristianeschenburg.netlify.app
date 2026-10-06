@@ -62,7 +62,7 @@
         {{ with .date_start }}{{ $starts = $starts | append . }}{{ end }}
       {{ end }}
 
-    <div class="row experience">
+    <div class="row experience{{ if not $ongoing }} exp-past{{ end }}">
       <!-- Timeline -->
       <div class="col-auto text-center flex-column d-none d-sm-flex exp-timeline">
         <div class="row h-50">
@@ -105,8 +105,10 @@
             {{/* --- Roles within this company --- */}}
             <ol class="exp-roles">
               {{ range $role := $roles }}
-              <li class="exp-role">
+              <li class="exp-role{{ if .date_end }} exp-past{{ end }}">
                 <h5 class="exp-title text-muted mt-0 mb-1">{{ .title | markdownify | emojify }}</h5>
+                {{/* A lone role's dates already appear in the company header. */}}
+                {{ if gt (len $roles) 1 }}
                 <div class="text-muted exp-meta">
                   {{ with .date_start }}{{ (time .).Format $date_fmt }} –{{ end }}
                   {{ if .date_end }}
@@ -119,6 +121,7 @@
                     <span>{{ . }}</span>
                   {{ end }}
                 </div>
+                {{ end }}
                 {{ with $role.description }}
                 <details class="exp-details"{{ if $role.details_open }} open{{ end }}>
                   <summary>{{ $details_label }}</summary>

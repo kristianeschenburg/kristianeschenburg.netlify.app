@@ -134,6 +134,38 @@
 }
 
 /* ---------------------------------------------------------------
+   Past experience: companies with no current role, and finished
+   roles inside a current company, render smaller and tighter so
+   the current role leads.
+   --------------------------------------------------------------- */
+.experience.exp-past > .col {
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+}
+
+.experience.exp-past .card-body {
+  padding: 0.6rem 1.1rem;
+}
+
+.experience.exp-past .exp-company-header {
+  font-size: 0.95rem;
+}
+
+.experience .exp-role.exp-past .exp-title {
+  font-size: 0.85rem;
+}
+
+.experience.exp-past .exp-meta,
+.experience .exp-past .exp-meta,
+.experience .exp-past .exp-details > summary {
+  font-size: 0.78rem;
+}
+
+.experience .exp-past .card-text {
+  font-size: 0.85rem;
+}
+
+/* ---------------------------------------------------------------
    Featurette (Skills): four items across one row, each with a
    left-aligned bullet list under a centered icon and heading.
    The `.featurette` element IS the row, so it takes the flex
@@ -210,11 +242,48 @@
 }
 
 #publications .article-style {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
-#publications .stream-item {
-  margin-bottom: 1.4rem;
+/* ---------------------------------------------------------------
+   Compact listings for Recent Posts and Research (homepage only).
+   Smaller titles and tighter spacing so more entries fit on screen;
+   Research summaries are clamped to two lines (the full abstract is
+   on each paper's page).
+   --------------------------------------------------------------- */
+#posts .media.stream-item,
+#publications .media.stream-item {
+  margin-bottom: 1.1rem;
+}
+
+#posts .media.stream-item .article-title,
+#publications .media.stream-item .article-title {
+  font-size: 1.02rem;
+  line-height: 1.3;
+}
+
+#posts .media.stream-item .article-style,
+#publications .media.stream-item .article-style {
+  margin-top: 0.15rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+#publications .media.stream-item .article-style {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#posts .media.stream-item .stream-meta {
+  margin-top: 0.2rem;
+  font-size: 12px;
+}
+
+#publications .btn-links .btn {
+  padding: 0.05rem 0.45rem;
+  font-size: 0.7rem;
 }
 
 /* Camera settings line under photography captions (read from EXIF). */

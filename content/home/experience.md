@@ -43,22 +43,33 @@ details_label = "Details"
     date_end = ""
     details_open = true
     description = """
-   * Modernized the Dagster orchestration platform on AWS ECS, decoupling pipeline infrastructure from application code for independent deployability and horizontal auto-scaling. Cut pipeline provisioning from hours to under 5 minutes via reusable infrastructure templates covering sensors, schedules, and triggers.
-   * Built and maintain a centralized schema registry enforcing versioned, backwards-compatible data contracts across 65+ schemas spanning instrument ingestion, orchestration pipelines, and lakehouse writes. Upstream validation catches quality issues at the point of entry, before bad data reaches downstream models and analytics.
-   * Architecting a regulatory-grade audit framework covering data lineage, schema versioning at write time, and user access logging, persisted to immutable DynamoDB stores, designed to enable rapid response to FDA and DoD information requests.
-   * Building a unified experiment management platform that consolidates sample planning, assay requests, run tracking, planned-vs-actual reconciliation, and reporting into one surface, replacing 6+ fragmented legacy interfaces. A multi-service monorepo (FastAPI, Next.js/React, shared Pydantic contracts) over multi-schema PostgreSQL, deployed via Terraform.
+   * Modernized the Dagster orchestration platform on AWS ECS, decoupling platform infrastructure from pipeline code for independent deploys and horizontal auto-scaling. Terraform templates cut new-pipeline provisioning from hours to under 5 minutes. Operate 3 production pipelines spanning upstream process development, ERP, and finance.
+   * Built and maintain a centralized schema registry: 65+ versioned, backwards-compatible data contracts across instrument ingestion, orchestration pipelines, and lakehouse writes, catching data quality issues at the point of entry before they reach downstream models and analytics.
+   * Led data platform integration for a new automated mini-bioreactor platform, a capital investment to improve scale-up analyses, now in production: built the ingestion pipelines, linkage of mini-bioreactor runs to bench- and manufacturing-scale bioreactor data, and the analytical tooling for scale-up comparisons.
+   * Own the data lifecycle for two SCADA production databases growing ~100 GB/month: AWS Backup snapshots, Step Functions exports of monthly Parquet snapshots to S3, Glacier tiering, and Athena for historical queries.
+   * Architecting a regulatory-grade audit framework (data lineage, write-time schema versioning, user access logs) on immutable DynamoDB stores for on-demand FDA and DoD information requests.
+   * Leading design of an experiment-management platform replacing 15+ legacy tools company-wide: a multi-service monorepo of FastAPI backends and a Next.js frontend over PostgreSQL, with shared Pydantic contracts, deployed via Terraform.
     """
 
   [[experience.roles]]
     title = "Senior Data Scientist"
     date_start = "2022-04-01"
     date_end = "2025-10-01"
-    details_open = true
+    details_open = false
     description = """
-   * Architected a serverless, event-driven AWS instrument ingestion pipeline (S3, EventBridge, Lambda, ECS) onboarding 7 scientific instruments, reducing time from assay file generation to analytics-ready data from days or weeks to under 30 minutes. Eliminated a data provenance risk where raw assay files previously sat on scientists' laptops with no version control or traceability.
-   * Delivered 3 production ML models for antibody design and property prediction, including fine-tuned masked protein language models and graph neural networks trained on protein structure data. Trained with PyTorch DDP on in-house GPU HPC; deployed as horizontally scalable inference endpoints on ECS Fargate and Lambda, tracked with MLflow.
-   * Built and deployed FastAPI data APIs, Dagster orchestration pipelines, and visualization dashboards now used by 60+ scientists across 6 functional groups, replacing manual data-sharing workflows and ad hoc reporting with standardized, always-available data access.
-   * Introduced Terraform as the company's infrastructure-as-code standard, now adopted org-wide across data science, data engineering, and software engineering. Built reusable modules for ECS/Fargate services, CI/CD, and application infrastructure, cutting deployment time from hours to minutes across dev, staging, and production.
+   **ML engineering**
+
+   * Designed and built in-house deep learning models for structure-based antibody sequence design (inverse folding): message-passing graph encoder-decoders over protein structure graphs, with autoregressive and parallel samplers for generating candidate sequence designs.
+   * Built the distributed training stack (PyTorch DDP / torchrun on multi-GPU Slurm nodes, checkpoint/resume, rank-aggregated metrics, Hydra configs) and ran systematic experiments on masking strategy, model depth, and validation design.
+   * Built dataset pipelines to pre-featurize Protein Data Bank complexes (DIPS, DB5, SAbDab) for faster training.
+   * Took the model to production as a versioned Python package (unit tests, GitLab CI publishing to an internal registry), containerized and deployed on ECS Fargate.
+   * Fine-tuned protein language models for sequence-liability and thermal stability prediction, deployed to production alongside the structure-based design models and versioned in MLflow.
+
+   **Data & platform engineering**
+
+   * Architected a serverless, event-driven AWS ingestion pipeline (S3, EventBridge, Lambda, ECS, SQS) for 7 scientific instruments with near-100% uptime, cutting time from raw assay file to analytics-ready data from days or weeks to under 30 minutes and closing a provenance gap where raw files sat on scientists' laptops.
+   * Introduced Terraform as the org-wide infrastructure-as-code standard and led migration of 35+ microservices from EC2 to ECS across test and production environments.
+   * Built FastAPI data services, Dagster gold-layer pipelines, and Dash/Plotly dashboards used by 60+ scientists across 6 functional groups.
     """
 
 [[experience]]
@@ -85,13 +96,13 @@ details_label = "Details"
   [[experience.roles]]
     title = "PhD Graduate Student, Biomedical Engineering"
     date_start = "2014-09-01"
-    date_end = "2021-09-01"
-    details_open = true
+    date_end = "2021-06-01"
+    details_open = false
     description = """
+   * Built a turn-key orchestration pipeline for processing 1000+ functional and diffusion MRI scans (>1.5TB) on a GPU-backed HPC system.
    * Developed graph neural networks for human MRI segmentation and biomarker generation, improving accuracy 15%+ over standard CNNs and improving test-retest reliability of patient-specific segmentations by 6% across clinical scanning sessions.
    * Applied dynamic mode decomposition (DMD) to fMRI brain dynamics, outperforming state-of-the-art ICA at identifying canonical activation networks while requiring shorter scanning sessions.
    * Designed a spatial statistical modeling approach for analyzing variability in the topography of functional brain connectivity, with results aligning with long-standing theories of hierarchical brain organization.
-   * Built a turn-key orchestration pipeline for processing 1000+ functional and diffusion MRI scans (>1.5TB) on a GPU-backed HPC system.
    * Awarded a highly selective 3-year ARCS Washington Research Foundation fellowship.
     """
 

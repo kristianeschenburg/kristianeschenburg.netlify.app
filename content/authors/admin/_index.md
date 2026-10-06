@@ -19,12 +19,12 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: "Data platform engineer in Seattle. Formerly MRI and machine learning research."
+bio: "Data platform and ML engineer in Seattle. Formerly MRI and machine learning research."
 
 interests:
-- Cloud architectures and distributed systems
+- Data platforms and orchestration
+- ML training, deployment, and inference infrastructure
 - Applied machine learning for scientific data
-- Backend services, APIs, and databases
 
 education:
   courses:
@@ -66,12 +66,8 @@ social:
 # - Visitors
 ---
 
-I build the platforms that scientific research and manufacturing run on.
+I'm a Senior Data Platform Engineer at a biologics company in Seattle, where I build the data, platform, and ML systems that help scientists make use of our large-scale biomanufacturing data. My role has encompassed everything from R&D work building machine learning models for antibody design and property prediction, to cloud infrastructure design and setup, to building data orchestration pipelines.
 
-I work at a biologics company, where I own most of the stack: event-driven ingestion from lab instruments, orchestration pipelines, a medallion lakehouse with schema contracts, PostgreSQL backends, and the APIs and dashboards our internal applications sit on. It's an FDA-regulated environment, which shapes a lot of how it gets built.
+Before industry, I spent seven years on a PhD in biomedical engineering at the University of Washington, where I developed graph neural network algorithms for processing brain MRI images to better understand cortical architecture and its relationship to disease diagnosis and progression.
 
-I also ship models for antibody design and property prediction, trained with PyTorch DDP on an in-house multi-GPU cluster I help maintain, plus the inference infrastructure that serves them.
-
-Before this I spent seven years on a PhD in biomedical engineering at the University of Washington, working with MRI (structural, functional, diffusion, arterial spin labeling) and building machine learning models on top of it, including graph neural networks for cortical segmentation. Processing and training ran across GPU-backed HPCs.
-
-Outside of work I like backcountry skiing, trail running, travel, practicing new languages, and gardening.
+When I'm not working, I'm usually backcountry skiing, trail running, or out in the garden. I also love to travel and like practicing new languages.

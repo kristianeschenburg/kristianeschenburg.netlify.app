@@ -5,7 +5,7 @@
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 35  # Order that this section will appear.
+weight = 65  # Order that this section will appear.
 
 title = "Research"
 subtitle = "Applied deep learning on brain imaging \u2014 the same methods I now apply to protein design."
