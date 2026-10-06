@@ -9,7 +9,7 @@ tags: [Pandera, YAML, AWS]
 categories: [data platform, software engineering]
 date:   2025-06-24T09:00:00-07:00
 featured: false
-draft: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
