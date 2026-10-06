@@ -68,6 +68,6 @@ social:
 
 I'm a Senior Data Platform Engineer at a biologics company in Seattle, where I build the data, platform, and ML systems that help scientists make use of our large-scale biomanufacturing data. My role has encompassed everything from R&D work building machine learning models for antibody design and property prediction, to cloud infrastructure design and setup, to building data orchestration pipelines.
 
-Before industry, I spent seven years on a PhD in biomedical engineering at the University of Washington, where I developed graph neural network algorithms for processing brain MRI images to better understand cortical architecture and its relationship to disease diagnosis and progression.
+Before industry, I did my PhD in biomedical engineering at the University of Washington, where I developed graph neural network algorithms for processing brain MRI images to better understand cortical architecture and its relationship to disease diagnosis and progression.
 
 When I'm not working, I'm usually backcountry skiing, trail running, or out in the garden. I also love to travel and like practicing new languages.
