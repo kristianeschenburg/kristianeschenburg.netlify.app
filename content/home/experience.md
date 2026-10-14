@@ -61,7 +61,7 @@ details_label = "Details"
 
    * Designed and built in-house deep learning models for structure-based antibody sequence design (inverse folding): message-passing graph encoder-decoders over protein structure graphs, with autoregressive and parallel samplers for generating candidate sequence designs.
    * Built the distributed training stack (PyTorch DDP / torchrun on multi-GPU Slurm nodes, checkpoint/resume, rank-aggregated metrics, Hydra configs) and ran systematic experiments on masking strategy, model depth, and validation design.
-   * Built dataset pipelines to pre-featurize Protein Data Bank complexes (DIPS, DB5, SAbDab) for faster training.
+   * Built dataset pipelines to pre-featurize open-source protein structure datasets for faster training.
    * Took the model to production as a versioned Python package (unit tests, GitLab CI publishing to an internal registry), containerized and deployed on ECS Fargate.
    * Fine-tuned protein language models for sequence-liability and thermal stability prediction, deployed to production alongside the structure-based design models and versioned in MLflow.
 

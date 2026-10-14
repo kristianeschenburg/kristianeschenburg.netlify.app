@@ -137,7 +137,7 @@ spec:
 
 ### NetworkPolicy
 
-We want to follow the principle of least priviledge.  Without any explicit policies, every Pod can reach every other Pod in every namespace.  This obviously should not happen.  One team's services should not be able to call another team's services *unless* that communication is explicitly allowed.  We also don't want non-admin resources to be able to access admin / platform resources directly.
+We want to follow the principle of least privilege.  Without any explicit policies, every Pod can reach every other Pod in every namespace.  This obviously should not happen.  One team's services should not be able to call another team's services *unless* that communication is explicitly allowed.  We also don't want non-admin resources to be able to access admin / platform resources directly.
 
 To make these rules explicit, we use NetworkPolicy resources.  NetworkPolicies can set rules at the Pod or Namespace level using label selectors, and/or at the CIDR level, and can specify Ingress and Egress rules.  Anything that isn't explicitly allowed, is denied.  For our architecture, we have the following needs:
  * frontend (`client-a` namespace) can be accessed from outside cluster *via* the Gateway (`platform` namespace)

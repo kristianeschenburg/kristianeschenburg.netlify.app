@@ -29,13 +29,13 @@ projects: []
 
 ## Why Kubernetes
 
-I come from an ML-heavy academic research background, where I applied machine learning methods to medical imaging and brain network analysis. My work focused heavily on 3- and 4-D image and mesh-based segmentation and computer vision, as well on the development and application of graph neural network architectures to better understand brain architecture. In my current role at Just-Evotec Biologics, I've built and deployed protein language models for antibody optimization and antibody property prediction. In all of these cases, I've had access to on-prem GPU compute and used schedulers like Slurm and Sun Grid Engine for training and inference.
+I come from an ML-heavy academic research background, where I applied machine learning methods to medical imaging and brain network analysis. My work focused heavily on 3- and 4-D image and mesh-based segmentation and computer vision, as well as on the development and application of graph neural network architectures to better understand brain architecture. In my current role at Just-Evotec Biologics, I've built and deployed protein language models for antibody optimization and antibody property prediction. In all of these cases, I've had access to on-prem GPU compute and used schedulers like Slurm and Sun Grid Engine for training and inference.
 
-My more recent work has moved away from ML development and toward data engineering efforts, cloud architecture setup, and data platform design.
+My more recent work has moved toward the infrastructure side of ML: data engineering, cloud architecture, and data platform design.
 
 I wanted to learn Kubernetes, specifically for machine learning training, inference, and monitoring. ECS has worked well for us, but a lot of the open-source tooling for ML platforms is built for Kubernetes. I also wanted to see how Kubernetes compares to the different HPC schedulers I've used for training. This series covers my exploration of Kubernetes (K8s) for machine learning and AI engineering. It starts with foundational topics like Pods and Services, moves to intermediate topics like role-based access control (RBAC) and networking, and ends with topics specific to ML platforms like horizontal pod autoscaling (HPA), multi-tenant namespaces, and job queuing.
 
-I want to stress that this *wont* be a tutorial.  There are plenty of those online already.  This is simply going to be a documentation of my path to learning K8s, with a specific application towards ML and AI.
+I want to stress that this *won't* be a tutorial.  There are plenty of those online already.  This is simply going to be a documentation of my path to learning K8s, with a specific application towards ML and AI.
 
 ## What's coming
 
@@ -63,7 +63,7 @@ In K8s, the equivalent easy approach would *also* hardcode values, like node IPs
 
 ## The Kubernetes way
 
-Instead, we'll implement a more robust system for inter-service communication. I've set up two applications [here](https://github.com/kristianeschenburg/k8s-for-mle-part-1/tree/main/src): a very simple Python Dash frontend and a FastAPI backend. The backend loads a small CSV file containing the names and ages of individuals, and has an endpoint that returns the age of a requested person. The frontend accepts a name and displays that person's age, if they are in the table.  External users don't need to know about the backend, they just need to interact with the frontend.
+Instead, we'll implement a more robust system for inter-service communication. I've set up two applications [here](https://github.com/kristianeschenburg/k8s-for-mle-part-1/tree/main/src): a very simple Python Dash frontend and a FastAPI backend. The backend loads a small CSV file containing the names and ages of individuals, and has an endpoint that returns the age of a requested person. The frontend accepts a name and displays that person's age, if they are in the table.  External users don't need to know about the backend; they just need to interact with the frontend.
 
 We'll create two Deployments, a ConfigMap, and two Services. The backend and frontend each run in their own Pods, and the frontend reaches the backend through the backend Service's name, `part-1-backend`, rather than a hardcoded IP address.
 
@@ -253,17 +253,17 @@ Coming from ECS, my instinct was to try to map each Kubernetes object onto somet
 
 | ECS | Kubernetes | Notes |
 |---|---|---|
-| Task Definition | Pod template (`spec.template` in a Deployment) | ECS Task Definitions are numbered revisions. K8s tracks revisions through ReplicaSets, so we can rollback to a previous revision with `kubectl rollout undo`. |
+| Task Definition | Pod template (`spec.template` in a Deployment) | ECS Task Definitions are numbered revisions. K8s tracks revisions through ReplicaSets, so we can roll back to a previous revision with `kubectl rollout undo`. |
 | Task | Pod | In `awsvpc` mode, all the containers in a task also share a network namespace, so the `localhost` path from my first attempt (see Gotchas below) also works in ECS. |
 | Service | Deployment + Service | An ECS Service keeps N tasks running and registers them with a load balancer. K8s splits this concept into two resources. |
 | Service Connect or Cloud Map | Cluster DNS | Service discovery in ECS must be specified, whereas every K8s Service gets a DNS name by default. |
 | Application Load Balancer | Ingress | A `type: LoadBalancer` Service is closer to a Network Load Balancer. |
 | Task role | ServiceAccount | The ECS Execution Role pulls images and fetches secrets, and maps to a K8s node's IAM role and image pull secrets. |
-| Environment variables and secrets in the Task Definition | ConfigMap and Secret | Changing a ConfigMap doesn't restart anything, you have to actually run the `rollout`, just like with changing environment variables in a Task Definition.|
+| Environment variables and secrets in the Task Definition | ConfigMap and Secret | Changing a ConfigMap doesn't restart anything; you have to actually run the `rollout`, just like with changing environment variables in a Task Definition.|
 | Container and load balancer health checks | Liveness and readiness probes | Both are defined on the Task / Pod OR the Target Group (EC2). |
 | Task CPU and memory | Container requests and limits | Required on Fargate, optional in K8s. |
 
-Each platform's definition of "Service" was a bit confusing at first. An ECS Service keeps a desired number of tasks running, handles deploys, and attaches tasks to target groups. A K8s Service is just a name and IP in front of the Pods that match its label selector while the actual controlling of the Pods is the Deployment's job. Kubernetes also explicitly refers to objects a "Controllers" -- from that perspective it makes a lot more sense e.g. "Your job is to maintain a certain state, or to watch for certain things...".
+Each platform's definition of "Service" was a bit confusing at first. An ECS Service keeps a desired number of tasks running, handles deploys, and attaches tasks to target groups. A K8s Service is just a name and IP in front of the Pods that match its label selector while the actual controlling of the Pods is the Deployment's job. Kubernetes also explicitly refers to objects as "Controllers" -- from that perspective it makes a lot more sense e.g. "Your job is to maintain a certain state, or to watch for certain things...".
 
 ## Speedbumps
 
@@ -277,6 +277,6 @@ This setup works on a laptop, but there are a few things I'd do differently in a
 
 1. **Data wouldn't live in the container image.** Right now the backend's CSV files are copied into the image, so changing the data means rebuilding it. In production, the data would live in S3 or in a database like RDS. For S3 access, we'd give the backend's ServiceAccount an IAM role rather than storing long-lived AWS keys in a Kubernetes Secret.
 
-2. **Service-to-service traffic would be explicitly allowed, not open by default.** a.k.a principle of least priviledge a.k.a. need-to-know. I didn't implement any authentication or network policies. By default, every Pod in a K8s cluster can reach every other Pod. This should be an explicit decision, since it's very likely not every service should be able to communicate with every other. The first step is a NetworkPolicy that denies all traffic by default and only allows the frontend to reach the backend. Also, a service mesh with mutual TLS could be used for authenticating and encrypting each request between services. Similarly, we don't have any authentication at the cluster boundary, which would sit in front of the frontend at the Ingress. I'll dig into these topics in Part 2.
+2. **Service-to-service traffic would be explicitly allowed, not open by default.** a.k.a. principle of least privilege a.k.a. need-to-know. I didn't implement any authentication or network policies. By default, every Pod in a K8s cluster can reach every other Pod. This should be an explicit decision, since it's very likely not every service should be able to communicate with every other. The first step is a NetworkPolicy that denies all traffic by default and only allows the frontend to reach the backend. Also, a service mesh with mutual TLS could be used for authenticating and encrypting each request between services. Similarly, we don't have any authentication at the cluster boundary, which would sit in front of the frontend at the Ingress. I'll dig into these topics in Part 2.
 
 3. **Probes would account for slow startup.** The backend's `SLEEP_DURATION` mocks actual startup work. For an ML service, that work might be loading a model, which, depending on the model size, could take quite long. If the liveness probe starts checking before the model finishes loading, Kubernetes restarts the container and the load starts over. A `startupProbe` holds off the liveness and readiness probes until the container has finished starting.
